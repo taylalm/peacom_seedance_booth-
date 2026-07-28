@@ -106,14 +106,14 @@ FILMS = [
         "tags": "STREET DANCE · BATTLE · FREEZE",
         "c1": "#14082A", "c2": "#7A2AB0", "c3": "#57E0F0",
         "prompt": ("A cinematic dance-movie scene: an underground dance floor with warm "
-                   "practical lights and a cheering circle of dancers. An original, hard-"
+                   "practical lights and a circle of dancers clapping along warmly. An original, hard-"
                    "hitting instrumental beat drops and the person in Image 1, in stylish "
                    "plain streetwear, takes the floor — ripping through a sharp, realistic "
                    "street-dance routine: crisp footwork, a smooth spin, a controlled "
                    "shoulder freeze — every move on the beat with real dancer's balance and "
-                   "momentum. The circle erupts; the dancer rises, flashes a confident grin "
+                   "momentum. The circle applauds warmly; the dancer rises, flashes a confident grin "
                    "to camera and says in clear English: \"That's how it's done.\" — as the "
-                   "crowd cheers around them." + _SUFFIX),
+                   "circle applauds warmly around them." + _SUFFIX),
     },
     {
         "key": "noir", "no": "05", "emoji": "🕵️",
@@ -218,7 +218,7 @@ DUO = {
     ),
     "dance": (
         "A cinematic dance-movie scene: an underground dance floor with warm practical "
-        "lights and a cheering circle of dancers. An original, hard-hitting instrumental "
+        "lights and a circle of dancers clapping along warmly. An original, hard-hitting instrumental "
         "beat drops. The person in Image 1 and a young {costar}, both in stylish plain "
         "streetwear, step into the circle facing each other. The {costar} spreads their "
         "arms with a grin and says in clear English: \"Show me what you've got!\" The "
@@ -228,10 +228,10 @@ DUO = {
         "Continue directly from Video 1. The {costar} answers with their own fiery combo, "
         "then the two dance TOGETHER — a synchronized burst of footwork and spins, "
         "perfectly on the beat, trading moves and mirroring each other with real momentum "
-        "and control as the circle goes wild. They hit a final freeze side by side, hold "
-        "it, then break into laughter. The {costar} says in clear English: \"Okay — we "
-        "OWN this floor.\" The person from Image 1 high-fives them: \"Every night.\" The "
-        "crowd cheers around them — an electric, joyful close." + _DUO_B,
+        "and control as the circle claps along, delighted. They hit a final freeze side by "
+        "side, hold it, then break into laughter. The {costar} says in clear English: "
+        "\"Okay — we OWN this floor.\" The person from Image 1 high-fives them: \"Every "
+        "night.\" The circle applauds warmly around them — an electric, joyful close." + _DUO_B,
     ),
     "noir": (
         "A moody 1940s film-noir movie scene in rich, realistic cinematic color — deep "
