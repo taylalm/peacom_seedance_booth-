@@ -479,32 +479,6 @@ def poster_art(key: str) -> str:
  <rect y="356" width="300" height="44" fill="#0C0518" opacity="0.85"/>
  <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#57E0F0" opacity="0.95">OWN THE FLOOR</text>
 </svg>""",
-        # --- Sci-Fi Epic: nebula, ringed planet, starship ---
-        "scifi": """
-<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
- <defs>
-  <linearGradient id="sf-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#03051A"/><stop offset="0.55" stop-color="#0A1240"/><stop offset="1" stop-color="#1E3CA8"/></linearGradient>
-  <radialGradient id="sf-neb" cx="0.7" cy="0.25" r="0.5"><stop offset="0" stop-color="#57E0F0" stop-opacity="0.5"/><stop offset="1" stop-color="#57E0F0" stop-opacity="0"/></radialGradient>
-  <radialGradient id="sf-pl" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#8AE0F0"/><stop offset="1" stop-color="#1E64B0"/></radialGradient>
- </defs>
- <rect width="300" height="400" fill="url(#sf-bg)"/>
- <ellipse cx="210" cy="100" rx="130" ry="90" fill="url(#sf-neb)"/>
- <g fill="#EAF7FF"><circle cx="40" cy="50" r="2"/><circle cx="90" cy="90" r="1.5"/><circle cx="250" cy="40" r="2"/><circle cx="270" cy="150" r="1.5"/><circle cx="60" cy="160" r="1.5"/><circle cx="150" cy="60" r="1.5"/><circle cx="30" cy="240" r="2"/><circle cx="270" cy="240" r="1.5"/><circle cx="120" cy="130" r="1"/></g>
- <g transform="translate(150 270)">
-  <circle r="70" fill="url(#sf-pl)"/>
-  <ellipse rx="112" ry="26" fill="none" stroke="#8AE0F0" stroke-width="6" opacity="0.7" transform="rotate(-16)"/>
-  <path d="M-70 4 a70 70 0 0 0 140 -8" fill="#03051A" opacity="0.35"/>
- </g>
- <g transform="translate(92 148) rotate(38)">
-  <path d="M0 -26 C7 -16 8 4 6 18 L-6 18 C-8 4 -7 -16 0 -26 Z" fill="#EAF7FF"/>
-  <path d="M-6 8 L-16 22 L-6 18 Z" fill="#8AE0F0"/>
-  <path d="M6 8 L16 22 L6 18 Z" fill="#8AE0F0"/>
-  <circle cx="0" cy="-4" r="4.5" fill="#1E3CA8"/>
-  <path d="M-3 19 L0 34 L3 19 Z" fill="#F6C55C"/>
- </g>
- <rect y="356" width="300" height="44" fill="#03051A" opacity="0.8"/>
- <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#57E0F0" opacity="0.95">STARBOUND</text>
-</svg>""",
         # --- Film Noir: streetlamp cone, fedora silhouette, rain ---
         "noir": """
 <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">

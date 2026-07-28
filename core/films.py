@@ -116,37 +116,20 @@ FILMS = [
                    "crowd cheers around them." + _SUFFIX),
     },
     {
-        "key": "scifi", "no": "05", "emoji": "🚀",
-        "title_th": "STARBOUND", "title_en": "SCI-FI EPIC",
-        "genre_th": "SCI-FI", "genre_en": "SCI-FI · SPACE",
-        "logline_en": "Through the storm. Into the dawn.",
-        "synopsis": ("A white-knuckle starship run — banking through a glittering asteroid "
-                     "field as alarms pulse, then breaking into the calm of a breathtaking "
-                     "alien sunrise. Big-screen space adventure."),
-        "tags": "STARSHIP · ASTEROIDS · ALIEN DAWN",
-        "c1": "#060A24", "c2": "#1E3CA8", "c3": "#57E0F0",
-        "prompt": ("A cinematic sci-fi movie scene: the sleek bridge of a starship, blue "
-                   "panel light pulsing as a glittering asteroid field tumbles past the "
-                   "viewport. The person in Image 1, in a plain futuristic flight suit, grips "
-                   "the controls and banks the ship hard — their body leaning naturally with "
-                   "each turn as asteroids sweep past — threading the storm with focused, "
-                   "realistic piloting. The ship bursts into open space just as an alien "
-                   "sunrise crests over a ringed planet, golden light flooding the bridge. "
-                   "They ease back, smile and say in clear English: \"Through the storm — "
-                   "into the dawn.\"" + _SUFFIX),
-    },
-    {
-        "key": "noir", "no": "06", "emoji": "🕵️",
+        "key": "noir", "no": "05", "emoji": "🕵️",
         "title_th": "MIDNIGHT NOIR", "title_en": "FILM NOIR",
         "genre_th": "MYSTERY", "genre_en": "MYSTERY · CLASSIC NOIR",
         "logline_en": "One clue. One chase. Case closed.",
-        "synopsis": ("A moody 1940s noir scene — rain-slicked streets, a fleeing shadow, a "
+        "synopsis": ("A moody 1940s noir scene in rich cinematic color — rain-slicked streets, a fleeing shadow, a "
                      "sharp chase through the alleys, and the clue that closes the case with "
                      "timeless style."),
         "tags": "DETECTIVE · RAIN · CHASE",
         "c1": "#0A0A0C", "c2": "#2E2E36", "c3": "#D8D8E0",
-        "prompt": ("A moody 1940s film-noir movie scene in stylish black-and-white: a "
-                   "rain-slicked city street at night, lamplight cutting through mist. The "
+        "prompt": ("A moody 1940s film-noir movie scene in rich, realistic cinematic color — "
+                   "deep blue night tones with warm amber lamplight, natural skin tones, wet "
+                   "streets reflecting the glow (NOT black-and-white, no desaturated or "
+                   "artificial filter look): a rain-slicked city street at night, lamplight "
+                   "cutting through mist. The "
                    "person in Image 1, a noir detective in a plain trench coat and fedora, "
                    "spots a shadowy figure dart from a doorway — and gives chase: a quick, "
                    "realistic pursuit through the rain, splashing through puddles, rounding a "
@@ -250,26 +233,11 @@ DUO = {
         "OWN this floor.\" The person from Image 1 high-fives them: \"Every night.\" The "
         "crowd cheers around them — an electric, joyful close." + _DUO_B,
     ),
-    "scifi": (
-        "A cinematic sci-fi movie scene: the sleek bridge of a starship, blue panel light "
-        "pulsing as a glittering asteroid field tumbles past the viewport. The person in "
-        "Image 1 and a young {costar}, both pilots in plain futuristic flight suits, strap "
-        "into the twin seats. The {costar} scans the field and says in clear English: "
-        "\"That storm is getting closer.\" The person in Image 1 grips the controls with a "
-        "calm smile: \"Then we fly through it — together.\" They bank the ship into the "
-        "asteroid field, bodies leaning naturally with every sharp turn as rocks sweep "
-        "past the glass." + _DUO_A,
-        "Continue directly from Video 1. The two pilots thread the asteroid storm in tight "
-        "coordination — the {costar} calls turns, the person from Image 1 banks and rolls "
-        "the ship with realistic, weighty motion — until they burst into open space just "
-        "as a breathtaking alien sunrise crests over a ringed planet, golden light "
-        "flooding the bridge. They ease back, breathing out. The {costar} whispers in "
-        "clear English: \"Worth every second.\" The person from Image 1 smiles: \"Told you "
-        "we'd make it.\" They share a triumphant fist-bump as the sunrise fills the "
-        "viewport — a wondrous close." + _DUO_B,
-    ),
     "noir": (
-        "A moody 1940s film-noir movie scene in stylish black-and-white: a rain-slicked "
+        "A moody 1940s film-noir movie scene in rich, realistic cinematic color — deep "
+        "blue night tones with warm amber lamplight, natural skin tones, wet streets "
+        "reflecting the glow (NOT black-and-white, no desaturated or artificial filter "
+        "look): a rain-slicked "
         "city street at night, lamplight cutting through mist. The person in Image 1 and a "
         "young {costar}, two noir detectives in plain trench coats and fedoras, study a "
         "small notebook under a streetlamp. Suddenly a shadowy figure darts from a doorway. "
