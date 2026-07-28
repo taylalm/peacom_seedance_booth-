@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+data/
+gallery/
+.DS_Store
+.streamlit/ca-bundle.pem
+byteplus_creds.sh
+bin/
+*.tgz
+test_face.jpg
+.streamlit/secrets_cloud.toml
+
+# local render scratch
+scratch_renders/
+
+# local editor/session config
+.claude/
