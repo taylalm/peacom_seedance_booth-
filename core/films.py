@@ -30,8 +30,7 @@ _RULES = (
 
 # appended to every SOLO prompt — face-lock + pacing + the shared rules
 _SUFFIX = (
-    _RULES + " Use the face in Image 1 as the only and exclusive face reference — keep the "
-    "facial features and facial structure exactly the same as the reference image. Pace the "
+    _RULES + " Use the face in Image 1 as the only and exclusive face reference — the face must stay EXACTLY identical to Image 1 in every single frame: same facial structure, same features, same identity, with ZERO morphing, drifting or beautifying, even during fast motion; keep the face clearly visible to the camera as much as possible. Pace the "
     "dialogue so the final line is completely finished by second 12, then hold a natural "
     "closing beat — never cut off mid-sentence or mid-action. 15 seconds."
 )
@@ -49,13 +48,14 @@ FILMS = [
         "c1": "#0A0E2A", "c2": "#C8321E", "c3": "#F6C55C",
         "prompt": ("A cinematic action-movie scene: a city rooftop at night in light rain, "
                    "neon glow from the skyline below. The person in Image 1, in a sleek plain "
-                   "jacket, turns as two masked figures rush in. In fluid, realistic "
-                   "martial-arts choreography they sidestep, block a strike, answer with a "
-                   "sharp spinning kick and a clean sweep — each move carrying real weight and "
-                   "momentum — until the masked figures stumble back and flee into the dark. "
-                   "The hero straightens up in the rain, exhales, looks to camera and says in "
-                   "clear English: \"Is that all you've got?\" — then walks toward the skyline "
-                   "as the rain glitters." + _SUFFIX),
+                   "jacket, stands facing the camera as a masked figure steps out of the "
+                   "shadows behind them. They calmly turn, and in one SHORT, crisp exchange — "
+                   "no more than three seconds — sidestep the attacker's lunge and answer with "
+                   "a single clean sweep that sends the figure stumbling away into the dark. "
+                   "The hero straightens their jacket unhurried, face clearly lit toward the "
+                   "camera, and says in clear English with a wry smile: \"Some nights just "
+                   "aren't your night.\" — then walks slowly toward the glowing skyline as "
+                   "the rain glitters, face visible in the neon light." + _SUFFIX),
     },
     {
         "key": "adventure", "no": "02", "emoji": "🗺️",
@@ -68,10 +68,12 @@ FILMS = [
         "tags": "JUNGLE · TREASURE · TRAPS",
         "c1": "#0A2414", "c2": "#2E7D32", "c3": "#F6C55C",
         "prompt": ("A cinematic adventure-movie scene: ancient jungle temple ruins, shafts of "
-                   "sunlight through the canopy, mist over mossy stone. The person in Image 1, "
-                   "in rugged plain explorer gear, sprints through a crumbling corridor as "
-                   "stone dust falls, vaults a fallen pillar with real athletic effort, grabs "
-                   "a hanging vine and swings across a deep chasm, landing in a controlled "
+                   "sunlight through the canopy, mist over mossy stone. Every stone or wall that moves or falls does so only because a real physical force acts on it — a stepped-on trigger plate, an impact, or its support visibly giving way first; NOTHING collapses or rises by itself without a clear physical cause. The person in "
+                   "Image 1, in rugged plain explorer gear, steps on an ancient trigger plate — "
+                   "it sinks with a clunk, and the impact makes a nearby column's support give "
+                   "way so it topples visibly from the base. They sprint through the corridor, "
+                   "vaulting the fallen pillar with real athletic effort, then grab "
+                   "a hanging vine and swing across a deep chasm, landing in a controlled "
                    "roll. They rise before a stone altar, lift a small golden idol into a "
                    "beam of sunlight, grin at the camera and say in clear English: \"Told you "
                    "the map was real.\" — holding the idol up as the light flares." + _SUFFIX),
@@ -138,6 +140,26 @@ FILMS = [
                    "a slow knowing smile, tips their hat to the camera and says in clear "
                    "English: \"Case closed.\" — then strolls into the mist." + _SUFFIX),
     },
+    {
+        "key": "family", "no": "06", "emoji": "🏮",
+        "title_th": "COME HOME HUNGRY", "title_en": "THE FAMILY TABLE",
+        "genre_th": "FAMILY", "genre_en": "FAMILY · HEARTWARMING",
+        "logline_en": "The best scenes happen at dinner.",
+        "synopsis": ("A warm Vietnamese family-film scene — coming home to a lantern-lit house, "
+                     "cooking together in a steamy kitchen, and gathering the whole family "
+                     "around a table full of dishes. Heartwarming Asian family cinema."),
+        "tags": "FAMILY · HOME COOKING · REUNION",
+        "c1": "#2A0E06", "c2": "#B0501E", "c3": "#F6C55C",
+        "prompt": ("A heartwarming Vietnamese family-movie scene: a cozy traditional Vietnamese "
+                   "home at dusk, warm paper lanterns glowing, a wooden dining table being set. "
+                   "The person in Image 1 stands at the family kitchen wok, tossing fresh "
+                   "vegetables with real cooking motion as steam rises, tasting the sauce with "
+                   "a spoon and nodding happily. They carry a beautiful steaming dish to the "
+                   "table where a warm multigenerational Vietnamese family is gathering, set it "
+                   "down at the center, look to camera with a proud smile and say in clear "
+                   "English: \"Grandma's recipe — come home hungry.\" The family beams as the "
+                   "lanterns glow — a warm, homey close." + _SUFFIX),
+    },
 ]
 
 FILM_BY_KEY = {f["key"]: f for f in FILMS}
@@ -151,13 +173,19 @@ FILM_BY_KEY = {f["key"]: f for f in FILMS}
 _DUO_A = (
     " Cinematic, filmic lighting with rich depth of field. Both people are clearly visible "
     "and share the frame. The person from Image 1 keeps the exact face, hair and look of "
-    "Image 1 the whole time — use the face in Image 1 as the only and exclusive face "
-    "reference." + _RULES + " End on a satisfying, natural beat — never cut off mid-action. "
-    "15 seconds."
+    "Image 1 the whole time — the face must stay EXACTLY identical to Image 1 in every "
+    "single frame, with ZERO morphing or drifting even during fast motion, and kept "
+    "clearly visible to the camera as much as possible." + _RULES + " End the sequence "
+    "on a brief, stable, holdable moment — both people settling into a natural still "
+    "pose for the final second — never cut off mid-action. 15 seconds."
 )
 _DUO_B = (
-    " Continue as ONE unbroken film from Video 1 — the exact same two people (the person "
-    "from Image 1 keeps the Image 1 face), same hair, same outfits, same world and lighting."
+    " Continue the SAME film from Video 1 — the exact same two people (the face of the "
+    "person from Image 1 stays EXACTLY identical to Image 1 in every frame, zero morphing), "
+    "same hair, same outfits, same world and lighting. OPEN this sequence as a deliberate "
+    "fresh camera angle on the same scene — like the next intentional shot cut by a film "
+    "editor — so the transition from the previous sequence feels like professional movie "
+    "editing, not a broken join."
     + _RULES + " Bring the story to a satisfying, natural close — a clear, feel-good final "
     "beat, never an abrupt mid-action cut. 15 seconds."
 )
@@ -168,31 +196,35 @@ DUO = {
     "action": (
         "A cinematic action-movie scene: a city rooftop at night in light rain, neon glow "
         "from the skyline below. The person in Image 1 and a young {costar}, both heroes in "
-        "sleek plain jackets, stand back to back as four masked figures circle them. The "
-        "{costar} says in clear English: \"Four against two — hardly fair.\" The person in "
-        "Image 1 smirks: \"For them.\" The masked figures rush in and the two heroes explode "
-        "into fluid, realistic martial-arts choreography — sidesteps, blocks, a spinning "
-        "kick, a clean sweep — every move carrying real weight, balance and momentum." + _DUO_A,
-        "Continue directly from Video 1. The two heroes fight in perfect sync — the {costar} "
-        "ducks as the person from Image 1 delivers a sharp kick over them, then they counter "
-        "side by side until the last masked figures stumble back and flee into the dark. Rain "
-        "glitters as the two catch their breath. The {costar} laughs in clear English: "
-        "\"You're getting faster.\" The person from Image 1 grins: \"You're getting slower.\" "
-        "They bump fists and walk toward the glowing skyline together — a cool, triumphant "
-        "close." + _DUO_B,
+        "sleek plain jackets, walk side by side toward the camera, faces clearly lit, "
+        "talking like partners at the end of a mission. The {costar} says in clear English: "
+        "\"Something feels off tonight.\" The person in Image 1 glances back calmly: \"They "
+        "found us.\" Two masked figures step from the shadows — and in one SHORT, crisp "
+        "exchange of only a few seconds the two heroes each sidestep a lunge and answer "
+        "with a single clean counter, sending the figures stumbling back. The heroes settle "
+        "into a calm, ready stance, faces to camera." + _DUO_A,
+        "Continue directly from Video 1. The masked figures scramble up and flee into the "
+        "dark — the fight is already over. The two heroes relax, rain glittering around "
+        "them, faces clearly lit by the neon skyline. The {costar} laughs in clear English: "
+        "\"You barely moved.\" The person from Image 1 grins: \"Didn't need to.\" They bump "
+        "fists, take in the city lights for a moment, and walk off along the rooftop side "
+        "by side, faces visible in the glow — a cool, confident close." + _DUO_B,
     ),
     "adventure": (
         "A cinematic adventure-movie scene: ancient jungle temple ruins, sunlight shafting "
-        "through the canopy, mist over mossy stone. The person in Image 1 and a young "
-        "{costar}, both explorers in rugged plain gear, study a stone map on an altar as the "
-        "ground begins to rumble. The {costar} looks up in alarm and says in clear English: "
-        "\"The floor's giving way — run!\" The person in Image 1 grabs the golden idol from "
-        "the altar: \"Go, go, GO!\" They sprint through the crumbling corridor together, "
-        "vaulting fallen pillars as stone dust rains down — real athletic effort and "
-        "momentum." + _DUO_A,
+        "through the canopy, mist over mossy stone. Every stone or wall that moves or falls does so only because a real physical force acts on it — a stepped-on trigger plate, an impact, or its support visibly giving way first; NOTHING collapses or rises by itself without a clear physical cause. The person in Image 1 and a "
+        "young {costar}, both explorers in rugged plain gear, study a stone map on an altar. "
+        "The person in Image 1 lifts the golden idol off its pedestal — and the pedestal "
+        "sinks under the released weight, triggering the ancient mechanism: stone supports "
+        "visibly slide away and columns begin toppling from their bases, one knocking into "
+        "the next. The {costar} shouts in clear English: \"You had to pick it up — RUN!\" "
+        "The person in Image 1 clutches the idol: \"Go, go, GO!\" They sprint through the "
+        "corridor together, vaulting a pillar that a falling neighbor has knocked down — "
+        "real athletic effort and momentum." + _DUO_A,
         "Continue directly from Video 1. The two explorers reach a deep chasm; the person "
         "from Image 1 grabs a hanging vine, the {costar} holds on, and they swing across "
-        "together, landing in a controlled roll as the corridor collapses behind them in a "
+        "together, landing in a controlled roll as behind them the last toppling columns — "
+        "each knocked over by the one before it — crash down and seal the corridor in a "
         "cloud of dust. Safe in a shaft of sunlight, they catch their breath and start "
         "laughing. The {costar} says in clear English: \"Next time, YOU read the warnings.\" "
         "The person from Image 1 holds up the gleaming golden idol: \"Next time... we bring "
@@ -252,6 +284,25 @@ DUO = {
         "there all along.\" The person from Image 1 tips their hat: \"Case closed, "
         "partner.\" They shake hands in the glow of the streetlamp and stroll off side by "
         "side into the mist — a stylish, timeless close." + _DUO_B,
+    ),
+    "family": (
+        "A heartwarming Vietnamese family-movie scene: a cozy traditional Vietnamese home at "
+        "dusk, warm paper lanterns glowing, the sounds of a busy family kitchen. The person "
+        "in Image 1 and a young {costar}, siblings home for a family reunion, cook side by "
+        "side — the person in Image 1 tosses fresh vegetables in a hot wok with real cooking "
+        "motion as steam rises, while the {costar} rolls fresh spring rolls with careful "
+        "hands. The {costar} leans over, tastes the sauce with a spoon and says in clear "
+        "English: \"Okay — you actually got grandma's recipe right.\" The person in Image 1 "
+        "laughs warmly: \"She'd never forgive me if I didn't.\" They plate the dishes "
+        "together, smiling." + _DUO_A,
+        "Continue directly from Video 1. The two carry the steaming dishes to the wooden "
+        "family table under the glowing lanterns, where a warm multigenerational Vietnamese "
+        "family is gathering — grandparents, parents, kids pulling up chairs around a table "
+        "full of food. The two set the dishes down at the center and everyone raises their "
+        "glasses together in a warm family toast. The {costar} says in clear English: \"To "
+        "being home.\" The person from Image 1 smiles around the table: \"To family — the "
+        "best part of every story.\" Everyone clinks glasses and laughs softly as the "
+        "lanterns glow over the table — a warm, heartfelt close." + _DUO_B,
     ),
 }
 

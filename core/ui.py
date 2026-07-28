@@ -504,6 +504,38 @@ def poster_art(key: str) -> str:
  <rect y="360" width="300" height="40" fill="#060608" opacity="0.85"/>
  <text x="150" y="386" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#D8D8E0" opacity="0.9">CASE CLOSED</text>
 </svg>""",
+        # --- Family Table: lanterns, steaming dishes, round family table ---
+        "family": """
+<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+ <defs>
+  <linearGradient id="fm-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A0804"/><stop offset="0.6" stop-color="#5A2410"/><stop offset="1" stop-color="#B0501E"/></linearGradient>
+  <radialGradient id="fm-gl" cx="0.5" cy="0.25" r="0.55"><stop offset="0" stop-color="#F6C55C" stop-opacity="0.55"/><stop offset="1" stop-color="#F6C55C" stop-opacity="0"/></radialGradient>
+ </defs>
+ <rect width="300" height="400" fill="url(#fm-bg)"/>
+ <rect width="300" height="400" fill="url(#fm-gl)"/>
+ <g>
+  <g transform="translate(70 70)"><rect x="-2" y="-26" width="4" height="14" fill="#8A3A10"/><ellipse rx="22" ry="26" fill="#E8641E"/><ellipse rx="22" ry="26" fill="none" stroke="#F6C55C" stroke-width="2" opacity="0.7"/><rect x="-6" y="24" width="12" height="6" rx="2" fill="#F6C55C"/></g>
+  <g transform="translate(150 52)"><rect x="-2" y="-26" width="4" height="14" fill="#8A3A10"/><ellipse rx="26" ry="30" fill="#D9481E"/><ellipse rx="26" ry="30" fill="none" stroke="#F6C55C" stroke-width="2" opacity="0.7"/><rect x="-7" y="28" width="14" height="6" rx="2" fill="#F6C55C"/></g>
+  <g transform="translate(232 76)"><rect x="-2" y="-24" width="4" height="12" fill="#8A3A10"/><ellipse rx="20" ry="24" fill="#E8641E"/><ellipse rx="20" ry="24" fill="none" stroke="#F6C55C" stroke-width="2" opacity="0.7"/><rect x="-5" y="22" width="10" height="5" rx="2" fill="#F6C55C"/></g>
+ </g>
+ <g stroke="#FDE2C0" stroke-width="4" fill="none" opacity="0.55" stroke-linecap="round">
+  <path d="M120 190 q-10 -18 0 -36 M150 186 q10 -18 0 -36 M180 190 q-10 -18 0 -36"/>
+ </g>
+ <g transform="translate(150 262)">
+  <ellipse cx="0" cy="42" rx="104" ry="16" fill="#3A1608"/>
+  <ellipse cx="0" cy="34" rx="104" ry="18" fill="#8A4A1E"/>
+  <ellipse cx="0" cy="30" rx="96" ry="15" fill="#C87838"/>
+  <ellipse cx="0" cy="-4" rx="34" ry="11" fill="#FDE2C0"/><ellipse cx="0" cy="-8" rx="34" ry="10" fill="#F6C55C"/>
+  <ellipse cx="-58" cy="12" rx="18" ry="7" fill="#FDE2C0"/><ellipse cx="58" cy="12" rx="18" ry="7" fill="#FDE2C0"/>
+  <circle cx="-30" cy="14" r="7" fill="#C8321E"/><circle cx="30" cy="14" r="7" fill="#2E7D32"/>
+ </g>
+ <g fill="#2A0E06">
+  <circle cx="66" cy="212" r="11"/><path d="M52 224 q14 12 28 0 l4 26 h-36 Z"/>
+  <circle cx="234" cy="212" r="11"/><path d="M220 224 q14 12 28 0 l4 26 h-36 Z"/>
+ </g>
+ <rect y="356" width="300" height="44" fill="#1A0804" opacity="0.82"/>
+ <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#F6C55C" opacity="0.95">COME HOME HUNGRY</text>
+</svg>""",
     }
     return art.get(key, "")
 
