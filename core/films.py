@@ -304,7 +304,7 @@ DUO = {
     "dance": (
         "A cinematic street-dance movie scene: a Saigon night plaza with warm practical "
         "lights and a small circle of young Vietnamese dancers watching with smiles, "
-        "nodding along. A smooth, upbeat ORIGINAL instrumental groove plays. The person in "
+        "nodding along. The ONLY audio besides the spoken lines is a simple ORIGINAL percussion beat — drums only, absolutely NO rap, NO vocals, NO singing, NO vocal samples of any kind. The person in "
         "Image 1 and a young {costar}, both in stylish plain streetwear, step into the "
         "circle. Both dance CONTINUOUSLY from the first beat to the last — never stopping, "
         "never freezing in place, no long held poses; bodies always moving and grooving "
