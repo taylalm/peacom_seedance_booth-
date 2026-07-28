@@ -55,7 +55,9 @@ FILMS = [
                    "hanging cables, street-food steam, parked motorbikes everywhere. The "
                    "person in Image 1, in a sleek plain jacket, rides a motorbike smoothly "
                    "through the busy streets, weaving past traffic with realistic riding "
-                   "physics, then skids to a controlled stop in a narrow alley where a masked "
+                   "physics — the motorbike ALWAYS moves FORWARD, never backward, never in "
+                   "reverse, no rewound footage — then brakes to a controlled forward stop "
+                   "in a narrow alley where a masked "
                    "rival gang member blocks the way. In one SHORT, crisp exchange — no more "
                    "than three seconds — they dismount, sidestep the rival's lunge and answer "
                    "with a single clean sweep that sends him stumbling back into the shadows. "
@@ -90,24 +92,28 @@ FILMS = [
     },
     {
         "key": "goldenage", "no": "03", "emoji": "🎞️",
-        "title_th": "SAIGON SERENADE", "title_en": "GOLDEN AGE CINEMA",
-        "genre_th": "ROMANCE", "genre_en": "ROMANCE · SAIGON XƯA",
-        "logline_en": "Old Saigon. One dance. Forever.",
-        "synopsis": ("A timeless vintage-Saigon romance scene — a 1960s Saigon ballroom with "
-                     "lanterns and ceiling fans, elegant áo dài, and a sweeping waltz that "
-                     "old Vietnamese cinema never forgot."),
-        "tags": "SAIGON XƯA · ÁO DÀI · WALTZ",
+        "title_th": "RAIN ON THE VERANDA", "title_en": "GOLDEN AGE CINEMA",
+        "genre_th": "PHIM XƯA", "genre_en": "ROMANCE · PHIM XƯA",
+        "logline_en": "A love the old mansion never allowed.",
+        "synopsis": ("The classic Vietnamese period melodrama — a 1950s Mekong Delta "
+                     "landowner's mansion, oil lamps and pouring rain, and a forbidden "
+                     "confession on the veranda straight out of the phim xưa everyone "
+                     "grew up watching."),
+        "tags": "PHIM XƯA · MIỀN TÂY · RAIN",
         "c1": "#1A140A", "c2": "#8A6A2A", "c3": "#F6E08A",
-        "prompt": ("A vintage Vietnamese romance movie scene set in 1960s old Saigon: an "
-                   "elegant colonial-era ballroom with warm lantern light, slow ceiling fans, "
-                   "wooden shutters and tropical plants, filled with elegantly dressed "
-                   "Vietnamese guests — women in graceful plain áo dài, men in tailored "
-                   "suits. The person in Image 1, dressed in timeless Vietnamese evening "
-                   "elegance, glides across the floor in a graceful waltz — smooth turns, "
-                   "poised arms, real dancer's balance and footwork — as the guests watch "
-                   "admiringly. They finish with a slow, elegant spin into a poised final "
-                   "pose, look warmly to the camera and say in clear English: \"Some nights "
-                   "belong to old Saigon.\" — as the lanterns glow." + _SUFFIX),
+        "prompt": ("A classic Vietnamese period-drama movie scene ('phim xưa' style) set in "
+                   "1950s Southern Vietnam, in the Mekong Delta countryside: the grand "
+                   "traditional wooden mansion of a wealthy landowner family — dark "
+                   "carved-wood pillars, an ancestral hall glowing with oil lamps, a wide "
+                   "veranda facing a rain-soaked courtyard, servants in plain áo bà ba "
+                   "moving quietly in the background. Heavy rain pours as gentle original "
+                   "string music plays. The person in Image 1, dressed as the elegant young "
+                   "master or young lady of the house in refined 1950s Vietnamese attire, "
+                   "stands on the veranda watching the rain, then turns to the camera with "
+                   "deep, dramatic feeling and says in clear English: \"This house has "
+                   "rules... but the heart has none.\" Thunder rolls softly; they gaze out "
+                   "into the glittering rain as the oil lamps glow — pure classic "
+                   "Vietnamese melodrama." + _SUFFIX),
     },
     {
         "key": "dance", "no": "04", "emoji": "🕺",
@@ -127,10 +133,12 @@ FILMS = [
                    "in stylish plain streetwear, dances "
                    "CONTINUOUSLY from the first beat to the last — never stopping, never "
                    "freezing in place, no long held poses; the body keeps moving and grooving "
-                   "with the music at all times. The routine is real hip-hop and breaking: "
-                   "sharp footwork, a smooth spin, a toprock into a windmill and a "
-                   "controlled headspin-style power move, flowing move into move with real "
-                   "b-boy momentum and balance. Any accent hit lands ON the beat and lasts "
+                   "with the music at all times. The routine is energetic urban street "
+                   "dance: sharp fast footwork, a smooth standing spin, a spin on their "
+                   "upper back with legs sweeping in a circle, and a brief controlled "
+                   "upside-down spin balanced on their head and hands, flowing move into "
+                   "move with real dancer's momentum and balance. Any accent hit lands ON "
+                   "the beat and lasts "
                    "less than half a second before flowing on. They finish the last move, "
                    "flash a confident grin to camera and say in clear English: \"That's how "
                    "it's done.\" — as the circle gives warm, gentle applause." + _SUFFIX),
@@ -244,18 +252,21 @@ DUO = {
         "(Ho Chi Minh City) at night — narrow shophouse streets, hanging cables, street-food "
         "steam, motorbikes everywhere. The person in Image 1 and a young {costar}, PARTNERS "
         "and allies on the same side, ride two motorbikes side by side through the streets "
-        "with realistic riding physics, masked rival riders tailing them. They skid to a "
-        "controlled stop in a lantern-lit alley and dismount as two masked rivals close in. "
-        "The {costar} says in clear English: \"They followed us.\" The person in Image 1 "
-        "answers calmly: \"Then let's finish this.\" IMPORTANT: the two partners are on the "
-        "SAME side and NEVER fight, strike, or touch each other — they only ever fight the "
-        "masked rivals. In one SHORT crisp exchange the two partners, fighting side by side "
-        "AGAINST the masked rivals, each sidestep a lunge and answer with one clean counter "
-        "each, sending the rivals stumbling back. The partners settle side by side, faces "
-        "to camera." + _DUO_A,
+        "with realistic riding physics — the motorbikes ALWAYS move FORWARD, never "
+        "backward, never in reverse, no rewound or backward-played footage — with masked "
+        "rival riders tailing them. They brake to a controlled forward stop in a "
+        "lantern-lit alley and dismount as two masked rivals close in from the opposite "
+        "end. The {costar} says in clear English: \"They followed us.\" The person in "
+        "Image 1 answers calmly: \"Then let's finish this.\" ABSOLUTE RULE: the two "
+        "partners are allies — they stand SIDE BY SIDE at all times facing the masked "
+        "rivals, never facing each other; every single strike, kick or sweep lands ONLY "
+        "on a masked rival, and the two partners' bodies NEVER make contact with each "
+        "other in any way. In one SHORT crisp exchange, each partner sidesteps a rival's "
+        "lunge and answers with one clean counter onto that masked rival, sending the "
+        "rivals stumbling back. The partners settle side by side, faces to camera." + _DUO_A,
         "Continue directly from Video 1. The masked rivals scramble up and flee down the "
-        "alley on foot — the fight is over. The two partners (still allies, never fighting "
-        "each other) relax, faces clearly lit by neon and lanterns. The {costar} laughs in "
+        "alley on foot — the fight is over. The two partners (allies side by side, never "
+        "touching or striking each other) relax, faces clearly lit by neon and lanterns. The {costar} laughs in "
         "clear English: \"Saigon nights are never boring.\" The person from Image 1 grins: "
         "\"Not with you around.\" They bump fists, get back on their motorbikes, and ride "
         "off side by side into the glowing street — a cool, confident close." + _DUO_B,
@@ -275,33 +286,42 @@ DUO = {
         "corridor together, vaulting a pillar that a falling neighbor has knocked down — "
         "real athletic effort and momentum." + _DUO_A,
         "Continue directly from Video 1. The two explorers reach a deep chasm; the person "
-        "from Image 1 grabs a hanging vine, the {costar} holds on, and they swing across "
-        "together, landing in a controlled roll as behind them the last toppling columns — "
+        "from Image 1 quickly tucks the golden idol securely into their shoulder satchel — "
+        "BOTH hands now completely free — then grips a hanging vine firmly with both "
+        "hands; the {costar} grips the same vine with both hands below them, and they "
+        "swing across together with realistic weight and momentum (nobody ever holds the "
+        "idol while swinging — it stays zipped in the satchel), landing in a controlled "
+        "roll as behind them the last toppling columns —
         "each knocked over by the one before it — crash down and seal the corridor in a "
         "cloud of dust. Safe in a shaft of sunlight, they catch their breath and start "
         "laughing. The {costar} says in clear English: \"Next time, YOU read the warnings.\" "
-        "The person from Image 1 holds up the gleaming golden idol: \"Next time... we bring "
-        "a bigger bag.\" They grin and walk out into the light — a classic adventure "
+        "The person from Image 1 pulls the gleaming golden idol out of the satchel and "
+        "holds it up: \"Next time... we bring a bigger bag.\" They grin and walk out into the light — a classic adventure "
         "close." + _DUO_B,
     ),
     "goldenage": (
-        "A vintage Vietnamese romance movie scene set in 1960s old Saigon: an elegant "
-        "colonial-era ballroom with warm lantern light, slow ceiling fans, wooden shutters "
-        "and tropical plants, filled with elegantly dressed Vietnamese guests — women in "
-        "graceful plain áo dài, men in tailored suits. The person in Image 1 and a young "
-        "{costar}, both dressed in timeless Vietnamese evening elegance, meet at the center "
-        "of the floor. The {costar} offers a hand and says in clear English: \"They're all "
-        "watching, you know.\" The person in Image 1 takes it with a warm smile: \"Then "
-        "let's give them something to remember.\" Gentle original orchestral music rises "
-        "and they sweep into a graceful, flowing waltz — real dancer's frame, balance and "
-        "footwork, turning elegantly across the floor." + _DUO_A,
-        "Continue directly from Video 1. The waltz builds — sweeping turns across the "
-        "lantern-lit floor, a graceful underarm spin, the Vietnamese guests watching "
-        "enchanted — every step with real dancer's poise and momentum. The music swells and "
-        "they finish with a gentle, elegant dip and a poised recovery, holding the final "
-        "pose as the guests applaud warmly. The {costar} says softly in clear English: "
-        "\"Told you they'd remember.\" The person from Image 1 smiles: \"So will I.\" They "
-        "share a warm look under the lanterns — a timeless, romantic close." + _DUO_B,
+        "A classic Vietnamese period-drama movie scene ('phim xưa' style) set in 1950s "
+        "Southern Vietnam, in the Mekong Delta countryside: the grand traditional wooden "
+        "mansion of a wealthy landowner family — dark carved-wood pillars, an ancestral "
+        "hall glowing with oil lamps, a wide veranda facing a rain-soaked courtyard, "
+        "servants in plain áo bà ba moving quietly in the background. Heavy rain pours as "
+        "gentle original string music plays. The person in Image 1, dressed as the elegant "
+        "young master or young lady of the house in refined 1950s Vietnamese attire, "
+        "stands on the veranda watching the rain. A young {costar}, a household servant in "
+        "a plain áo bà ba holding an oil lamp, approaches hesitantly and says softly in "
+        "clear English: \"You shouldn't be out here — if the family sees us talking, I'll "
+        "be sent away.\" The person in Image 1 turns, eyes full of feeling: \"Then let "
+        "them see. I'm done pretending.\" Thunder rolls softly; the rain glitters in the "
+        "lamplight — pure classic Vietnamese melodrama." + _DUO_A,
+        "Continue directly from Video 1. A fresh angle across the rain-soaked courtyard: "
+        "the person from Image 1 steps down into the rain and gently takes the {costar}'s "
+        "hand; the {costar}'s eyes brim with a single dramatic tear, the oil lamp "
+        "trembling in their other hand — the iconic rain-drenched confession scene of "
+        "classic Vietnamese period films. The person from Image 1 says in clear English: "
+        "\"Rich or poor doesn't matter to me. It never did.\" The {costar} replies, "
+        "voice breaking: \"...Then I'll stay. Whatever happens, I'll stay.\" The original "
+        "string music swells; the two stand together in the glittering rain as the oil "
+        "lamps glow along the veranda — a sweeping, tearful, timeless close." + _DUO_B,
     ),
     "dance": (
         "A cinematic street-dance movie scene: a Saigon night plaza with warm practical "
@@ -310,14 +330,16 @@ DUO = {
         "Image 1 and a young {costar}, both in stylish plain streetwear, step into the "
         "circle. Both dance CONTINUOUSLY from the first beat to the last — never stopping, "
         "never freezing in place, no long held poses; bodies always moving and grooving "
-        "with the music. The {costar} opens with real hip-hop: sharp toprock footwork into "
-        "a smooth spin, calling in clear English mid-groove: \"Show me what you've got!\" "
+        "with the music. The {costar} opens with sharp fast footwork into a smooth "
+        "standing spin, calling in clear English mid-move: \"Show me what you've got!\" "
         "The person in Image 1 answers while already moving: \"Try to keep up.\" — and "
-        "flows into a breaking combo: footwork, a windmill, a controlled headspin-style "
-        "power move, every transition flowing with real b-boy momentum." + _DUO_A,
+        "flows into an acrobatic floor combo: quick footwork low to the ground, a spin on "
+        "their upper back with legs sweeping in a circle, and a brief controlled "
+        "upside-down spin balanced on head and hands, every transition flowing with real "
+        "dancer's momentum." + _DUO_A,
         "Continue directly from Video 1. The two dance TOGETHER non-stop — synchronized "
-        "hip-hop grooves, trading breaking moves, mirroring each other perfectly on the "
-        "beat, never pausing or freezing; any accent hit lands ON the beat and flows "
+        "energetic urban dance, trading acrobatic moves, mirroring each other perfectly "
+        "on the beat, never pausing or freezing; any accent hit lands ON the beat and flows "
         "onward in under half a second. The circle of Vietnamese dancers sways along, "
         "delighted. On the final beat they land one clean shared ending move, then break "
         "into laughter, still bouncing with the groove. The {costar} says in clear "
