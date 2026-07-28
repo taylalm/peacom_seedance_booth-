@@ -291,7 +291,7 @@ DUO = {
         "hands; the {costar} grips the same vine with both hands below them, and they "
         "swing across together with realistic weight and momentum (nobody ever holds the "
         "idol while swinging — it stays zipped in the satchel), landing in a controlled "
-        "roll as behind them the last toppling columns —
+        "roll as behind them the last toppling columns — "
         "each knocked over by the one before it — crash down and seal the corridor in a "
         "cloud of dust. Safe in a shaft of sunlight, they catch their breath and start "
         "laughing. The {costar} says in clear English: \"Next time, YOU read the warnings.\" "
