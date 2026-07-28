@@ -121,8 +121,10 @@ FILMS = [
         "c1": "#14082A", "c2": "#7A2AB0", "c3": "#57E0F0",
         "prompt": ("A cinematic street-dance movie scene: a Saigon night plaza with warm "
                    "practical lights and a small circle of young Vietnamese dancers watching "
-                   "with smiles, nodding along. A smooth, upbeat ORIGINAL instrumental groove "
-                   "plays and the person in Image 1, in stylish plain streetwear, dances "
+                   "with smiles, nodding along. The ONLY audio besides the spoken lines is a "
+                   "simple ORIGINAL percussion beat — drums only, absolutely NO rap, NO "
+                   "vocals, NO singing, NO vocal samples of any kind. The person in Image 1, "
+                   "in stylish plain streetwear, dances "
                    "CONTINUOUSLY from the first beat to the last — never stopping, never "
                    "freezing in place, no long held poses; the body keeps moving and grooving "
                    "with the music at all times. The routine is real hip-hop and breaking: "
