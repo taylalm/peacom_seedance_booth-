@@ -392,33 +392,36 @@ def poster_art(key: str) -> str:
  <rect y="360" width="300" height="40" fill="#060818" opacity="0.7"/>
  <text x="150" y="386" text-anchor="middle" font-family="Space Mono,monospace" font-size="13" fill="#F6C55C" opacity="0.95">ACTION!</text>
 </svg>""",
-        # --- Red Carpet Premiere: carpet perspective, ropes, flashes ---
-        "redcarpet": """
+        # --- Temple of Gold: jungle ruins, idol in sunbeam, vines ---
+        "adventure": """
 <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
  <defs>
-  <linearGradient id="rc-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12060E"/><stop offset="0.55" stop-color="#2A0A14"/><stop offset="1" stop-color="#5A0F24"/></linearGradient>
-  <linearGradient id="rc-cp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7A1020"/><stop offset="1" stop-color="#C8321E"/></linearGradient>
-  <radialGradient id="rc-gl" cx="0.5" cy="0.3" r="0.55"><stop offset="0" stop-color="#F8D98A" stop-opacity="0.6"/><stop offset="1" stop-color="#F8D98A" stop-opacity="0"/></radialGradient>
+  <linearGradient id="ad-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#06180C"/><stop offset="0.6" stop-color="#14401E"/><stop offset="1" stop-color="#2E7D32"/></linearGradient>
+  <linearGradient id="ad-beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6E08A" stop-opacity="0.65"/><stop offset="1" stop-color="#F6E08A" stop-opacity="0.05"/></linearGradient>
  </defs>
- <rect width="300" height="400" fill="url(#rc-bg)"/>
- <rect width="300" height="400" fill="url(#rc-gl)"/>
- <g fill="#FFF" opacity="0.9">
-  <g transform="translate(52 84)"><path d="M0 -10 L2 -2 L10 0 L2 2 L0 10 L-2 2 L-10 0 L-2 -2 Z"/></g>
-  <g transform="translate(246 66)"><path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z"/></g>
-  <g transform="translate(210 130)" opacity="0.7"><path d="M0 -6 L1.5 -1.5 L6 0 L1.5 1.5 L0 6 L-1.5 1.5 L-6 0 L-1.5 -1.5 Z"/></g>
-  <g transform="translate(84 150)" opacity="0.6"><path d="M0 -6 L1.5 -1.5 L6 0 L1.5 1.5 L0 6 L-1.5 1.5 L-6 0 L-1.5 -1.5 Z"/></g>
+ <rect width="300" height="400" fill="url(#ad-bg)"/>
+ <g fill="#04120A" opacity="0.9">
+  <rect x="10" y="60" width="34" height="300" rx="4"/><rect x="256" y="60" width="34" height="300" rx="4"/>
+  <rect x="0" y="40" width="54" height="22" rx="4"/><rect x="246" y="40" width="54" height="22" rx="4"/>
+  <path d="M60 396 L84 320 L108 396 Z" opacity="0.7"/><path d="M196 396 L220 320 L244 396 Z" opacity="0.7"/>
  </g>
- <path d="M120 180 L180 180 L262 400 L38 400 Z" fill="url(#rc-cp)"/>
- <g stroke="#F6C55C" stroke-width="4" fill="none" opacity="0.9">
-  <path d="M96 214 Q70 232 66 260 M204 214 Q230 232 234 260 M60 288 Q34 306 30 334 M240 288 Q266 306 270 334"/>
+ <g stroke="#0E2E14" stroke-width="5" fill="none" opacity="0.9">
+  <path d="M60 0 Q80 90 60 180 M240 0 Q225 70 244 150 M110 0 Q118 50 108 100"/>
  </g>
- <g fill="#F6C55C"><circle cx="96" cy="210" r="7"/><circle cx="204" cy="210" r="7"/><circle cx="60" cy="284" r="7"/><circle cx="240" cy="284" r="7"/></g>
- <g fill="#8A5A10"><rect x="92" y="210" width="8" height="70" rx="3"/><rect x="200" y="210" width="8" height="70" rx="3"/><rect x="56" y="284" width="8" height="90" rx="3"/><rect x="236" y="284" width="8" height="90" rx="3"/></g>
- <g transform="translate(150 240)" fill="#160408">
-  <circle cx="0" cy="-42" r="12"/>
-  <path d="M0 -30 c-16 0 -22 14 -20 30 l-8 56 h56 l-8 -56 c2 -16 -4 -30 -20 -30Z"/>
+ <g fill="#3E8E44" opacity="0.85"><ellipse cx="60" cy="182" rx="14" ry="7"/><ellipse cx="243" cy="152" rx="12" ry="6"/><ellipse cx="108" cy="102" rx="10" ry="5"/></g>
+ <path d="M150 30 L102 340 L198 340 Z" fill="url(#ad-beam)"/>
+ <g transform="translate(150 262)">
+  <rect x="-52" y="52" width="104" height="26" rx="5" fill="#0A2410"/>
+  <rect x="-42" y="34" width="84" height="18" rx="4" fill="#123618"/>
+  <g fill="#F6C55C" stroke="#8A5A10" stroke-width="1.5">
+   <rect x="-14" y="-6" width="28" height="40" rx="6"/>
+   <circle cx="0" cy="-16" r="12"/>
+   <path d="M-14 6 L-26 22 M14 6 L26 22" stroke-width="4" fill="none"/>
+  </g>
  </g>
- <text x="150" y="382" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#F8D98A" opacity="0.95">OPENING NIGHT</text>
+ <g fill="#F6E08A" opacity="0.9"><circle cx="132" cy="180" r="2"/><circle cx="168" cy="150" r="2"/><circle cx="150" cy="210" r="2.5"/><circle cx="180" cy="230" r="2"/></g>
+ <rect y="356" width="300" height="44" fill="#04120A" opacity="0.8"/>
+ <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#F6E08A" opacity="0.95">THE MAP WAS REAL</text>
 </svg>""",
         # --- Golden Age Cinema: spotlight, vintage camera, film reel ---
         "goldenage": """
@@ -446,36 +449,35 @@ def poster_art(key: str) -> str:
  <rect y="356" width="300" height="44" fill="#0E0A04" opacity="0.75"/>
  <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#F6E08A" opacity="0.95">LIGHTS · CAMERA · MAGIC</text>
 </svg>""",
-        # --- Director's Chair: chair, megaphone, clapper, light beams ---
-        "director": """
+        # --- Dance Fever: neon floor, mid-spin silhouette, crowd ---
+        "dance": """
 <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
  <defs>
-  <linearGradient id="dr-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0C0C12"/><stop offset="0.6" stop-color="#26242E"/><stop offset="1" stop-color="#4A4656"/></linearGradient>
-  <radialGradient id="dr-gl" cx="0.5" cy="0.32" r="0.55"><stop offset="0" stop-color="#F6C55C" stop-opacity="0.5"/><stop offset="1" stop-color="#F6C55C" stop-opacity="0"/></radialGradient>
+  <linearGradient id="dc-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0C0518"/><stop offset="0.6" stop-color="#3A1258"/><stop offset="1" stop-color="#7A2AB0"/></linearGradient>
+  <radialGradient id="dc-gl" cx="0.5" cy="0.62" r="0.55"><stop offset="0" stop-color="#57E0F0" stop-opacity="0.45"/><stop offset="1" stop-color="#57E0F0" stop-opacity="0"/></radialGradient>
  </defs>
- <rect width="300" height="400" fill="url(#dr-bg)"/>
- <path d="M70 0 L130 220 L10 220 Z" fill="#F6C55C" opacity="0.12"/>
- <path d="M230 0 L290 220 L170 220 Z" fill="#F6C55C" opacity="0.12"/>
- <rect width="300" height="400" fill="url(#dr-gl)"/>
- <g transform="translate(96 96) rotate(-8)" fill="#14121A" stroke="#F6C55C" stroke-width="3">
-  <rect x="-44" y="0" width="88" height="58" rx="6"/>
-  <path d="M-44 -2 L44 -18 L44 0 L-44 14 Z" fill="#F6C55C" stroke="none"/>
-  <path d="M-38 -3 L-24 -6 M-16 -7 L-2 -10 M6 -11 L20 -14 M28 -15 L40 -17" stroke="#14121A" stroke-width="5"/>
+ <rect width="300" height="400" fill="url(#dc-bg)"/>
+ <rect width="300" height="400" fill="url(#dc-gl)"/>
+ <g opacity="0.8">
+  <path d="M40 0 L80 190 L20 190 Z" fill="#57E0F0" opacity="0.14"/>
+  <path d="M260 0 L280 190 L220 190 Z" fill="#FE7AC8" opacity="0.14"/>
  </g>
- <g transform="translate(214 120) rotate(14)" fill="#14121A" stroke="#F6C55C" stroke-width="3">
-  <path d="M-30 12 L10 -12 L18 6 L-24 26 Z"/>
-  <circle cx="20" cy="-2" r="12"/>
+ <g fill="#0A0412" opacity="0.85">
+  <circle cx="40" cy="300" r="12"/><path d="M28 312 h24 v46 h-24 Z"/>
+  <circle cx="262" cy="296" r="12"/><path d="M250 308 h24 v50 h-24 Z"/>
+  <circle cx="86" cy="322" r="10"/><path d="M76 332 h20 v34 h-20 Z"/>
+  <circle cx="216" cy="320" r="10"/><path d="M206 330 h20 v36 h-20 Z"/>
  </g>
- <g transform="translate(150 268)">
-  <g stroke="#14121A" stroke-width="8" stroke-linecap="round">
-   <path d="M-44 -60 L44 40 M44 -60 L-44 40"/>
-   <path d="M-44 -60 L-44 -84 M44 -60 L44 -84"/>
-  </g>
-  <rect x="-52" y="-104" width="104" height="24" rx="6" fill="#C8321E"/>
-  <rect x="-40" y="34" width="80" height="10" rx="5" fill="#14121A"/>
+ <g transform="translate(150 240) rotate(-8)" fill="#0C0518">
+  <circle cx="6" cy="-64" r="14"/>
+  <path d="M2 -50 c-18 4 -24 20 -18 38 l-26 20 10 12 28 -22 10 24 30 4 2 -14 -24 -4 -4 -26 c6 -18 4 -30 -8 -32Z"/>
  </g>
- <rect y="356" width="300" height="44" fill="#0C0C12" opacity="0.8"/>
- <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#F6C55C" opacity="0.95">QUIET ON SET</text>
+ <g stroke="#57E0F0" stroke-width="3" fill="none" opacity="0.8" stroke-linecap="round">
+  <path d="M96 160 a70 70 0 0 1 60 -34 M204 260 a70 70 0 0 1 -50 40"/>
+ </g>
+ <ellipse cx="150" cy="332" rx="76" ry="10" fill="#57E0F0" opacity="0.2"/>
+ <rect y="356" width="300" height="44" fill="#0C0518" opacity="0.85"/>
+ <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#57E0F0" opacity="0.95">OWN THE FLOOR</text>
 </svg>""",
         # --- Sci-Fi Epic: nebula, ringed planet, starship ---
         "scifi": """
