@@ -32,9 +32,9 @@ CFG = {
     "event_prefix": SECRETS.get("EVENT_PREFIX", "premiere"),
     "group_name": SECRETS.get("ASSET_GROUP_NAME", "seedance-booth"),
 }
-COSTAR = "woman"  # test face is male
-
-FACE = ROOT / "test_face.jpg"
+import os
+COSTAR = os.environ.get("TEST_COSTAR", "woman")  # co-star gender (opposite of face)
+FACE = Path(os.environ.get("TEST_FACE", str(ROOT / "test_face.jpg")))
 OUT = ROOT / "scratch_renders"
 OUT.mkdir(exist_ok=True)
 

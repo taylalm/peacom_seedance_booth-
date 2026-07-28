@@ -4,3 +4,4 @@ requests>=2.31
 certifi>=2024.0
 byteplus-python-sdk-v2>=3.0     # Ark runtime (Seedance) + asset-library APIs
 tos>=2.9                        # BytePlus TOS object storage
+imageio-ffmpeg>=0.5
