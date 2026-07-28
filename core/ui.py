@@ -504,37 +504,65 @@ def poster_art(key: str) -> str:
  <rect y="360" width="300" height="40" fill="#060608" opacity="0.85"/>
  <text x="150" y="386" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#D8D8E0" opacity="0.9">CASE CLOSED</text>
 </svg>""",
-        # --- Family Table: lanterns, steaming dishes, round family table ---
-        "family": """
+        # --- Vietnamese Horror: old house, oil lamp, pale figure in mirror ---
+        "horror": """
 <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
  <defs>
-  <linearGradient id="fm-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A0804"/><stop offset="0.6" stop-color="#5A2410"/><stop offset="1" stop-color="#B0501E"/></linearGradient>
-  <radialGradient id="fm-gl" cx="0.5" cy="0.25" r="0.55"><stop offset="0" stop-color="#F6C55C" stop-opacity="0.55"/><stop offset="1" stop-color="#F6C55C" stop-opacity="0"/></radialGradient>
+  <linearGradient id="hr-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#020A06"/><stop offset="0.6" stop-color="#08241A"/><stop offset="1" stop-color="#0E3A2A"/></linearGradient>
+  <radialGradient id="hr-lamp" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F6C55C" stop-opacity="0.8"/><stop offset="1" stop-color="#F6C55C" stop-opacity="0"/></radialGradient>
  </defs>
- <rect width="300" height="400" fill="url(#fm-bg)"/>
- <rect width="300" height="400" fill="url(#fm-gl)"/>
- <g>
-  <g transform="translate(70 70)"><rect x="-2" y="-26" width="4" height="14" fill="#8A3A10"/><ellipse rx="22" ry="26" fill="#E8641E"/><ellipse rx="22" ry="26" fill="none" stroke="#F6C55C" stroke-width="2" opacity="0.7"/><rect x="-6" y="24" width="12" height="6" rx="2" fill="#F6C55C"/></g>
-  <g transform="translate(150 52)"><rect x="-2" y="-26" width="4" height="14" fill="#8A3A10"/><ellipse rx="26" ry="30" fill="#D9481E"/><ellipse rx="26" ry="30" fill="none" stroke="#F6C55C" stroke-width="2" opacity="0.7"/><rect x="-7" y="28" width="14" height="6" rx="2" fill="#F6C55C"/></g>
-  <g transform="translate(232 76)"><rect x="-2" y="-24" width="4" height="12" fill="#8A3A10"/><ellipse rx="20" ry="24" fill="#E8641E"/><ellipse rx="20" ry="24" fill="none" stroke="#F6C55C" stroke-width="2" opacity="0.7"/><rect x="-5" y="22" width="10" height="5" rx="2" fill="#F6C55C"/></g>
+ <rect width="300" height="400" fill="url(#hr-bg)"/>
+ <g stroke="#04140E" stroke-width="10" opacity="0.9"><path d="M30 0 V400 M270 0 V400"/></g>
+ <g stroke="#B8E8D0" stroke-width="1.5" opacity="0.25"><path d="M30 60 H270 M30 130 H270 M30 200 H270"/></g>
+ <g transform="translate(96 210)">
+  <rect x="-34" y="-64" width="68" height="120" rx="8" fill="#061A12" stroke="#0E3A2A" stroke-width="4"/>
+  <g fill="#DCEEE4" opacity="0.85">
+   <ellipse cx="0" cy="-20" rx="16" ry="18"/>
+   <path d="M-16 -20 q-4 44 -8 64 l48 0 q-4 -20 -8 -64 Z"/>
+   <path d="M-14 -34 q14 -12 28 0 l0 40 q-14 8 -28 0 Z" fill="#0A0A0A" opacity="0.9"/>
+  </g>
  </g>
- <g stroke="#FDE2C0" stroke-width="4" fill="none" opacity="0.55" stroke-linecap="round">
-  <path d="M120 190 q-10 -18 0 -36 M150 186 q10 -18 0 -36 M180 190 q-10 -18 0 -36"/>
+ <g transform="translate(206 292)">
+  <circle r="26" fill="url(#hr-lamp)"/>
+  <rect x="-7" y="-12" width="14" height="18" rx="5" fill="#F6C55C"/>
+  <rect x="-10" y="6" width="20" height="6" rx="2" fill="#8A5A10"/>
+  <circle cx="0" cy="-42" r="9" fill="#0A0A0A"/>
+  <path d="M0 -33 c-13 0 -18 11 -16 26 l-6 40 h44 l-6 -40 c2 -15 -3 -26 -16 -26Z" fill="#08080A"/>
  </g>
- <g transform="translate(150 262)">
-  <ellipse cx="0" cy="42" rx="104" ry="16" fill="#3A1608"/>
-  <ellipse cx="0" cy="34" rx="104" ry="18" fill="#8A4A1E"/>
-  <ellipse cx="0" cy="30" rx="96" ry="15" fill="#C87838"/>
-  <ellipse cx="0" cy="-4" rx="34" ry="11" fill="#FDE2C0"/><ellipse cx="0" cy="-8" rx="34" ry="10" fill="#F6C55C"/>
-  <ellipse cx="-58" cy="12" rx="18" ry="7" fill="#FDE2C0"/><ellipse cx="58" cy="12" rx="18" ry="7" fill="#FDE2C0"/>
-  <circle cx="-30" cy="14" r="7" fill="#C8321E"/><circle cx="30" cy="14" r="7" fill="#2E7D32"/>
+ <rect y="356" width="300" height="44" fill="#020A06" opacity="0.85"/>
+ <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#B8E8D0" opacity="0.95">DON'T LOOK BACK</text>
+</svg>""",
+        # --- Drama Royale: cafe table, splashing glass, hair-flip silhouette ---
+        "drama": """
+<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+ <defs>
+  <linearGradient id="dm-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1A040C"/><stop offset="0.6" stop-color="#5A0F28"/><stop offset="1" stop-color="#B01E4A"/></linearGradient>
+  <radialGradient id="dm-gl" cx="0.5" cy="0.3" r="0.6"><stop offset="0" stop-color="#F6B7D8" stop-opacity="0.4"/><stop offset="1" stop-color="#F6B7D8" stop-opacity="0"/></radialGradient>
+ </defs>
+ <rect width="300" height="400" fill="url(#dm-bg)"/>
+ <rect width="300" height="400" fill="url(#dm-gl)"/>
+ <g fill="#F6B7D8" opacity="0.8"><path d="M52 66 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 Z"/><path d="M244 48 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5 Z"/></g>
+ <g transform="translate(150 300)">
+  <ellipse cx="0" cy="34" rx="96" ry="13" fill="#3A0A1C"/>
+  <ellipse cx="0" cy="28" rx="88" ry="12" fill="#F6E8F0"/>
  </g>
- <g fill="#2A0E06">
-  <circle cx="66" cy="212" r="11"/><path d="M52 224 q14 12 28 0 l4 26 h-36 Z"/>
-  <circle cx="234" cy="212" r="11"/><path d="M220 224 q14 12 28 0 l4 26 h-36 Z"/>
+ <g transform="translate(104 246)" fill="#12030A">
+  <circle cx="0" cy="-58" r="12"/>
+  <path d="M-12 -62 q-16 -10 -22 6 q10 10 20 4 Z"/>
+  <path d="M0 -46 c-16 0 -22 13 -20 30 l-7 46 h54 l-7 -46 c2 -17 -4 -30 -20 -30Z"/>
+  <path d="M18 -40 L44 -18" stroke="#12030A" stroke-width="9" stroke-linecap="round"/>
  </g>
- <rect y="356" width="300" height="44" fill="#1A0804" opacity="0.82"/>
- <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#F6C55C" opacity="0.95">COME HOME HUNGRY</text>
+ <g transform="translate(168 216) rotate(24)">
+  <path d="M-8 0 L8 0 L5 22 L-5 22 Z" fill="#CDEBF7" opacity="0.9"/>
+  <g fill="#8AD2EE"><path d="M4 -6 q10 -10 22 -8 q-4 8 -12 12 Z"/><circle cx="30" cy="-16" r="4"/><circle cx="40" cy="-4" r="3"/><circle cx="22" cy="-22" r="3"/><ellipse cx="46" cy="-22" rx="4" ry="2.5" transform="rotate(30 46 -22)"/></g>
+ </g>
+ <g transform="translate(216 258)" fill="#2A0614">
+  <circle cx="0" cy="-46" r="11"/>
+  <path d="M10 -50 q18 -6 20 12 q-12 6 -20 -2 Z"/>
+  <path d="M0 -35 c-15 0 -20 12 -18 28 l-6 42 h48 l-6 -42 c2 -16 -3 -28 -18 -28Z"/>
+ </g>
+ <rect y="356" width="300" height="44" fill="#1A040C" opacity="0.85"/>
+ <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#F6B7D8" opacity="0.95">NOBODY CROSSES ME</text>
 </svg>""",
     }
     return art.get(key, "")
