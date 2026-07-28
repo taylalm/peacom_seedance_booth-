@@ -90,6 +90,63 @@ FILMS = [
                    "calls \"Cut — beautiful!\" and the small crew applauds as the star smiles "
                    "under the warm lights." + _SUFFIX),
     },
+    {
+        "key": "director", "no": "04", "emoji": "🎬",
+        "title_th": "FINAL CUT", "title_en": "THE DIRECTOR'S CHAIR",
+        "genre_th": "DIRECTOR", "genre_en": "DIRECTOR · ON SET",
+        "logline_en": "Today, the set answers to you.",
+        "synopsis": ("You're the director on a bustling soundstage — crew everywhere, lights "
+                     "rigging up, a camera crane sweeping. You call the shot, the set springs "
+                     "to life, and the take is perfect. Pure filmmaker energy."),
+        "tags": "DIRECTOR · SOUNDSTAGE · THAT'S A WRAP",
+        "c1": "#101014", "c2": "#37343E", "c3": "#F6C55C",
+        "prompt": ("The person in Image 1 is a film director on a bustling movie soundstage — "
+                   "crew adjusting big studio lights, a camera crane sweeping overhead, set "
+                   "pieces everywhere. Wearing a stylish plain jacket and headphones around "
+                   "their neck, they rise from a classic director's chair, raise a hand and "
+                   "call in clear English: \"Quiet on set — and... action!\" The set springs "
+                   "to life around them; they watch intently, then break into a proud smile, "
+                   "and call: \"Cut! Perfect — that's a wrap.\" The crew applauds warmly as "
+                   "the director takes a happy little bow." + _SUFFIX),
+    },
+    {
+        "key": "scifi", "no": "05", "emoji": "🚀",
+        "title_th": "STARBOUND", "title_en": "SCI-FI EPIC",
+        "genre_th": "SCI-FI", "genre_en": "SCI-FI · SPACE",
+        "logline_en": "Strap in. The galaxy is rolling.",
+        "synopsis": ("You're the star pilot of a gleaming starship — a luminous bridge, a "
+                     "sweeping nebula outside the viewport, a heroic course set for a "
+                     "breathtaking alien dawn. Big-screen space adventure."),
+        "tags": "STARSHIP · NEBULA · HERO PILOT",
+        "c1": "#060A24", "c2": "#1E3CA8", "c3": "#57E0F0",
+        "prompt": ("The person in Image 1 is the star pilot of a gleaming starship in a "
+                   "cinematic space epic — a sleek bridge bathed in soft blue light, a vast "
+                   "luminous nebula drifting past the viewport. Wearing a plain futuristic "
+                   "flight suit, they settle into the pilot seat, grip the controls with calm "
+                   "confidence and say in clear English: \"Setting course — hold on tight.\" "
+                   "The ship glides forward through shimmering stardust as light sweeps "
+                   "across their face; they watch a breathtaking alien sunrise crest over a "
+                   "ringed planet, smile and say: \"Now THAT is worth the trip.\"" + _SUFFIX),
+    },
+    {
+        "key": "noir", "no": "06", "emoji": "🕵️",
+        "title_th": "MIDNIGHT NOIR", "title_en": "FILM NOIR",
+        "genre_th": "MYSTERY", "genre_en": "MYSTERY · CLASSIC NOIR",
+        "logline_en": "One clue. One night. One legend.",
+        "synopsis": ("You're the detective in a moody 1940s film noir — rain-slicked streets, "
+                     "a trench coat, dramatic lamplight shadows. You piece the mystery "
+                     "together and close the case with timeless style."),
+        "tags": "DETECTIVE · RAIN · LAMPLIGHT",
+        "c1": "#0A0A0C", "c2": "#2E2E36", "c3": "#D8D8E0",
+        "prompt": ("A moody 1940s film-noir scene in stylish black-and-white: a rain-slicked "
+                   "city street at night, dramatic lamplight cutting through mist. The person "
+                   "in Image 1 is a classic noir detective in a plain trench coat and fedora, "
+                   "standing under a streetlamp studying a small notebook. Rain glitters in "
+                   "the light as they look up slowly, narrow their eyes with a knowing smile "
+                   "and say in clear English: \"Of course... it was there all along.\" They "
+                   "snap the notebook shut, tip their hat to the camera and say: \"Case "
+                   "closed.\" then stroll off into the misty light." + _SUFFIX),
+    },
 ]
 
 FILM_BY_KEY = {f["key"]: f for f in FILMS}
@@ -164,6 +221,55 @@ DUO = {
         "director calls \"Cut — that's a wrap!\" and the small crew applauds. The two laugh "
         "softly, take a playful little bow toward the crew, and stroll off the set together "
         "under the golden lights — a warm, timeless close." + _DUO_B,
+    ),
+    "director": (
+        "A bustling movie soundstage — big studio lights rigging up, a camera crane sweeping "
+        "overhead, crew moving set pieces. The person in Image 1 is the film director in a "
+        "stylish plain jacket, and a young {costar} is their trusted cinematographer with a "
+        "camera rig. The {costar} frames a shot with their hands and says in clear English: "
+        "\"If we shoot it from here, it'll be legendary.\" The person in Image 1 studies the "
+        "angle, nods with a grin: \"That's why you're the best — places, everyone!\" They "
+        "take positions as the set springs to life." + _DUO_A,
+        "Continue directly from Video 1. The person from Image 1 raises a hand and calls "
+        "\"Action!\" — the crane glides, the lights bloom, and the {costar} tracks a smooth "
+        "sweeping shot as the director watches, spellbound. The person from Image 1 calls "
+        "\"Cut!\" and the whole crew applauds. The {costar} lowers the camera and says in "
+        "clear English: \"That's the best shot we've ever made.\" The person from Image 1 "
+        "laughs proudly: \"THAT is movie magic — that's a wrap!\" They share a happy "
+        "high-five as the crew celebrates around them — a joyful, triumphant close." + _DUO_B,
+    ),
+    "scifi": (
+        "A cinematic space epic: the sleek bridge of a gleaming starship bathed in soft blue "
+        "light, a vast luminous nebula drifting past the viewport. The person in Image 1 and "
+        "a young {costar}, both star pilots in plain futuristic flight suits, settle into the "
+        "twin pilot seats. The {costar} runs a hand over the controls and says in clear "
+        "English: \"No one's ever flown through that nebula.\" The person in Image 1 grips "
+        "the controls with a calm smile: \"Then let's be the first.\" The ship glides forward "
+        "into the shimmering stardust as light sweeps across their faces." + _DUO_A,
+        "Continue directly from Video 1. The starship sails gracefully through glowing bands "
+        "of stardust, colors washing over the bridge, the two pilots flying in smooth "
+        "coordination. They emerge into clear space just as a breathtaking alien sunrise "
+        "crests over a ringed planet, filling the viewport with golden light. The {costar} "
+        "whispers in clear English: \"It's beautiful...\" The person from Image 1 smiles: "
+        "\"And we made it here together.\" They share a triumphant fist-bump and watch the "
+        "sunrise side by side — a wondrous, uplifting close." + _DUO_B,
+    ),
+    "noir": (
+        "A moody 1940s film-noir scene in stylish black-and-white: a rain-slicked city "
+        "street at night, dramatic lamplight cutting through mist. The person in Image 1 and "
+        "a young {costar}, two classic noir detectives in plain trench coats and fedoras, "
+        "stand under a streetlamp studying a small notebook together, rain glittering in the "
+        "light. The {costar} taps the page and says in clear English: \"Every clue points to "
+        "the old theater.\" The person in Image 1 narrows their eyes with a knowing smile: "
+        "\"Then the show's about to end.\" They turn up their collars and stride off through "
+        "the rain together." + _DUO_A,
+        "Continue directly from Video 1. The two detectives arrive at the grand doors of an "
+        "old theater; the person from Image 1 finds a small key tucked above the door frame "
+        "and holds it up — the missing piece. The {costar} laughs softly in clear English: "
+        "\"It was there all along. You never miss.\" The person from Image 1 tips their hat "
+        "with a wry smile: \"Case closed, partner.\" They shake hands under the marquee "
+        "lights and stroll off side by side into the misty lamplight — a stylish, satisfying "
+        "close." + _DUO_B,
     ),
 }
 

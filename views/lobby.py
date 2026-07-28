@@ -91,9 +91,9 @@ def scene_lobby():
 
     st.markdown(
         """
-        <p style="text-align:center; margin-top:1.2rem; color:#6B5C50">
-        Take one photo, pick one film, and we'll cast you as the lead of a 15-second cinematic
-        short — delivered straight to your inbox.
+        <p style="text-align:center; margin-top:1.2rem; color:#9A8C78">
+        Take one photo, pick one film, and we'll cast you as the lead of your own cinematic
+        short — 15 seconds solo or 30 seconds with a co-star — straight to your inbox.
         </p>
         """,
         unsafe_allow_html=True,
@@ -400,7 +400,7 @@ def scene_production():
         <div style="text-align:center; margin-top:.6rem">
           <div class="mp-clap">SCENE 4 · ACTION!</div>
           <h2 style="margin:.2rem 0">Your epic is in production 🎥</h2>
-          <p style="font-style:italic; color:#55483F">Rolling now — sit back, superstar.</p>
+          <p style="font-style:italic; color:#C9BCA8">Rolling now — sit back, superstar.</p>
         </div>
         <div class="mp-stub">
           <div class="meta">MAHA PICTURES · KEEP THIS STUB</div>
