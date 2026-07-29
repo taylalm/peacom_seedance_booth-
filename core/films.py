@@ -143,30 +143,33 @@ FILMS = [
     },
     {
         "key": "noir", "no": "04", "emoji": "🕵️",
-        "title_th": "SAIGON MIDNIGHT", "title_en": "FILM NOIR",
-        "genre_th": "MYSTERY", "genre_en": "MYSTERY · SAIGON NOIR",
+        "title_th": "MIDNIGHT NOIR", "title_en": "FILM NOIR",
+        "genre_th": "MYSTERY", "genre_en": "MYSTERY · CLASSIC NOIR",
         "logline_en": "One clue. One chase. Case closed.",
-        "synopsis": ("A grounded, realistic old-Saigon detective scene — a wet shophouse "
-                     "street lit only by real shop lights and a phở cart's bulb, a fleeing "
-                     "shadow, and the clue that closes the case."),
-        "tags": "DETECTIVE · OLD SAIGON · RAIN",
+        "synopsis": ("A grounded 1940s American-city noir — rain-slicked brick streets, "
+                     "a fleeing shadow, a chase into the dark, and the clue that closes "
+                     "the case with timeless style."),
+        "tags": "DETECTIVE · 1940s · RAIN",
         "c1": "#0A0A0C", "c2": "#2E2E36", "c3": "#D8D8E0",
-        "prompt": ("A REALISTIC live-action detective movie scene in old Saigon at night — "
-                   "shot like real 35mm film footage, absolutely photorealistic: a narrow "
-                   "street of aged Vietnamese shophouses with peeling paint and real worn "
-                   "textures, wet asphalt after rain reflecting ONLY the actual light "
-                   "sources present — a single bare bulb over a phở cart, dim warm light "
-                   "from two shophouse windows, one distant streetlamp. No fog, no haze, no "
-                   "glow effects, no stylized color wash — just the natural darkness of a "
-                   "real street at 1 a.m. with true photographic shadows and natural skin "
-                   "tones. The person in Image 1, a detective in a plain worn trench coat, "
-                   "stands near the phở cart checking a small notebook when a figure darts "
-                   "from a doorway down the street. They give chase — a quick, realistic "
-                   "sprint with real footsteps splashing shallow puddles — but the figure "
-                   "is gone around the corner. On the wet ground under the streetlamp lies "
-                   "a dropped key. The detective picks it up, turns it in the light with a "
-                   "slow knowing smile, looks into the camera and says in clear English: "
-                   "\"Case closed.\" — then walks off down the quiet street." + _SUFFIX),
+        "prompt": ("A REALISTIC live-action 1940s American film-noir movie scene — shot "
+                   "like real 35mm film footage, absolutely photorealistic: a narrow "
+                   "downtown city street at night after rain — aged brick buildings with "
+                   "iron fire escapes, ONE streetlamp, warm light from a single diner "
+                   "window, one parked vintage 1940s car, a thin column of steam rising "
+                   "from one manhole grate. Every window and door stays shut the whole "
+                   "video; every sign and surface is completely BLANK with no lettering; "
+                   "no fog, no haze, no glow — true photographic darkness and shadows. "
+                   "EXACTLY ONE person appears: the person in Image 1, a detective ALREADY "
+                   "WEARING a plain worn trench coat and fedora from the first frame. "
+                   "Sequence, in order: (1) they stand under the streetlamp studying a "
+                   "small blank notebook, rain dripping from the hat brim; (2) they hear "
+                   "footsteps, look up sharply toward the dark end of the street, and "
+                   "walk forward — away from the camera, deeper down the street, never "
+                   "turning back; (3) under the next pool of lamplight they spot a small "
+                   "brass key on the wet asphalt, crouch, pick it up and turn it in the "
+                   "light; (4) a slow knowing smile, they tip the hat to camera and say "
+                   "in clear English: \"Case closed.\" — then walk on into the dark, "
+                   "the same direction, never returning." + _SUFFIX),
     },
     {
         "key": "horror", "no": "05", "emoji": "👻",
@@ -358,39 +361,49 @@ DUO = {
         "charming, cinematic close." + _DUO_B,
     ),
     "noir": (
-        "A REALISTIC live-action detective movie scene in old Saigon at night — shot "
-        "like real 35mm film footage, absolutely photorealistic: a narrow street of "
-        "aged Vietnamese shophouses with peeling paint and worn textures, wet asphalt "
-        "after rain reflecting ONLY the actual light sources present — a single bare "
-        "bulb over a small phở cart, dim warm light from two shophouse windows, one "
-        "distant streetlamp. No fog, no haze, no glow effects, no stylized color wash "
-        "— the natural darkness of a real street at 1 a.m., true photographic shadows, "
-        "natural skin tones. THE SET IS FIXED: every shopfront shutter, door and gate "
-        "in the street is CLOSED and stays closed for the entire video — nothing ever "
-        "opens, closes, or changes anywhere in the environment; all shop signs and "
-        "surfaces are completely BLANK with no lettering. EXACTLY THREE people exist "
-        "in this video: the person in Image 1 and a young {costar} — two detectives "
-        "ALREADY WEARING plain worn trench coats AND fedora hats from the very first "
-        "frame (the hats stay firmly on through all the running) — plus ONE fleeing "
-        "figure seen only briefly and only from behind. The two detectives stand near "
-        "the phở cart studying a small unmarked notebook when the figure darts from a "
-        "shadowed corner down the street. The {costar} snaps in clear English: "
-        "\"There — that's our lead!\" The person in Image 1 is already moving: "
-        "\"Don't lose him!\" The two sprint down the street after the figure — "
-        "quick, realistic running, real footsteps splashing shallow puddles, coats "
-        "moving with real fabric weight, past the same closed shutters." + _DUO_A,
-        "Continue directly from Video 1 — the IDENTICAL street: same closed shutters "
-        "and doors (still closed, nothing has opened or changed), same phở cart, same "
-        "three light sources, photorealistic and naturally dark. Only the two "
-        "detectives remain — the fleeing figure has escaped and never appears again. "
-        "They slow to a stop where the street bends, breathing hard — the figure is "
-        "gone — and there on the wet asphalt under the streetlamp lies a small "
-        "dropped brass key. The person from Image 1 crouches, picks it up and turns "
-        "it in the light with a slow, knowing smile. The {costar} laughs softly in "
-        "clear English: \"The theater locker. It was there all along.\" The person "
-        "from Image 1 tips their hat: \"Case closed, partner.\" They shake hands "
-        "under the streetlamp and walk back toward the warm bulb of the phở cart — a "
-        "grounded, stylish close." + _DUO_B,
+        "A REALISTIC live-action 1940s American film-noir movie scene — shot like real "
+        "35mm film footage, absolutely photorealistic: a narrow downtown city street at "
+        "night after rain — aged brick buildings with iron fire escapes, ONE streetlamp "
+        "at the near end, warm light from a single diner window, one parked vintage "
+        "1940s car, a thin column of steam rising from one manhole grate. THE SET IS "
+        "FIXED: every window, door and shopfront stays SHUT for the entire video — "
+        "nothing opens, closes or changes; every sign and surface is completely BLANK "
+        "with no lettering; no fog, no haze, no glow effects — true photographic "
+        "darkness, real shadows, natural skin tones. EXACTLY THREE people exist: the "
+        "person in Image 1 and a young {costar} — two detectives ALREADY WEARING plain "
+        "worn trench coats AND fedora hats from the very first frame, hats firmly on "
+        "throughout — plus ONE fleeing man in a long black coat, seen ONLY from behind, "
+        "who never shows his face. CHASE GEOMETRY, exact and simple: the street runs "
+        "straight AWAY from the camera into the dark. Sequence, in order: (1) the two "
+        "detectives stand under the near streetlamp studying a small blank notebook; "
+        "(2) the man in the black coat bursts from a recessed doorway AHEAD of them "
+        "and sprints straight AWAY from the camera, down the street into the dark; "
+        "(3) the {costar} snaps in clear English: \"There he goes!\" and the person "
+        "in Image 1 answers, already running: \"Stay on him!\"; (4) BOTH detectives "
+        "sprint AFTER the fleeing man in the SAME direction he ran — away from the "
+        "camera, following his exact path down the middle of the street, never turning "
+        "around, never running toward the camera, never returning to where they "
+        "started — the gap slowly closing, real sprinting with splashing footsteps and "
+        "coats flaring, the camera tracking BEHIND them. The sequence ends mid-chase "
+        "with both detectives still running away from camera, the black coat just "
+        "visible ahead." + _DUO_A,
+        "Continue directly from Video 1 — the IDENTICAL street continuing FARTHER "
+        "along in the same direction (a new stretch of the same street, NOT the "
+        "starting point; the streetlamp and diner from the start are far behind and "
+        "never seen again). Same rules: everything shut and unchanged, blank surfaces, "
+        "photorealistic darkness. Sequence, in order: (1) ahead of the detectives the "
+        "fleeing man cuts hard around a brick corner and is gone; (2) the two "
+        "detectives reach that same corner seconds later and pull up, breathing hard — "
+        "the side street beyond is empty, he has escaped, and he never appears again; "
+        "(3) the {costar} slaps the brick wall in frustration: \"Lost him!\"; (4) "
+        "the person from Image 1 scans the ground — and there in the gutter under the "
+        "corner lamp lies a small brass key; they crouch, pick it up, and turn it "
+        "slowly in the light with a knowing smile: \"No... he lost THIS.\"; (5) the "
+        "{costar} leans in, then laughs softly: \"The station locker. We've got him "
+        "by morning.\" The person from Image 1 tips their hat: \"Case closed, "
+        "partner.\" They shake hands once and walk on TOGETHER down the side street — "
+        "the same forward direction, never back the way they came — a grounded, "
+        "stylish close." + _DUO_B,
     ),
     "horror": (
         "A Vietnamese horror-movie scene, staged with precise control: inside an old "
