@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": "sample-01",
+    "label": "Sample",
+    "tos_url": "https://seedance-booth-guests.tos-ap-southeast-1.bytepluses.com/premiere/2026-07-29/ba44e868f8bf44b68e376ae0f8bbd5ad.jpg",
+    "asset_id": "asset-20260729150237-lq5rw",
+    "created": "2026-07-29T15:00:00"
+  }
+]
