@@ -368,29 +368,34 @@ def poster_art(key: str) -> str:
     """Hand-built cinematic SVG poster art per film — self-contained (no network),
     so it renders anywhere including an offline booth. viewBox 0 0 300 400 (3:4)."""
     art = {
-        # --- Action Blockbuster: dusk rooftop set, crane, running star ---
-        "action": """
+        # --- Midnight Waltz: chandelier, dancing couple silhouette ---
+        "ballroom": """
 <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
  <defs>
-  <linearGradient id="ac-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A0E2A"/><stop offset="0.6" stop-color="#5A1430"/><stop offset="1" stop-color="#C8321E"/></linearGradient>
-  <radialGradient id="ac-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FBE38A"/><stop offset="0.6" stop-color="#F6C55C"/><stop offset="1" stop-color="#F6C55C" stop-opacity="0"/></radialGradient>
+  <linearGradient id="bl-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A0C24"/><stop offset="0.6" stop-color="#2A2258"/><stop offset="1" stop-color="#4A3A8A"/></linearGradient>
+  <radialGradient id="bl-gl" cx="0.5" cy="0.28" r="0.55"><stop offset="0" stop-color="#F6C55C" stop-opacity="0.5"/><stop offset="1" stop-color="#F6C55C" stop-opacity="0"/></radialGradient>
  </defs>
- <rect width="300" height="400" fill="url(#ac-sky)"/>
- <circle cx="150" cy="180" r="110" fill="url(#ac-sun)" opacity="0.8"/>
- <g fill="#060818" opacity="0.9">
-  <rect x="0" y="250" width="46" height="150"/><rect x="54" y="290" width="40" height="110"/>
-  <rect x="206" y="270" width="44" height="130"/><rect x="258" y="240" width="42" height="160"/>
+ <rect width="300" height="400" fill="url(#bl-bg)"/>
+ <rect width="300" height="400" fill="url(#bl-gl)"/>
+ <g transform="translate(150 84)" stroke="#F6C55C" fill="#F6C55C">
+  <line x1="0" y1="-60" x2="0" y2="-24" stroke-width="3"/>
+  <path d="M-38 0 q0 -26 38 -24 q38 -2 38 24" fill="none" stroke-width="3"/>
+  <g><circle cx="-38" cy="6" r="5"/><circle cx="0" cy="10" r="5"/><circle cx="38" cy="6" r="5"/><circle cx="-19" cy="9" r="4"/><circle cx="19" cy="9" r="4"/></g>
  </g>
- <g fill="#F6C55C" opacity="0.7"><rect x="8" y="262" width="5" height="5"/><rect x="22" y="280" width="5" height="5"/><rect x="216" y="284" width="5" height="5"/><rect x="268" y="256" width="5" height="5"/><rect x="282" y="300" width="5" height="5"/></g>
- <g stroke="#060818" stroke-width="6" fill="none" opacity="0.95"><path d="M20 130 L120 96 M120 96 L96 250"/><circle cx="20" cy="130" r="8" fill="#060818"/></g>
- <rect x="96" y="330" width="120" height="8" rx="4" fill="#060818" opacity="0.8"/>
- <g transform="translate(150 300)" fill="#0A0612">
-  <circle cx="0" cy="-52" r="13"/>
-  <path d="M-4 -40 c-16 4 -20 18 -16 34 l-22 30 14 8 20 -28 6 22 26 10 6 -14 -20 -8 -2 -24 c4 -16 0 -28 -12 -30Z"/>
+ <g fill="#F6E08A" opacity="0.7"><circle cx="60" cy="150" r="2"/><circle cx="240" cy="140" r="2"/><circle cx="90" cy="120" r="1.5"/><circle cx="210" cy="170" r="1.5"/></g>
+ <g transform="translate(150 262)">
+  <g fill="#0C0A1E">
+   <circle cx="-26" cy="-72" r="12"/>
+   <path d="M-30 -60 c-14 4 -18 18 -16 34 l-8 48 h34 l4 -40 Z"/>
+   <circle cx="24" cy="-76" r="11"/>
+   <path d="M20 -64 c-12 2 -16 14 -14 30 l0 18 q22 42 8 56 l44 0 q10 -38 -14 -74 c2 -16 -10 -30 -24 -30Z"/>
+   <path d="M-20 -46 L16 -52" stroke="#0C0A1E" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <path d="M14 -16 q34 30 22 72 q-30 10 -52 0 q16 -40 30 -72Z" fill="#1A1440" opacity="0.9"/>
  </g>
- <g stroke="#F6C55C" stroke-width="3" opacity="0.8" stroke-linecap="round"><path d="M92 236 l-14 -8 M96 252 l-16 0 M212 260 l14 -8"/></g>
- <rect y="360" width="300" height="40" fill="#060818" opacity="0.7"/>
- <text x="150" y="386" text-anchor="middle" font-family="Space Mono,monospace" font-size="13" fill="#F6C55C" opacity="0.95">ACTION!</text>
+ <ellipse cx="150" cy="336" rx="86" ry="10" fill="#F6C55C" opacity="0.15"/>
+ <rect y="356" width="300" height="44" fill="#0A0C24" opacity="0.85"/>
+ <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#F6C55C" opacity="0.95">ONE DANCE, ONE NIGHT</text>
 </svg>""",
         # --- Temple of Gold: jungle ruins, idol in sunbeam, vines ---
         "adventure": """
@@ -448,36 +453,6 @@ def poster_art(key: str) -> str:
  </g>
  <rect y="356" width="300" height="44" fill="#0E0A04" opacity="0.75"/>
  <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#F6E08A" opacity="0.95">LIGHTS · CAMERA · MAGIC</text>
-</svg>""",
-        # --- Dance Fever: neon floor, mid-spin silhouette, crowd ---
-        "dance": """
-<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
- <defs>
-  <linearGradient id="dc-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0C0518"/><stop offset="0.6" stop-color="#3A1258"/><stop offset="1" stop-color="#7A2AB0"/></linearGradient>
-  <radialGradient id="dc-gl" cx="0.5" cy="0.62" r="0.55"><stop offset="0" stop-color="#57E0F0" stop-opacity="0.45"/><stop offset="1" stop-color="#57E0F0" stop-opacity="0"/></radialGradient>
- </defs>
- <rect width="300" height="400" fill="url(#dc-bg)"/>
- <rect width="300" height="400" fill="url(#dc-gl)"/>
- <g opacity="0.8">
-  <path d="M40 0 L80 190 L20 190 Z" fill="#57E0F0" opacity="0.14"/>
-  <path d="M260 0 L280 190 L220 190 Z" fill="#FE7AC8" opacity="0.14"/>
- </g>
- <g fill="#0A0412" opacity="0.85">
-  <circle cx="40" cy="300" r="12"/><path d="M28 312 h24 v46 h-24 Z"/>
-  <circle cx="262" cy="296" r="12"/><path d="M250 308 h24 v50 h-24 Z"/>
-  <circle cx="86" cy="322" r="10"/><path d="M76 332 h20 v34 h-20 Z"/>
-  <circle cx="216" cy="320" r="10"/><path d="M206 330 h20 v36 h-20 Z"/>
- </g>
- <g transform="translate(150 240) rotate(-8)" fill="#0C0518">
-  <circle cx="6" cy="-64" r="14"/>
-  <path d="M2 -50 c-18 4 -24 20 -18 38 l-26 20 10 12 28 -22 10 24 30 4 2 -14 -24 -4 -4 -26 c6 -18 4 -30 -8 -32Z"/>
- </g>
- <g stroke="#57E0F0" stroke-width="3" fill="none" opacity="0.8" stroke-linecap="round">
-  <path d="M96 160 a70 70 0 0 1 60 -34 M204 260 a70 70 0 0 1 -50 40"/>
- </g>
- <ellipse cx="150" cy="332" rx="76" ry="10" fill="#57E0F0" opacity="0.2"/>
- <rect y="356" width="300" height="44" fill="#0C0518" opacity="0.85"/>
- <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#57E0F0" opacity="0.95">OWN THE FLOOR</text>
 </svg>""",
         # --- Film Noir: streetlamp cone, fedora silhouette, rain ---
         "noir": """
