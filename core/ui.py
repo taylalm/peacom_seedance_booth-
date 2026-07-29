@@ -428,31 +428,34 @@ def poster_art(key: str) -> str:
  <rect y="356" width="300" height="44" fill="#04120A" opacity="0.8"/>
  <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#F6E08A" opacity="0.95">THE MAP WAS REAL</text>
 </svg>""",
-        # --- Golden Age Cinema: spotlight, vintage camera, film reel ---
-        "goldenage": """
+        # --- Royal Escape: palace silhouette, lanterns, cloaked figure ---
+        "royal": """
 <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
  <defs>
-  <linearGradient id="ga-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E0A04"/><stop offset="0.6" stop-color="#3A2C12"/><stop offset="1" stop-color="#8A6A2A"/></linearGradient>
-  <radialGradient id="ga-gl" cx="0.5" cy="0.35" r="0.6"><stop offset="0" stop-color="#F6E08A" stop-opacity="0.7"/><stop offset="1" stop-color="#F6E08A" stop-opacity="0"/></radialGradient>
+  <linearGradient id="ry-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#120604"/><stop offset="0.6" stop-color="#4A1610"/><stop offset="1" stop-color="#8A2A1E"/></linearGradient>
+  <radialGradient id="ry-gl" cx="0.5" cy="0.4" r="0.6"><stop offset="0" stop-color="#F6C55C" stop-opacity="0.4"/><stop offset="1" stop-color="#F6C55C" stop-opacity="0"/></radialGradient>
  </defs>
- <rect width="300" height="400" fill="url(#ga-bg)"/>
- <path d="M150 40 L70 330 L230 330 Z" fill="url(#ga-gl)"/>
- <g transform="translate(150 120)" fill="#F6E08A" opacity="0.9">
-  <circle r="34" fill="none" stroke="#F6E08A" stroke-width="6"/>
-  <circle r="6"/><circle cx="0" cy="-18" r="6"/><circle cx="17" cy="9" r="6"/><circle cx="-17" cy="9" r="6"/>
+ <rect width="300" height="400" fill="url(#ry-bg)"/>
+ <rect width="300" height="400" fill="url(#ry-gl)"/>
+ <g fill="#0C0402" opacity="0.9">
+  <path d="M20 120 L150 84 L280 120 L262 120 L150 94 L38 120 Z"/>
+  <rect x="38" y="120" width="224" height="12"/>
+  <path d="M52 132 h196 v10 h-196 Z" opacity="0.7"/>
+  <rect x="60" y="142" width="20" height="70"/><rect x="220" y="142" width="20" height="70"/>
+  <rect x="46" y="206" width="208" height="10"/>
  </g>
- <g fill="#14100A" opacity="0.95">
-  <circle cx="86" cy="238" r="20"/><circle cx="118" cy="238" r="16"/>
-  <rect x="72" y="252" width="60" height="34" rx="6"/>
-  <rect x="128" y="258" width="22" height="12" rx="4"/>
-  <path d="M84 286 L70 350 M104 286 L104 350 M120 286 L134 350" stroke="#14100A" stroke-width="7"/>
+ <g>
+  <g transform="translate(84 250)"><rect x="-1.5" y="-20" width="3" height="10" fill="#5A1A10"/><ellipse rx="14" ry="17" fill="#E8641E"/><ellipse rx="14" ry="17" fill="none" stroke="#F6C55C" stroke-width="1.5" opacity="0.8"/><rect x="-4" y="15" width="8" height="4" rx="2" fill="#F6C55C"/></g>
+  <g transform="translate(150 236)"><rect x="-1.5" y="-22" width="3" height="10" fill="#5A1A10"/><ellipse rx="17" ry="20" fill="#D9481E"/><ellipse rx="17" ry="20" fill="none" stroke="#F6C55C" stroke-width="1.5" opacity="0.8"/><rect x="-5" y="18" width="10" height="4" rx="2" fill="#F6C55C"/></g>
+  <g transform="translate(216 252)"><rect x="-1.5" y="-19" width="3" height="9" fill="#5A1A10"/><ellipse rx="13" ry="16" fill="#E8641E"/><ellipse rx="13" ry="16" fill="none" stroke="#F6C55C" stroke-width="1.5" opacity="0.8"/><rect x="-4" y="14" width="8" height="4" rx="2" fill="#F6C55C"/></g>
  </g>
- <g transform="translate(206 268)" fill="#14100A">
-  <circle cx="0" cy="-36" r="11"/>
-  <path d="M0 -26 c-14 0 -20 12 -18 27 l-7 49 h50 l-7 -49 c2 -15 -4 -27 -18 -27Z"/>
+ <g transform="translate(150 316)" fill="#0A0301">
+  <circle cx="0" cy="-46" r="12"/>
+  <path d="M0 -36 c-20 2 -30 16 -28 36 l-6 40 h68 l-6 -40 c2 -20 -8 -34 -28 -36Z"/>
+  <path d="M-24 -30 q24 -18 48 0 l-6 10 q-18 -12 -36 0 Z" fill="#F6C55C" opacity="0.35"/>
  </g>
- <rect y="356" width="300" height="44" fill="#0E0A04" opacity="0.75"/>
- <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#F6E08A" opacity="0.95">LIGHTS · CAMERA · MAGIC</text>
+ <rect y="356" width="300" height="44" fill="#120604" opacity="0.85"/>
+ <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" fill="#F6C55C" opacity="0.95">ONE NIGHT OF FREEDOM</text>
 </svg>""",
         # --- Film Noir: streetlamp cone, fedora silhouette, rain ---
         "noir": """

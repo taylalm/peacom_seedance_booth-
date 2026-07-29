@@ -120,31 +120,26 @@ FILMS = [
                    "up as the light flares." + _SUFFIX),
     },
     {
-        "key": "goldenage", "no": "03", "emoji": "🎞️",
-        "title_th": "RAIN ON THE VERANDA", "title_en": "GOLDEN AGE CINEMA",
-        "genre_th": "PHIM XƯA", "genre_en": "ROMANCE · PHIM XƯA",
-        "logline_en": "A love the old mansion never allowed.",
-        "synopsis": ("The classic Vietnamese period melodrama — a 1950s Mekong Delta "
-                     "landowner's mansion, oil lamps and pouring rain, and a forbidden "
-                     "confession on the veranda straight out of the phim xưa everyone "
-                     "grew up watching."),
-        "tags": "PHIM XƯA · MIỀN TÂY · RAIN",
-        "c1": "#1A140A", "c2": "#8A6A2A", "c3": "#F6E08A",
-        "prompt": ("A classic Vietnamese period-drama movie scene ('phim xưa' style) set in "
-                   "1950s Southern Vietnam, in the Mekong Delta countryside: the grand "
-                   "traditional wooden mansion of a wealthy landowner family — dark "
-                   "carved-wood pillars, an ancestral hall lit by oil lamps with small steady "
-                   "flames, a wide veranda facing a rain-soaked courtyard. Only the person in Image 1 and "
-                   "two distant servants in plain áo bà ba (visible far in the background, "
-                   "never approaching) appear. Heavy rain pours as gentle original string "
-                   "music plays. The person in Image 1, dressed as the elegant young master "
-                   "or young lady of the house in refined 1950s Vietnamese attire, stands "
-                   "on the veranda framed FRONTALLY toward the camera, watching the rain, "
-                   "then looks straight into the camera lens with steady, focused eyes and "
-                   "says in clear English with deep dramatic feeling: \"This house has "
-                   "rules... but the heart has none.\" Thunder rolls softly; they hold the "
-                   "frontal gaze as the rain falls softly — pure classic Vietnamese "
-                   "melodrama." + _SUFFIX),
+        "key": "royal", "no": "03", "emoji": "🏮",
+        "title_th": "ONE NIGHT OF FREEDOM", "title_en": "THE ROYAL ESCAPE",
+        "genre_th": "CỔ TRANG", "genre_en": "PERIOD · ROYAL",
+        "logline_en": "One royal. One night. No guards... almost.",
+        "synopsis": ("A lavish Vietnamese costume-drama escapade — a young royal slips out "
+                     "of the imperial palace in disguise for one night at the lantern "
+                     "market. Silk robes, golden halls, and stolen freedom."),
+        "tags": "CỔ TRANG · PALACE · LANTERN MARKET",
+        "c1": "#1A0A06", "c2": "#8A2A1E", "c3": "#F6C55C",
+        "prompt": ("A lavish Vietnamese period costume-drama movie scene ('phim cổ trang'): "
+                   "night inside a grand Vietnamese imperial palace chamber — carved gilded "
+                   "wood, silk drapes, candles with small steady flames. All lanterns and "
+                   "surfaces are completely blank with no writing or calligraphy anywhere. "
+                   "The person in Image 1, a young royal in exquisite plain silk royal "
+                   "robes, paces restlessly, then stops at the window hearing distant "
+                   "festival music. They pull a plain dark commoner's cloak over the silk "
+                   "robes, look to the camera with a mischievous grin and say in clear "
+                   "English: \"The palace can spare me for one night.\" — then slip "
+                   "quietly out the door into the lantern-lit night, glancing back once "
+                   "with a smile." + _SUFFIX),
     },
     {
         "key": "noir", "no": "04", "emoji": "🕵️",
@@ -335,38 +330,32 @@ DUO = {
         "it up: \"Next time... we bring a bigger bag.\" They grin and walk out into the "
         "light — a classic adventure close." + _DUO_B,
     ),
-    "goldenage": (
-        "A classic Vietnamese period-drama movie scene ('phim xưa' style) set in 1950s "
-        "Southern Vietnam, in the Mekong Delta countryside: the grand traditional wooden "
-        "mansion of a wealthy landowner family at night — dark carved-wood pillars, an "
-        "ancestral hall lit by oil lamps with small steady flames, a wide veranda facing "
-        "a rain-soaked courtyard. The oil lamp carried in this scene burns with a small, "
-        "steady, natural flame behind glass at all times — it never sparks, flares, "
-        "brightens or emits particles. EXACTLY TWO people appear in this video: the "
-        "person in Image 1 and a young {costar}; nobody else ever appears. Heavy rain "
-        "pours as gentle original string music plays. The person in Image 1, the elegant "
-        "young master or young lady of the house in refined 1950s Vietnamese attire, "
-        "waits on the veranda; the young {costar}, a household servant in plain áo bà "
-        "ba, hurries in holding an oil lamp, breathless and distressed. BOTH faces stay "
-        "framed FRONTALLY or three-quarter toward the camera, eyes locked directly on "
-        "each other when they speak. The {costar} says urgently in clear English: "
-        "\"They've decided — tomorrow morning they marry you to a stranger.\" The "
-        "person in Image 1 takes their hand firmly, eyes steady: \"Then we leave "
-        "TONIGHT. Together.\" A last look back at the ancestral hall — then they turn "
-        "toward the rain, hands clasped, hearts pounding." + _DUO_A,
-        "Continue directly from Video 1 — the same TWO people only, hands still "
-        "clasped. The two run together out into the pouring rain across the dark "
-        "courtyard — real splashing footsteps, clothes soaking, the oil lamp swinging "
-        "in the {costar}'s free hand with its small steady flame — through the wooden "
-        "gate and down the muddy path to the riverbank, where a small wooden sampan "
-        "boat waits among the reeds. The person from Image 1 steadies the {costar} "
-        "aboard, pushes the boat off the bank and steps in, and the sampan glides "
-        "slowly out onto the dark misty river as the rain begins to soften. Soaked and "
-        "breathless, they look at each other and start to laugh with relief. The "
-        "{costar} says in clear English: \"There's no turning back now.\" The person "
-        "from Image 1, holding their hand tight: \"Good. Everything I want is in this "
-        "boat.\" The sampan drifts into the mist as the string music swells — a "
-        "sweeping, unforgettable phim-xưa close." + _DUO_B,
+    "royal": (
+        "A lavish Vietnamese period costume-drama movie scene ('phim cổ trang'): night "
+        "inside a grand Vietnamese imperial palace chamber — carved gilded wood, silk "
+        "drapes, candles with small steady flames that never flare or spark. All "
+        "lanterns, banners and surfaces are completely BLANK with no writing or "
+        "calligraphy anywhere. EXACTLY TWO people appear in this sequence: the person "
+        "in Image 1, a young royal in exquisite plain silk royal robes, and a young "
+        "{costar}, their fiercely loyal royal guard in plain dark guard attire. The "
+        "royal stares out the window toward distant festival music, restless. The "
+        "{costar} steps in carrying a folded plain dark commoner's cloak and says in "
+        "clear English, half-smiling: \"If anyone asks — I tried to stop you.\" The "
+        "person in Image 1 grins, swinging the cloak over their robes: \"You're the "
+        "worst guard in the kingdom. Let's go.\" The two slip out of the chamber "
+        "together, hushed and giddy, the guard checking the corridor first." + _DUO_A,
+        "Continue directly from Video 1. The two arrive at a bustling Vietnamese "
+        "night lantern market just outside the palace walls — dozens of plain unlit-"
+        "text silk lanterns glowing warm and steady overhead, Vietnamese market-goers "
+        "strolling in the background (they stay in the background and never approach). "
+        "The royal, hood down now, wanders wide-eyed between the lantern stalls, "
+        "touching nothing yet beaming at everything; the {costar} stays close, "
+        "half-vigilant, half-smiling. The royal picks up one small plain paper "
+        "lantern with both hands, turns to the {costar} and says in clear English: "
+        "\"One night of freedom is worth a thousand thrones.\" The {costar} laughs "
+        "quietly: \"Then we'd better not get caught.\" They share a conspiratorial "
+        "grin and stroll deeper into the warm glow of the market together — a "
+        "charming, cinematic close." + _DUO_B,
     ),
     "noir": (
         "A REALISTIC live-action detective movie scene in old Saigon at night — shot "
@@ -437,24 +426,31 @@ DUO = {
         "signs, no chalkboards, no posters, no labels, no wall art with writing of any "
         "kind. EXACTLY THREE people appear in this entire video and NEVER "
         "anyone else — no waiter, no passers-by, no background people at all: (a) the "
-        "person in Image 1, dressed in a powerful, elegant adult outfit — a chic tailored "
-        "blazer ensemble or sharp designer dress with heels or polished shoes, the look of "
-        "a confident successful adult (NEVER a school uniform, NEVER the clothing from the "
-        "reference photo); (b) a young {costar} — the person in Image 1's PARTNER, "
+        "person in Image 1, dressed in an elegant flowing LONG CREAM-colored dress "
+        "(soft ivory/cream tone, ankle-length, refined and expensive-looking) with heels — "
+        "NEVER black clothing, NEVER a school uniform, NEVER the clothing from the "
+        "reference photo; (b) a young {costar} — the person in Image 1's PARTNER, "
         "who is cheating; (c) one glamorous Vietnamese woman — the story's notorious "
         "'tiểu tam'. Sequence, in order: (1) the {costar} and the glamorous woman sit "
         "cozily together at a marble café table, laughing, her hand resting on the "
         "{costar}'s arm, two glasses of iced tea on the table; (2) the person in "
         "Image 1 walks in, stops dead at the sight — a long, devastating beat as "
         "their expression hardens from shock to icy calm; (3) they walk slowly to the "
-        "table; the {costar} freezes mid-laugh, going pale, and stammers in clear "
-        "English: \"...It's — it's not what it looks like.\"; (4) the glamorous woman "
-        "just smirks and clings tighter to the {costar}'s arm; the person in Image 1 "
-        "stands over them in dead silence, tension at maximum." + _DUO_A,
+        "table and stop DIRECTLY FACING the seated couple — body and face turned "
+        "TOWARD the two of them at all times, eyes locked on them, NEVER turning "
+        "their back to the couple while confronting them (the camera views the "
+        "confrontation from a three-quarter angle so the Image 1 face stays visible "
+        "while clearly facing the pair); the {costar} freezes mid-laugh, going pale, "
+        "and stammers in clear English: \"...It's — it's not what it looks like.\"; "
+        "(4) the glamorous woman just smirks and clings tighter to the {costar}'s "
+        "arm; the person in Image 1 stands facing them in dead silence, tension at "
+        "maximum." + _DUO_A,
         "Continue directly from Video 1 — the same THREE people only, nobody else "
-        "ever appears. Sequence, in order: (1) the person from Image 1 says in clear "
-        "English, quiet and razor-sharp: \"Funny. It looks exactly like what it "
-        "is.\"; (2) they calmly pick up ONE glass of iced tea from the table with one "
+        "ever appears; the person from Image 1 remains DIRECTLY FACING the seated "
+        "couple throughout steps 1-3, body and eyes toward them, never turning away "
+        "until the final exit. Sequence, in order: (1) the person from Image 1 says "
+        "in clear English, quiet and razor-sharp: \"Funny. It looks exactly like "
+        "what it is.\"; (2) they calmly pick up ONE glass of iced tea from the table with one "
         "hand and tip it forward so it splashes over BOTH the {costar} and the "
         "glamorous woman — one real physical splash, the glass staying firmly in "
         "hand; the two flinch back with theatrical gasps, drenched (staged drama, "
