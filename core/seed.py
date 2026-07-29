@@ -5,9 +5,9 @@ committed sample face + sample ad videos (hosted on TOS) so the Guest Gallery
 and NOW SHOWING look populated for demos. Idempotent and once-per-process.
 
 The seed files are AUTHORITATIVE for sample content: SAMPLE-* gallery entries
-that are no longer in seed/gallery.json get pruned, so removing a clip from
-the seed removes it from the deployed gallery too. Real guest content (non
-SAMPLE tickets) is never touched.
+are fully reconciled against seed/gallery.json — entries removed from the seed
+disappear, and entries whose video URL changed get replaced with the new
+version. Real guest content (non-SAMPLE tickets) is never touched.
 """
 
 import json
@@ -25,22 +25,32 @@ def seed_demo_content() -> None:
         return
     _seeded = True
     _seed(SEED_DIR / "guests.json", storage.load_guest_photos, storage.save_guest_photo, "id")
-    _seed(SEED_DIR / "gallery.json", storage.load_gallery, storage.add_gallery_entry, "ticket")
-    _prune_stale_samples()
+    _sync_sample_gallery()
 
 
-def _prune_stale_samples() -> None:
-    """Drop SAMPLE-* gallery entries that the committed seed no longer lists."""
+def _sync_sample_gallery() -> None:
+    """Make SAMPLE-* gallery entries match seed/gallery.json exactly:
+    delete stale/outdated ones, then add whatever is missing."""
     try:
         path = SEED_DIR / "gallery.json"
-        wanted = set()
-        if path.exists():
-            wanted = {e.get("ticket") for e in json.loads(path.read_text(encoding="utf-8"))}
+        seeds = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
+        wanted = {e.get("ticket"): e for e in seeds}
+
+        # remove SAMPLE entries that are gone from the seed OR point at an old video
         for entry in storage.load_gallery():
             ticket = entry.get("ticket", "")
-            if ticket.startswith("SAMPLE-") and ticket not in wanted:
+            if not ticket.startswith("SAMPLE-"):
+                continue  # real guest content — never touched
+            want = wanted.get(ticket)
+            if want is None or want.get("video") != entry.get("video"):
                 storage.delete_gallery_entry(ticket)
-    except Exception:  # pruning must never break app startup
+
+        # add any seed entry not currently present
+        existing = {e.get("ticket") for e in storage.load_gallery()}
+        for entry in seeds:
+            if entry.get("ticket") not in existing:
+                storage.add_gallery_entry(entry)
+    except Exception:  # seeding must never break app startup
         pass
 
 
