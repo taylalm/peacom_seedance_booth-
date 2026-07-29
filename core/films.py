@@ -24,7 +24,11 @@ _RULES = (
     "camera; avoid long side-profile shots. The footage must look like REAL live-action "
     "film shot on a professional cinema camera: physically-plausible practical lighting "
     "coming from actual visible light sources in the scene, true photographic shadows, "
-    "natural skin texture — never a CGI, dreamlike, hazy, or artificially glowing look. "
+    "natural skin texture — never a CGI, dreamlike, hazy, or artificially glowing look; "
+    "absolutely NO lens flares, light streaks, sparks, embers, fireworks, glitter, or "
+    "magical glowing particle effects of any kind — every flame, lamp and light in the "
+    "scene burns small, steady and natural, and NEVER brightens, flares, sparks or "
+    "shoots particles, especially at the beginning or end of the video. "
     "ABSOLUTE TEXT BAN: do NOT render any text anywhere in the video — no captions, "
     "subtitles, labels, watermarks or floating graphics, and NO letters, numbers, script, "
     "runes or inscriptions on ANY surface: walls, floors, stone, signs, papers, books, "
@@ -117,8 +121,8 @@ FILMS = [
         "prompt": ("A classic Vietnamese period-drama movie scene ('phim xưa' style) set in "
                    "1950s Southern Vietnam, in the Mekong Delta countryside: the grand "
                    "traditional wooden mansion of a wealthy landowner family — dark "
-                   "carved-wood pillars, an ancestral hall glowing with oil lamps, a wide "
-                   "veranda facing a rain-soaked courtyard. Only the person in Image 1 and "
+                   "carved-wood pillars, an ancestral hall lit by oil lamps with small steady "
+                   "flames, a wide veranda facing a rain-soaked courtyard. Only the person in Image 1 and "
                    "two distant servants in plain áo bà ba (visible far in the background, "
                    "never approaching) appear. Heavy rain pours as gentle original string "
                    "music plays. The person in Image 1, dressed as the elegant young master "
@@ -127,7 +131,7 @@ FILMS = [
                    "then looks straight into the camera lens with steady, focused eyes and "
                    "says in clear English with deep dramatic feeling: \"This house has "
                    "rules... but the heart has none.\" Thunder rolls softly; they hold the "
-                   "frontal gaze as the oil lamps glow — pure classic Vietnamese "
+                   "frontal gaze as the rain falls softly — pure classic Vietnamese "
                    "melodrama." + _SUFFIX),
     },
     {
@@ -316,7 +320,10 @@ DUO = {
         "A classic Vietnamese period-drama movie scene ('phim xưa' style) set in 1950s "
         "Southern Vietnam, in the Mekong Delta countryside: the grand traditional wooden "
         "mansion of a wealthy landowner family — dark carved-wood pillars, an ancestral "
-        "hall glowing with oil lamps, a wide veranda facing a rain-soaked courtyard. "
+        "hall lit by oil lamps with small steady flames, a wide veranda facing a "
+        "rain-soaked courtyard. The {costar}'s oil lamp burns with a small, steady, "
+        "natural flame behind glass at all times — it never sparks, flares, brightens "
+        "or emits particles. "
         "EXACTLY TWO people appear in this video: the person in Image 1 and a young "
         "{costar}; nobody else ever appears. Heavy rain pours as gentle original string "
         "music plays. The person in Image 1, the elegant young master or young lady of "
@@ -328,8 +335,8 @@ DUO = {
         "crossed or drifting. The {costar} says softly in clear English: \"You shouldn't "
         "be out here — if the family sees us talking, I'll be sent away.\" The person in "
         "Image 1 turns to face them fully, eyes locked on theirs: \"Then let them see. "
-        "I'm done pretending.\" Thunder rolls softly; the rain glitters in the "
-        "lamplight." + _DUO_A,
+        "I'm done pretending.\" Thunder rolls softly; the rain falls steadily past "
+        "the veranda." + _DUO_A,
         "Continue directly from Video 1 — the same TWO people only, both faces kept "
         "frontal or three-quarter to the camera, their eyes locked directly on each "
         "other whenever they speak. The person from Image 1 steps down into the rain "
@@ -340,8 +347,8 @@ DUO = {
         "or poor doesn't matter to me. It never did.\" The {costar} replies, voice "
         "breaking, gaze never leaving them: \"...Then I'll stay. Whatever happens, I'll "
         "stay.\" The original string music swells; the two stand together in the "
-        "glittering rain as the oil lamps glow — a sweeping, tearful, timeless "
-        "close." + _DUO_B,
+        "steady rain, the small lamp flame burning calmly between them — a "
+        "sweeping, tearful, timeless close." + _DUO_B,
     ),
     "noir": (
         "A REALISTIC live-action detective movie scene in old Saigon at night — shot "
