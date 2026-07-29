@@ -87,5 +87,24 @@ else:
     st.info("No guests yet.")
 
 st.divider()
+st.markdown("### 🗑 Remove a film from NOW SHOWING")
+st.caption("Deletes the clip from the public gallery. Seeded demo clips (SAMPLE-…) "
+           "come back on restart unless also removed from seed/gallery.json.")
+_gallery = storage.load_gallery()
+if _gallery:
+    _labels = {
+        f"{e['ticket']} · {e.get('name','')} · "
+        f"{films.FILM_BY_KEY.get(e.get('film'), {}).get('title_en', e.get('film',''))}": e["ticket"]
+        for e in _gallery
+    }
+    _pick = st.selectbox("Film to remove", list(_labels), key="remove_pick")
+    if st.button("🗑 Remove from Now Showing", type="primary", key="remove_btn"):
+        storage.delete_gallery_entry(_labels[_pick])
+        st.success(f"Removed {_labels[_pick]} from NOW SHOWING.")
+        st.rerun()
+else:
+    st.info("Nothing in NOW SHOWING yet.")
+
+st.divider()
 if st.button("← LOBBY"):
     st.switch_page("views/lobby.py")
