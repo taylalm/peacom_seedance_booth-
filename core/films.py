@@ -42,6 +42,11 @@ _RULES = (
     "Image 1 is a FACE reference ONLY: take nothing from Image 1 except the face — the "
     "clothing, hairstyle-styling and accessories worn in the video always follow THIS "
     "prompt's wardrobe description, NEVER the clothing visible in the reference photo. "
+    "CHARACTER IDENTITY STABILITY: each character keeps the exact same body, height, "
+    "build, hair, and gender-presentation in every single frame — INCLUDING when seen "
+    "from behind or at a distance; characters NEVER swap positions with each other, "
+    "never trade places left/right, and never morph into a different person, even "
+    "momentarily. "
     "WARDROBE CONTINUITY: every character's clothing, hat and accessories are exactly "
     "the same from the very first frame to the very last — nothing is ever added, "
     "removed, appears, disappears, or transforms mid-video; if a character wears a hat, "
@@ -207,6 +212,29 @@ FILMS = [
                    "one small hair-flip, the camera following their confident exit. "
                    "Nothing else happens; no other actions or gestures." + _SUFFIX),
     },
+    {
+        "key": "firstlove", "no": "06", "emoji": "🚲",
+        "title_th": "THE SUMMER WE REMEMBER", "title_en": "FIRST LOVE",
+        "genre_th": "THANH XUÂN", "genre_en": "ROMANCE · COMING OF AGE",
+        "logline_en": "A bicycle, a country road, and a heart full of summer.",
+        "synopsis": ("A nostalgic Vietnamese thanh-xuân romance — golden-hour bicycles on a "
+                     "countryside road, red phượng petals drifting, and the shy, sweet "
+                     "moment every first love remembers."),
+        "tags": "THANH XUÂN · BICYCLE · GOLDEN HOUR",
+        "c1": "#2A1A06", "c2": "#C87828", "c3": "#F6E08A",
+        "prompt": ("A nostalgic Vietnamese coming-of-age romance movie scene ('thanh xuân' "
+                   "style): a quiet countryside road at golden hour, rice fields on both "
+                   "sides, a row of flame trees (phượng) with red blossoms, petals drifting "
+                   "gently in the breeze — everything photorealistic with warm natural "
+                   "sunlight only. EXACTLY ONE person appears: the person in Image 1, a "
+                   "young university student in a plain white shirt, riding an old-style "
+                   "bicycle along the road — the bicycle ALWAYS moves FORWARD, never "
+                   "backward, with real pedaling and balance. They ride at an easy pace, "
+                   "wind in their hair, reach up and catch a falling red petal in one hand, "
+                   "then smile at the camera and say in clear English: \"Some summers stay "
+                   "with you forever.\" — riding on down the golden road, forward, as "
+                   "petals drift." + _SUFFIX),
+    },
 ]
 
 FILM_BY_KEY = {f["key"]: f for f in FILMS}
@@ -323,8 +351,13 @@ DUO = {
         "darkness, real shadows, natural skin tones. EXACTLY THREE people exist: the "
         "person in Image 1 and a young {costar} — two detectives ALREADY WEARING plain "
         "worn trench coats AND fedora hats from the very first frame, hats firmly on "
-        "throughout — plus ONE fleeing man in a long black coat, seen ONLY from behind, "
-        "who never shows his face. CHASE GEOMETRY, exact and simple: the street runs "
+        "throughout. POSITIONS ARE PINNED: the person from Image 1 stays on the LEFT "
+        "and the {costar} on the RIGHT for the entire video, including while running — "
+        "they NEVER swap sides. Seen from behind, each keeps a clearly distinct, "
+        "constant silhouette — same body, same build, same hair, same gender-"
+        "presentation in every frame; neither ever changes into a different person "
+        "even for a single frame. Plus ONE fleeing man in a long black coat, seen "
+        "ONLY from behind, who never shows his face. CHASE GEOMETRY, exact and simple: the street runs "
         "straight AWAY from the camera into the dark. Sequence, in order: (1) the two "
         "detectives stand under the near streetlamp studying a small blank notebook; "
         "(2) the man in the black coat bursts from a recessed doorway AHEAD of them "
@@ -424,6 +457,32 @@ DUO = {
         "out at a natural, unhurried, queenly pace with one small hair-flip — the "
         "camera following their confident exit while the two cheaters sit frozen and "
         "dripping behind them — an iconic, deliciously dramatic close." + _DUO_B,
+    ),
+    "firstlove": (
+        "A nostalgic Vietnamese coming-of-age romance movie scene ('thanh xuân' style): "
+        "a quiet countryside road at golden hour, rice fields on both sides, a row of "
+        "flame trees (phượng) with red blossoms, petals drifting gently in the breeze — "
+        "photorealistic, warm natural sunlight only. EXACTLY TWO people appear: the "
+        "person in Image 1 and a young {costar}, both young university students — one "
+        "in a plain white áo dài or white blouse, the other in a plain white shirt and "
+        "dark trousers. Each rides an old-style bicycle, side by side along the road — "
+        "the bicycles ALWAYS move FORWARD, never backward, with real pedaling, real "
+        "balance, natural wobble. POSITIONS PINNED: the person from Image 1 rides on "
+        "the LEFT, the {costar} on the RIGHT, never swapping. They glance at each "
+        "other shyly as they ride. The {costar} says in clear English, half-teasing: "
+        "\"You always ride this slowly?\" The person in Image 1 smiles at the road "
+        "ahead: \"Only when the company's good.\" A drift of red petals swirls "
+        "between them as they ride on, both smiling to themselves." + _DUO_A,
+        "Continue directly from Video 1 — same road, same golden light, same TWO "
+        "people, same bicycles, still riding FORWARD. They slow and stop side by side "
+        "under the biggest flame tree, still astride their bicycles, feet down. The "
+        "{costar} reaches up, picks one red blossom from a low branch, and holds it "
+        "out; the person in Image 1 takes it gently, genuinely surprised, meeting "
+        "their eyes. The {costar} says softly in clear English: \"So you'll remember "
+        "this summer.\" The person from Image 1 looks at the blossom, then back up "
+        "with a warm, shy smile: \"I wasn't planning to forget it.\" A breeze sends "
+        "petals drifting around them as they stand smiling at each other under the "
+        "red tree, golden light everywhere — a sweet, timeless close." + _DUO_B,
     ),
 }
 
