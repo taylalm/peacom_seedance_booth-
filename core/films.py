@@ -120,29 +120,7 @@ FILMS = [
                    "up as the light flares." + _SUFFIX),
     },
     {
-        "key": "royal", "no": "03", "emoji": "🏮",
-        "title_th": "ONE NIGHT OF FREEDOM", "title_en": "THE ROYAL ESCAPE",
-        "genre_th": "CỔ TRANG", "genre_en": "PERIOD · ROYAL",
-        "logline_en": "One royal. One night. No guards... almost.",
-        "synopsis": ("A lavish Vietnamese costume-drama escapade — a young royal slips out "
-                     "of the imperial palace in disguise for one night at the lantern "
-                     "market. Silk robes, golden halls, and stolen freedom."),
-        "tags": "CỔ TRANG · PALACE · LANTERN MARKET",
-        "c1": "#1A0A06", "c2": "#8A2A1E", "c3": "#F6C55C",
-        "prompt": ("A lavish Vietnamese period costume-drama movie scene ('phim cổ trang'): "
-                   "night inside a grand Vietnamese imperial palace chamber — carved gilded "
-                   "wood, silk drapes, candles with small steady flames. All lanterns and "
-                   "surfaces are completely blank with no writing or calligraphy anywhere. "
-                   "The person in Image 1, a young royal in exquisite plain silk royal "
-                   "robes, paces restlessly, then stops at the window hearing distant "
-                   "festival music. They pull a plain dark commoner's cloak over the silk "
-                   "robes, look to the camera with a mischievous grin and say in clear "
-                   "English: \"The palace can spare me for one night.\" — then slip "
-                   "quietly out the door into the lantern-lit night, glancing back once "
-                   "with a smile." + _SUFFIX),
-    },
-    {
-        "key": "noir", "no": "04", "emoji": "🕵️",
+        "key": "noir", "no": "03", "emoji": "🕵️",
         "title_th": "MIDNIGHT NOIR", "title_en": "FILM NOIR",
         "genre_th": "MYSTERY", "genre_en": "MYSTERY · CLASSIC NOIR",
         "logline_en": "One clue. One chase. Case closed.",
@@ -172,7 +150,7 @@ FILMS = [
                    "the same direction, never returning." + _SUFFIX),
     },
     {
-        "key": "horror", "no": "05", "emoji": "👻",
+        "key": "horror", "no": "04", "emoji": "👻",
         "title_th": "DON'T LOOK BACK", "title_en": "VIETNAMESE HORROR",
         "genre_th": "HORROR", "genre_en": "HORROR · THRILLER",
         "logline_en": "The old house remembers you.",
@@ -201,7 +179,7 @@ FILMS = [
                    "figures." + _SUFFIX),
     },
     {
-        "key": "drama", "no": "06", "emoji": "💔",
+        "key": "drama", "no": "05", "emoji": "💔",
         "title_th": "NOBODY CROSSES ME", "title_en": "DRAMA ROYALE",
         "genre_th": "DRAMA", "genre_en": "DRAMA · MELODRAMA",
         "logline_en": "The tea is hot. The drama is hotter.",
@@ -332,33 +310,6 @@ DUO = {
         "warnings.\" The person from Image 1 pulls the idol from the satchel and holds "
         "it up: \"Next time... we bring a bigger bag.\" They grin and walk out into the "
         "light — a classic adventure close." + _DUO_B,
-    ),
-    "royal": (
-        "A lavish Vietnamese period costume-drama movie scene ('phim cổ trang'): night "
-        "inside a grand Vietnamese imperial palace chamber — carved gilded wood, silk "
-        "drapes, candles with small steady flames that never flare or spark. All "
-        "lanterns, banners and surfaces are completely BLANK with no writing or "
-        "calligraphy anywhere. EXACTLY TWO people appear in this sequence: the person "
-        "in Image 1, a young royal in exquisite plain silk royal robes, and a young "
-        "{costar}, their fiercely loyal royal guard in plain dark guard attire. The "
-        "royal stares out the window toward distant festival music, restless. The "
-        "{costar} steps in carrying a folded plain dark commoner's cloak and says in "
-        "clear English, half-smiling: \"If anyone asks — I tried to stop you.\" The "
-        "person in Image 1 grins, swinging the cloak over their robes: \"You're the "
-        "worst guard in the kingdom. Let's go.\" The two slip out of the chamber "
-        "together, hushed and giddy, the guard checking the corridor first." + _DUO_A,
-        "Continue directly from Video 1. The two arrive at a bustling Vietnamese "
-        "night lantern market just outside the palace walls — dozens of plain unlit-"
-        "text silk lanterns glowing warm and steady overhead, Vietnamese market-goers "
-        "strolling in the background (they stay in the background and never approach). "
-        "The royal, hood down now, wanders wide-eyed between the lantern stalls, "
-        "touching nothing yet beaming at everything; the {costar} stays close, "
-        "half-vigilant, half-smiling. The royal picks up one small plain paper "
-        "lantern with both hands, turns to the {costar} and says in clear English: "
-        "\"One night of freedom is worth a thousand thrones.\" The {costar} laughs "
-        "quietly: \"Then we'd better not get caught.\" They share a conspiratorial "
-        "grin and stroll deeper into the warm glow of the market together — a "
-        "charming, cinematic close." + _DUO_B,
     ),
     "noir": (
         "A REALISTIC live-action 1940s American film-noir movie scene — shot like real "
