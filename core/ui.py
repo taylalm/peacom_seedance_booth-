@@ -428,31 +428,6 @@ def poster_art(key: str) -> str:
  <rect y="356" width="300" height="44" fill="#04120A" opacity="0.8"/>
  <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#F6E08A" opacity="0.95">THE MAP WAS REAL</text>
 </svg>""",
-        # --- Film Noir: streetlamp cone, fedora silhouette, rain ---
-        "noir": """
-<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
- <defs>
-  <linearGradient id="nr-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#060608"/><stop offset="0.7" stop-color="#1A1A20"/><stop offset="1" stop-color="#2E2E36"/></linearGradient>
-  <linearGradient id="nr-cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D8D8E0" stop-opacity="0.55"/><stop offset="1" stop-color="#D8D8E0" stop-opacity="0.05"/></linearGradient>
- </defs>
- <rect width="300" height="400" fill="url(#nr-bg)"/>
- <g stroke="#8A8A98" stroke-width="1.5" opacity="0.5">
-  <path d="M40 30 L34 60 M90 10 L84 40 M140 40 L134 70 M200 20 L194 50 M250 50 L244 80 M70 110 L64 140 M180 100 L174 130 M260 140 L254 170 M110 160 L104 190 M30 190 L24 220"/>
- </g>
- <rect x="196" y="60" width="8" height="290" fill="#0A0A0C"/>
- <path d="M200 60 Q170 58 168 78 L176 80 Q180 68 200 68 Z" fill="#0A0A0C"/>
- <ellipse cx="172" cy="84" rx="10" ry="6" fill="#F6E8B0"/>
- <path d="M172 88 L92 350 L252 350 Z" fill="url(#nr-cone)"/>
- <g transform="translate(160 268)" fill="#08080A">
-  <ellipse cx="0" cy="-58" rx="26" ry="7"/>
-  <path d="M-13 -60 a13 13 0 0 1 26 0 Z"/>
-  <path d="M0 -50 c-18 0 -26 14 -24 32 l-10 60 h68 l-10 -60 c2 -18 -6 -32 -24 -32Z"/>
-  <path d="M-24 -20 L-34 30 M24 -20 L34 30" stroke="#08080A" stroke-width="10" stroke-linecap="round"/>
- </g>
- <ellipse cx="160" cy="352" rx="70" ry="8" fill="#D8D8E0" opacity="0.14"/>
- <rect y="360" width="300" height="40" fill="#060608" opacity="0.85"/>
- <text x="150" y="386" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#D8D8E0" opacity="0.9">CASE CLOSED</text>
-</svg>""",
         # --- Vietnamese Horror: old house, oil lamp, pale figure in mirror ---
         "horror": """
 <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
@@ -512,34 +487,6 @@ def poster_art(key: str) -> str:
  </g>
  <rect y="356" width="300" height="44" fill="#1A040C" opacity="0.85"/>
  <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" fill="#F6B7D8" opacity="0.95">NOBODY CROSSES ME</text>
-</svg>""",
-        # --- First Love: golden road, flame tree, bicycle silhouette ---
-        "firstlove": """
-<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
- <defs>
-  <linearGradient id="fl-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6E08A"/><stop offset="0.55" stop-color="#E8A020"/><stop offset="1" stop-color="#C87828"/></linearGradient>
- </defs>
- <rect width="300" height="400" fill="url(#fl-sky)"/>
- <circle cx="150" cy="150" r="46" fill="#FBE38A"/>
- <g fill="#2A1A06">
-  <rect x="228" y="60" width="10" height="240" rx="4"/>
-  <path d="M233 70 Q180 60 150 96 M233 70 Q290 58 296 96 M233 86 Q196 84 178 116" stroke="#2A1A06" stroke-width="8" fill="none" stroke-linecap="round"/>
- </g>
- <g fill="#C8321E" opacity="0.9">
-  <ellipse cx="170" cy="86" rx="26" ry="14"/><ellipse cx="240" cy="66" rx="30" ry="15"/><ellipse cx="282" cy="88" rx="20" ry="12"/><ellipse cx="196" cy="112" rx="18" ry="10"/>
-  <circle cx="132" cy="150" r="3"/><circle cx="180" cy="180" r="2.5"/><circle cx="220" cy="150" r="3"/><circle cx="250" cy="200" r="2.5"/><circle cx="120" cy="210" r="2.5"/>
- </g>
- <path d="M0 320 L300 300 L300 400 L0 400 Z" fill="#8A5A1E"/>
- <path d="M40 400 Q150 300 260 400" stroke="#F6E08A" stroke-width="5" fill="none" opacity="0.5" stroke-dasharray="10 12"/>
- <g transform="translate(140 300)" fill="#2A1A06">
-  <circle cx="-26" cy="26" r="16" fill="none" stroke="#2A1A06" stroke-width="4"/>
-  <circle cx="26" cy="26" r="16" fill="none" stroke="#2A1A06" stroke-width="4"/>
-  <path d="M-26 26 L-8 2 L18 2 L26 26 M-8 2 L-2 26 M-12 -2 L-2 -2 M18 2 L14 -6 L8 -6" stroke="#2A1A06" stroke-width="4" fill="none" stroke-linecap="round"/>
-  <circle cx="4" cy="-24" r="9"/>
-  <path d="M4 -16 c-10 2 -13 10 -11 20 l6 12 4 -10 4 10 6 -12 c2 -10 -1 -18 -9 -20Z"/>
- </g>
- <rect y="356" width="300" height="44" fill="#2A1A06" opacity="0.8"/>
- <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" fill="#F6E08A" opacity="0.95">THE SUMMER WE REMEMBER</text>
 </svg>""",
     }
     return art.get(key, "")

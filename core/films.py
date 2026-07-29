@@ -125,37 +125,7 @@ FILMS = [
                    "up as the light flares." + _SUFFIX),
     },
     {
-        "key": "noir", "no": "03", "emoji": "🕵️",
-        "title_th": "MIDNIGHT NOIR", "title_en": "FILM NOIR",
-        "genre_th": "MYSTERY", "genre_en": "MYSTERY · CLASSIC NOIR",
-        "logline_en": "One clue. One chase. Case closed.",
-        "synopsis": ("A grounded 1940s American-city noir — rain-slicked brick streets, "
-                     "a fleeing shadow, a chase into the dark, and the clue that closes "
-                     "the case with timeless style."),
-        "tags": "DETECTIVE · 1940s · RAIN",
-        "c1": "#0A0A0C", "c2": "#2E2E36", "c3": "#D8D8E0",
-        "prompt": ("A REALISTIC live-action 1940s American film-noir movie scene — shot "
-                   "like real 35mm film footage, absolutely photorealistic: a narrow "
-                   "downtown city street at night after rain — aged brick buildings with "
-                   "iron fire escapes, ONE streetlamp, warm light from a single diner "
-                   "window, one parked vintage 1940s car, a thin column of steam rising "
-                   "from one manhole grate. Every window and door stays shut the whole "
-                   "video; every sign and surface is completely BLANK with no lettering; "
-                   "no fog, no haze, no glow — true photographic darkness and shadows. "
-                   "EXACTLY ONE person appears: the person in Image 1, a detective ALREADY "
-                   "WEARING a plain worn trench coat and fedora from the first frame. "
-                   "Sequence, in order: (1) they stand under the streetlamp studying a "
-                   "small blank notebook, rain dripping from the hat brim; (2) they hear "
-                   "footsteps, look up sharply toward the dark end of the street, and "
-                   "walk forward — away from the camera, deeper down the street, never "
-                   "turning back; (3) under the next pool of lamplight they spot a small "
-                   "brass key on the wet asphalt, crouch, pick it up and turn it in the "
-                   "light; (4) a slow knowing smile, they tip the hat to camera and say "
-                   "in clear English: \"Case closed.\" — then walk on into the dark, "
-                   "the same direction, never returning." + _SUFFIX),
-    },
-    {
-        "key": "horror", "no": "04", "emoji": "👻",
+        "key": "horror", "no": "03", "emoji": "👻",
         "title_th": "DON'T LOOK BACK", "title_en": "VIETNAMESE HORROR",
         "genre_th": "HORROR", "genre_en": "HORROR · THRILLER",
         "logline_en": "The old house remembers you.",
@@ -184,7 +154,7 @@ FILMS = [
                    "figures." + _SUFFIX),
     },
     {
-        "key": "drama", "no": "05", "emoji": "💔",
+        "key": "drama", "no": "04", "emoji": "💔",
         "title_th": "NOBODY CROSSES ME", "title_en": "DRAMA ROYALE",
         "genre_th": "DRAMA", "genre_en": "DRAMA · MELODRAMA",
         "logline_en": "The tea is hot. The drama is hotter.",
@@ -194,46 +164,22 @@ FILMS = [
         "tags": "MELODRAMA · CONFRONTATION · ICONIC",
         "c1": "#2A0614", "c2": "#B01E4A", "c3": "#F6B7D8",
         "prompt": ("A Vietnamese melodrama movie scene, glossy TV-drama style, staged with "
-                   "precise control: an elegant modern Saigon café in soft natural "
-                   "afternoon window light. EXACTLY THREE people appear: the person in "
-                   "Image 1, one glamorous seated Vietnamese woman (the story's scheming "
-                   "'other woman'), and one waiter far in the background who never "
-                   "approaches. Sequence, in order: (1) the person in Image 1, impeccably "
-                   "dressed, walks calmly to the woman's marble table and stops, standing "
-                   "naturally; (2) they say in clear English, calm and cold: \"I think you "
-                   "know why I'm here.\" — the seated woman puts down her iced tea and "
-                   "smirks; (3) the person in Image 1 picks up the glass of water from the "
-                   "table with one hand and tips it forward so the water splashes onto the "
-                   "woman — a real, physical splash, the glass stays firmly in hand, the "
-                   "woman flinches back with a theatrical gasp, her hair and blouse wet "
-                   "(staged drama, water only, nobody hurt); (4) the person in Image 1 "
-                   "sets the glass back down gently, says in clear English: \"Stay away "
-                   "from what's mine.\" — then turns and walks out at a natural pace with "
-                   "one small hair-flip, the camera following their confident exit. "
-                   "Nothing else happens; no other actions or gestures." + _SUFFIX),
-    },
-    {
-        "key": "firstlove", "no": "06", "emoji": "🚲",
-        "title_th": "THE SUMMER WE REMEMBER", "title_en": "FIRST LOVE",
-        "genre_th": "THANH XUÂN", "genre_en": "ROMANCE · COMING OF AGE",
-        "logline_en": "A bicycle, a country road, and a heart full of summer.",
-        "synopsis": ("A nostalgic Vietnamese thanh-xuân romance — golden-hour bicycles on a "
-                     "countryside road, red phượng petals drifting, and the shy, sweet "
-                     "moment every first love remembers."),
-        "tags": "THANH XUÂN · BICYCLE · GOLDEN HOUR",
-        "c1": "#2A1A06", "c2": "#C87828", "c3": "#F6E08A",
-        "prompt": ("A nostalgic Vietnamese coming-of-age romance movie scene ('thanh xuân' "
-                   "style): a quiet countryside road at golden hour, rice fields on both "
-                   "sides, a row of flame trees (phượng) with red blossoms, petals drifting "
-                   "gently in the breeze — everything photorealistic with warm natural "
-                   "sunlight only. EXACTLY ONE person appears: the person in Image 1, a "
-                   "young university student in a plain white shirt, riding an old-style "
-                   "bicycle along the road — the bicycle ALWAYS moves FORWARD, never "
-                   "backward, with real pedaling and balance. They ride at an easy pace, "
-                   "wind in their hair, reach up and catch a falling red petal in one hand, "
-                   "then smile at the camera and say in clear English: \"Some summers stay "
-                   "with you forever.\" — riding on down the golden road, forward, as "
-                   "petals drift." + _SUFFIX),
+                   "precise control: an elegant modern Saigon café in soft natural afternoon "
+                   "window light, completely FREE of any text (no menus, signs or posters). "
+                   "THE ROLE DEPENDS ON THE PERSON IN IMAGE 1. IF A WOMAN: exactly three "
+                   "people appear — she strides in wearing an elegant long cream dress, stops "
+                   "DIRECTLY FACING a table where a Vietnamese man (her partner) sits cozily "
+                   "with a glamorous 'tiểu tam'; she says in clear English, icy calm: \"I "
+                   "think you know why I'm here.\" — splashes one glass of iced tea over "
+                   "them both (staged, liquid only), says \"Keep each other. You deserve "
+                   "it.\" and struts out with a hair-flip. IF A MAN: exactly three people "
+                   "appear — HE is the cheating partner in a stylish plain shirt, sitting "
+                   "cozily with the glamorous 'tiểu tam' when his partner, a Vietnamese "
+                   "woman in a long cream dress, storms up FACING them; he stammers in clear "
+                   "English: \"It's not what it looks like—\" — she splashes iced tea over "
+                   "them both and struts out; drenched, he looks into the camera and says "
+                   "sheepishly: \"...I deserved that.\" The man is NEVER the one "
+                   "confronting; no same-gender couples." + _SUFFIX),
     },
 ]
 
@@ -339,56 +285,6 @@ DUO = {
         "it up: \"Next time... we bring a bigger bag.\" They grin and walk out into the "
         "light — a classic adventure close." + _DUO_B,
     ),
-    "noir": (
-        "A REALISTIC live-action 1940s American film-noir movie scene — shot like real "
-        "35mm film footage, absolutely photorealistic: a narrow downtown city street at "
-        "night after rain — aged brick buildings with iron fire escapes, ONE streetlamp "
-        "at the near end, warm light from a single diner window, one parked vintage "
-        "1940s car, a thin column of steam rising from one manhole grate. THE SET IS "
-        "FIXED: every window, door and shopfront stays SHUT for the entire video — "
-        "nothing opens, closes or changes; every sign and surface is completely BLANK "
-        "with no lettering; no fog, no haze, no glow effects — true photographic "
-        "darkness, real shadows, natural skin tones. EXACTLY THREE people exist: the "
-        "person in Image 1 and a young {costar} — two detectives ALREADY WEARING plain "
-        "worn trench coats AND fedora hats from the very first frame, hats firmly on "
-        "throughout. POSITIONS ARE PINNED: the person from Image 1 stays on the LEFT "
-        "and the {costar} on the RIGHT for the entire video, including while running — "
-        "they NEVER swap sides. Seen from behind, each keeps a clearly distinct, "
-        "constant silhouette — same body, same build, same hair, same gender-"
-        "presentation in every frame; neither ever changes into a different person "
-        "even for a single frame. Plus ONE fleeing man in a long black coat, seen "
-        "ONLY from behind, who never shows his face. CHASE GEOMETRY, exact and simple: the street runs "
-        "straight AWAY from the camera into the dark. Sequence, in order: (1) the two "
-        "detectives stand under the near streetlamp studying a small blank notebook; "
-        "(2) the man in the black coat bursts from a recessed doorway AHEAD of them "
-        "and sprints straight AWAY from the camera, down the street into the dark; "
-        "(3) the {costar} snaps in clear English: \"There he goes!\" and the person "
-        "in Image 1 answers, already running: \"Stay on him!\"; (4) BOTH detectives "
-        "sprint AFTER the fleeing man in the SAME direction he ran — away from the "
-        "camera, following his exact path down the middle of the street, never turning "
-        "around, never running toward the camera, never returning to where they "
-        "started — the gap slowly closing, real sprinting with splashing footsteps and "
-        "coats flaring, the camera tracking BEHIND them. The sequence ends mid-chase "
-        "with both detectives still running away from camera, the black coat just "
-        "visible ahead." + _DUO_A,
-        "Continue directly from Video 1 — the IDENTICAL street continuing FARTHER "
-        "along in the same direction (a new stretch of the same street, NOT the "
-        "starting point; the streetlamp and diner from the start are far behind and "
-        "never seen again). Same rules: everything shut and unchanged, blank surfaces, "
-        "photorealistic darkness. Sequence, in order: (1) ahead of the detectives the "
-        "fleeing man cuts hard around a brick corner and is gone; (2) the two "
-        "detectives reach that same corner seconds later and pull up, breathing hard — "
-        "the side street beyond is empty, he has escaped, and he never appears again; "
-        "(3) the {costar} slaps the brick wall in frustration: \"Lost him!\"; (4) "
-        "the person from Image 1 scans the ground — and there in the gutter under the "
-        "corner lamp lies a small brass key; they crouch, pick it up, and turn it "
-        "slowly in the light with a knowing smile: \"No... he lost THIS.\"; (5) the "
-        "{costar} leans in, then laughs softly: \"The station locker. We've got him "
-        "by morning.\" The person from Image 1 tips their hat: \"Case closed, "
-        "partner.\" They shake hands once and walk on TOGETHER down the side street — "
-        "the same forward direction, never back the way they came — a grounded, "
-        "stylish close." + _DUO_B,
-    ),
     "horror": (
         "A Vietnamese horror-movie scene, staged with precise control: inside an old "
         "traditional wooden Vietnamese house at midnight — dark carved-wood furniture, "
@@ -416,7 +312,11 @@ DUO = {
         "look at each other and burst into nervous laughter under the moonlight — a "
         "fun, spooky, shareable close." + _DUO_B,
     ),
-    "drama": (
+    # Drama branches by guest gender: the man is ALWAYS the cheater being
+    # caught — never the one doing đánh ghen. costar "man" => female guest
+    # confronts; costar "woman" => male guest is caught by his partner.
+    "drama": {
+        "man": (
         "A Vietnamese melodrama movie scene, glossy TV-drama style, staged with precise "
         "control: an elegant modern Saigon café terrace in soft natural afternoon "
         "window light — the café interior is completely FREE of any text: no menus, no "
@@ -458,40 +358,57 @@ DUO = {
         "camera following their confident exit while the two cheaters sit frozen and "
         "dripping behind them — an iconic, deliciously dramatic close." + _DUO_B,
     ),
-    "firstlove": (
-        "A nostalgic Vietnamese coming-of-age romance movie scene ('thanh xuân' style): "
-        "a quiet countryside road at golden hour, rice fields on both sides, a row of "
-        "flame trees (phượng) with red blossoms, petals drifting gently in the breeze — "
-        "photorealistic, warm natural sunlight only. EXACTLY TWO people appear: the "
-        "person in Image 1 and a young {costar}, both young university students — one "
-        "in a plain white áo dài or white blouse, the other in a plain white shirt and "
-        "dark trousers. Each rides an old-style bicycle, side by side along the road — "
-        "the bicycles ALWAYS move FORWARD, never backward, with real pedaling, real "
-        "balance, natural wobble. POSITIONS PINNED: the person from Image 1 rides on "
-        "the LEFT, the {costar} on the RIGHT, never swapping. They glance at each "
-        "other shyly as they ride. The {costar} says in clear English, half-teasing: "
-        "\"You always ride this slowly?\" The person in Image 1 smiles at the road "
-        "ahead: \"Only when the company's good.\" A drift of red petals swirls "
-        "between them as they ride on, both smiling to themselves." + _DUO_A,
-        "Continue directly from Video 1 — same road, same golden light, same TWO "
-        "people, same bicycles, still riding FORWARD. They slow and stop side by side "
-        "under the biggest flame tree, still astride their bicycles, feet down. The "
-        "{costar} reaches up, picks one red blossom from a low branch, and holds it "
-        "out; the person in Image 1 takes it gently, genuinely surprised, meeting "
-        "their eyes. The {costar} says softly in clear English: \"So you'll remember "
-        "this summer.\" The person from Image 1 looks at the blossom, then back up "
-        "with a warm, shy smile: \"I wasn't planning to forget it.\" A breeze sends "
-        "petals drifting around them as they stand smiling at each other under the "
-        "red tree, golden light everywhere — a sweet, timeless close." + _DUO_B,
-    ),
+        "woman": (
+        "A Vietnamese melodrama movie scene, glossy TV-drama style, staged with precise "
+        "control: an elegant modern Saigon café terrace in soft natural afternoon "
+        "window light — the café interior completely FREE of any text: no menus, no "
+        "signs, no chalkboards, no posters. EXACTLY THREE people appear in this entire "
+        "video and NEVER anyone else — no waiter, no passers-by: (a) the person in "
+        "Image 1 — a MAN, the story's cheating partner, dressed in a stylish plain "
+        "shirt and slacks; (b) a young {costar} — his PARTNER, the betrayed woman, "
+        "dressed in an elegant flowing LONG CREAM-colored dress (soft ivory, ankle-"
+        "length, refined) with heels; (c) one glamorous Vietnamese woman — the "
+        "story's notorious 'tiểu tam'. Sequence, in order: (1) the person in Image 1 "
+        "sits cozily at a marble café table WITH the glamorous tiểu tam beside him, "
+        "laughing together, her hand resting on his arm, two glasses of iced tea on "
+        "the table; (2) the {costar} walks in, stops dead at the sight — a long, "
+        "devastating beat as her expression hardens from shock to icy calm; (3) she "
+        "walks slowly to the table and stops DIRECTLY FACING the seated pair — body "
+        "and eyes toward them at all times, never turning her back — and the person "
+        "in Image 1 freezes mid-laugh, going pale, and stammers in clear English: "
+        "\"...It's — it's not what it looks like.\"; (4) the tiểu tam just smirks "
+        "and clings tighter to his arm; the {costar} stands facing them in dead "
+        "silence, tension at maximum." + _DUO_A,
+        "Continue directly from Video 1 — the same THREE people only, nobody else "
+        "ever appears; the {costar} remains DIRECTLY FACING the seated pair until her "
+        "exit. Sequence, in order: (1) the {costar} says in clear English, quiet and "
+        "razor-sharp: \"Funny. It looks exactly like what it is.\"; (2) she calmly "
+        "picks up ONE glass of iced tea and tips it forward so it splashes over BOTH "
+        "the person from Image 1 and the tiểu tam — one real physical splash, the "
+        "glass staying firmly in hand; the two flinch back with theatrical gasps, "
+        "drenched (staged drama, liquid only, nobody hurt, nobody touched); (3) she "
+        "sets the glass down gently and delivers the final line in clear English: "
+        "\"Keep each other. You deserve it.\" — then turns and struts out at a "
+        "queenly pace with one hair-flip; (4) the person from Image 1 sits frozen, "
+        "dripping, iced tea running off his hair — he looks straight into the camera, "
+        "sighs, and says sheepishly in clear English: \"...I deserved that.\" — a "
+        "hilarious, iconic close." + _DUO_B,
+        ),
+    },
 }
 
 
 def duo_prompts(film_key: str, costar_gender: str):
     """Return (sequence_a, sequence_b) for the 30s version. The AI companion is
-    always Vietnamese; costar_gender is 'woman' or 'man'."""
+    always Vietnamese; costar_gender is 'woman' or 'man'. A theme may provide a
+    dict keyed by costar gender when the storyline depends on who the guest is
+    (e.g. drama: the man is always the cheater, never the one doing đánh ghen)."""
     pair = DUO.get(film_key)
     if not pair:
         return None
+    if isinstance(pair, dict):
+        pair = pair.get(costar_gender)
+        if not pair:
+            return None
     costar = f"Vietnamese {costar_gender}"
     return tuple(p.replace("{costar}", costar) for p in pair)
