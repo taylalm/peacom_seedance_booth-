@@ -188,9 +188,12 @@ _DUO_A = (
     "and share the frame. The person from Image 1 keeps the exact face, hair and look of "
     "Image 1 the whole time — the face must stay EXACTLY identical to Image 1 in every "
     "single frame, with ZERO morphing or drifting even during fast motion, and kept "
-    "clearly visible to the camera as much as possible." + _RULES + " End the sequence "
-    "on a brief, stable, holdable moment — both people settling into a natural still "
-    "pose for the final second — never cut off mid-action. 15 seconds."
+    "clearly visible to the camera as much as possible." + _RULES + " Natural motion "
+    "continues flowing through the VERY LAST frame of the sequence — the characters "
+    "keep breathing, shifting and moving naturally to the end; NEVER freeze, hold a "
+    "static pose, or stand motionless at the end of the sequence — simply avoid ending "
+    "in the middle of a fast action: end on calm, continuous, natural movement. "
+    "15 seconds."
 )
 _DUO_B = (
     " Continue the SAME film from Video 1 — the exact same two people (the face of the "

@@ -17,3 +17,6 @@ scratch_renders/
 
 # local editor/session config
 .claude/
+
+# test faces (never commit)
+test_*.jpg
