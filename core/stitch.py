@@ -39,7 +39,7 @@ LOGO = Path(__file__).resolve().parent.parent / "assets" / "byteplus_logo.png"
 
 
 def watermark(src: Path, out_path: Path, logo: Path = LOGO) -> Path:
-    """Overlay the BytePlus logo (top-right, 24px margin) onto src.
+    """Overlay the BytePlus logo (bottom-right, 24px margin) onto src.
     If the logo file is missing, just pass the video through unchanged."""
     if not Path(logo).exists():
         if Path(src) != Path(out_path):
@@ -48,7 +48,7 @@ def watermark(src: Path, out_path: Path, logo: Path = LOGO) -> Path:
     ff = imageio_ffmpeg.get_ffmpeg_exe()
     cmd = [
         ff, "-y", "-i", str(src), "-i", str(logo),
-        "-filter_complex", "[0:v][1:v]overlay=W-w-24:24[v]",
+        "-filter_complex", "[0:v][1:v]overlay=W-w-24:H-h-24[v]",
         "-map", "[v]", "-map", "0:a?",
         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "copy",
         "-movflags", "+faststart",
