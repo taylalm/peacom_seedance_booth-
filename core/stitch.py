@@ -33,3 +33,28 @@ def concat(clips: list[Path], out_path: Path) -> Path:
     if proc.returncode != 0:
         raise RuntimeError(f"ffmpeg concat failed: {proc.stderr[-500:]}")
     return out_path
+
+
+LOGO = Path(__file__).resolve().parent.parent / "assets" / "byteplus_logo.png"
+
+
+def watermark(src: Path, out_path: Path, logo: Path = LOGO) -> Path:
+    """Overlay the BytePlus logo (top-right, 24px margin) onto src.
+    If the logo file is missing, just pass the video through unchanged."""
+    if not Path(logo).exists():
+        if Path(src) != Path(out_path):
+            Path(src).replace(out_path)
+        return out_path
+    ff = imageio_ffmpeg.get_ffmpeg_exe()
+    cmd = [
+        ff, "-y", "-i", str(src), "-i", str(logo),
+        "-filter_complex", "[0:v][1:v]overlay=W-w-24:24[v]",
+        "-map", "[v]", "-map", "0:a?",
+        "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "copy",
+        "-movflags", "+faststart",
+        str(out_path),
+    ]
+    proc = subprocess.run(cmd, capture_output=True, text=True)
+    if proc.returncode != 0:
+        raise RuntimeError(f"ffmpeg watermark failed: {proc.stderr[-500:]}")
+    return out_path

@@ -205,6 +205,17 @@ def _render_live(job: dict) -> str:
     return _render_solo(job, asset_uri)
 
 
+def _brand(video: Path, ticket: str) -> None:
+    """Overlay the BytePlus logo on a finished render (best effort)."""
+    from core import stitch
+    try:
+        tmp = video.with_suffix(".brand.mp4")
+        stitch.watermark(video, tmp)
+        tmp.replace(video)
+    except Exception:
+        log.exception("watermark failed for %s — using unbranded video", ticket)
+
+
 def _render_solo(job: dict, asset_uri: str | None) -> str:
     film = films.FILM_BY_KEY[job["film_key"]]
     storage.ensure_dirs()
@@ -212,6 +223,7 @@ def _render_solo(job: dict, asset_uri: str | None) -> str:
     if not asset_uri:  # inline fallback path (no asset creds)
         return _run_task_inline(job, film["prompt"], dest)
     _run_task(job, film["prompt"], image_refs=[asset_uri], dest=dest)
+    _brand(dest, job["ticket"])
     return f"gallery/{dest.name}"
 
 
@@ -226,6 +238,7 @@ def _run_task_inline(job: dict, prompt: str, dest: Path) -> str:
     result = seedance.wait_for_task(_config["api_key"], task_id,
                                     on_status=lambda s: log.info("%s %s", job["ticket"], s))
     seedance.download(seedance.video_url(result), dest)
+    _brand(dest, job["ticket"])
     return f"gallery/{dest.name}"
 
 
@@ -252,6 +265,7 @@ def _render_duo(job: dict, visitor_uri: str, duo) -> str:
     _run_task(job, seq_b_prompt, image_refs=refs, video_ref=seq_a_url, dest=tmp_b)
 
     stitch.concat([tmp_a, tmp_b], final)
+    _brand(final, job["ticket"])
     tmp_a.unlink(missing_ok=True)
     tmp_b.unlink(missing_ok=True)
     log.info("%s duo stitched -> %s", job["ticket"], final.name)

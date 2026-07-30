@@ -80,6 +80,9 @@ def render_duo(film: dict, asset_uri: str) -> tuple[str, str]:
     _run(key, seq_b, [asset_uri], seq_a_url, tmp_b)
 
     stitch.concat([tmp_a, tmp_b], final)
+    branded = OUT / f"{key}_duo_branded.mp4"
+    stitch.watermark(final, branded)
+    branded.replace(final)
     tmp_a.unlink(missing_ok=True)
     tmp_b.unlink(missing_ok=True)
     _, url = tos_store.upload_video(CFG["tos"], final.read_bytes(),
