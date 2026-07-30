@@ -125,61 +125,55 @@ FILMS = [
                    "up as the light flares." + _SUFFIX),
     },
     {
-        "key": "horror", "no": "03", "emoji": "👻",
-        "title_th": "DON'T LOOK BACK", "title_en": "VIETNAMESE HORROR",
-        "genre_th": "HORROR", "genre_en": "HORROR · THRILLER",
-        "logline_en": "The old house remembers you.",
-        "synopsis": ("A Vietnamese horror-movie scene — an old wooden house at midnight, a "
-                     "flickering oil lamp, and a pale figure in white that shouldn't be "
-                     "there. Classic Vietnamese ghost-film chills with a fun scare."),
-        "tags": "GHOST · OLD HOUSE · MIDNIGHT",
-        "c1": "#04140E", "c2": "#0E3A2A", "c3": "#B8E8D0",
-        "prompt": ("A Vietnamese horror-movie scene, staged with precise control: inside an "
-                   "old traditional wooden Vietnamese house at midnight — dark carved-wood "
-                   "furniture, ONE oil lamp as the only light source, its warm flame "
-                   "flickering naturally, moonlight through slatted shutters. EXACTLY TWO "
-                   "figures exist in this video: the person in Image 1, and ONE pale "
-                   "ghostly woman in a white dress with long black hair who appears ONLY "
-                   "inside the mirror, ONLY once, for exactly one second — she never "
-                   "appears outside the mirror, never moves toward anyone, and nothing else "
-                   "in the house ever moves by itself except one door pushed by a visible "
-                   "draft. Sequence, in order: (1) the person in Image 1 walks slowly "
-                   "through the house holding the oil lamp, floorboards creaking under "
-                   "their real steps; (2) a draft makes one wooden door swing slowly shut "
-                   "with a creak — they freeze and whisper in clear English: \"...Hello?\"; "
-                   "(3) in the dusty mirror behind them the pale woman appears for one "
-                   "second, then is gone when they spin around; (4) eyes wide, they back "
-                   "toward the exit, look into the camera and whisper: \"Time to go.\" — "
-                   "then hurry out. Nothing else happens; no other scares, objects, or "
-                   "figures." + _SUFFIX),
+        "key": "mountain", "no": "03", "emoji": "🏔️",
+        "title_th": "TO THE TOP, TOGETHER", "title_en": "MOUNTAIN PEAK",
+        "genre_th": "ADVENTURE", "genre_en": "ADVENTURE · SUMMIT",
+        "logline_en": "Two climbers. One summit. All the way together.",
+        "synopsis": ("Soft morning light on a snow-covered range — two climbing partners "
+                     "help each other up the final steps and reach the peak side by side. "
+                     "A warm, triumphant summit story."),
+        "tags": "SNOW · CLIMBING · SUMMIT",
+        "c1": "#0E1E30", "c2": "#3A6A9A", "c3": "#EAF6FF",
+        "prompt": ("A cinematic mountaineering movie scene: soft morning sunlight across a "
+                   "beautiful snow-covered mountain range, photorealistic alpine light. "
+                   "EXACTLY ONE person appears: the person in Image 1 in a professional "
+                   "plain mountaineering outfit — climbing harness, gloves, light backpack "
+                   "— walking a gentle snowy trail with real weighted steps, breath visible "
+                   "in the cold air, face clearly visible toward the camera. They pause at "
+                   "a ridge, take in the sweeping view of peaks and clouds, smile and say "
+                   "in clear English: \"What a perfect day to climb.\" Then they push up "
+                   "the final snowy rise with real effort and step onto the peak, raise "
+                   "both arms wide against the sunlit clouds and say joyfully: \"Made it "
+                   "— all the way.\" — holding the happy pose as the wind moves the "
+                   "snow." + _SUFFIX),
     },
     {
-        "key": "drama", "no": "04", "emoji": "💔",
-        "title_th": "NOBODY CROSSES ME", "title_en": "DRAMA ROYALE",
-        "genre_th": "DRAMA", "genre_en": "DRAMA · MELODRAMA",
-        "logline_en": "The tea is hot. The drama is hotter.",
-        "synopsis": ("The Vietnamese melodrama everyone secretly loves — a glamorous café "
-                     "confrontation with the 'tiểu tam', a dramatic glass of water, a "
-                     "hair-flip exit. Pure drama-queen cinema."),
-        "tags": "MELODRAMA · CONFRONTATION · ICONIC",
-        "c1": "#2A0614", "c2": "#B01E4A", "c3": "#F6B7D8",
-        "prompt": ("A Vietnamese melodrama movie scene, glossy TV-drama style, staged with "
-                   "precise control: an elegant modern Saigon café in soft natural afternoon "
-                   "window light, completely FREE of any text (no menus, signs or posters). "
-                   "THE ROLE DEPENDS ON THE PERSON IN IMAGE 1. IF A WOMAN: exactly three "
-                   "people appear — she strides in wearing an elegant long cream dress, stops "
-                   "DIRECTLY FACING a table where a Vietnamese man (her partner) sits cozily "
-                   "with a glamorous 'tiểu tam'; she says in clear English, icy calm: \"I "
-                   "think you know why I'm here.\" — splashes one glass of iced tea over "
-                   "them both (staged, liquid only), says \"Keep each other. You deserve "
-                   "it.\" and struts out with a hair-flip. IF A MAN: exactly three people "
-                   "appear — HE is the cheating partner in a stylish plain shirt, sitting "
-                   "cozily with the glamorous 'tiểu tam' when his partner, a Vietnamese "
-                   "woman in a long cream dress, storms up FACING them; he stammers in clear "
-                   "English: \"It's not what it looks like—\" — she splashes iced tea over "
-                   "them both and struts out; drenched, he looks into the camera and says "
-                   "sheepishly: \"...I deserved that.\" The man is NEVER the one "
-                   "confronting; no same-gender couples." + _SUFFIX),
+        "key": "hoian", "no": "04", "emoji": "🏮",
+        "title_th": "THE NIGHT THE RIVER GLOWS", "title_en": "LANTERN NIGHTS",
+        "genre_th": "FESTIVAL", "genre_en": "FESTIVAL · HỘI AN",
+        "logline_en": "Lanterns on the water. Fireworks in the sky.",
+        "synopsis": ("A warm evening at a Hội An riverside lantern festival — glowing "
+                     "lanterns, street food, and a golden firework finale over the water. "
+                     "The night every traveler dreams about."),
+        "tags": "HỘI AN · LANTERNS · FIREWORKS",
+        "c1": "#1A0806", "c2": "#B0501E", "c3": "#F6C55C",
+        "prompt": ("A cinematic travel movie scene: warm evening light over the lively "
+                   "riverside of Hội An ancient town, Vietnam — yellow-walled heritage "
+                   "houses, hundreds of plain silk lanterns glowing warm and steady (all "
+                   "lanterns completely blank, no writing), food stalls, festival visitors "
+                   "strolling in the background who never approach. EXCEPTION to the "
+                   "effects rule: this scene DOES include real festival FIREWORKS — real "
+                   "pyrotechnics that launch from across the river, burst high in the "
+                   "night sky and fade naturally, reflected in the water; they behave with "
+                   "real physics and are the only exception — lanterns and lamps still "
+                   "burn small and steady. The person in Image 1, in comfortable plain "
+                   "travel clothes, strolls through the festival with relaxed curiosity, "
+                   "buys a small local snack at a stall (handing the vendor money, taking "
+                   "the snack), walks to a peaceful spot at the river's edge and says in "
+                   "clear English: \"This place feels so alive.\" A golden firework "
+                   "rises and bursts over the river; they watch it bloom, smile, turn "
+                   "slightly to the camera with the glowing river behind them and say: "
+                   "\"What a beautiful night.\"" + _SUFFIX),
     },
 ]
 
@@ -285,116 +279,72 @@ DUO = {
         "it up: \"Next time... we bring a bigger bag.\" They grin and walk out into the "
         "light — a classic adventure close." + _DUO_B,
     ),
-    "horror": (
-        "A Vietnamese horror-movie scene, staged with precise control: inside an old "
-        "traditional wooden Vietnamese house at midnight — dark carved-wood furniture, "
-        "ONE oil lamp as the only light source with a naturally flickering flame, "
-        "moonlight through slatted shutters. EXACTLY THREE figures exist in this video: "
-        "the person in Image 1, a young {costar}, and ONE pale ghostly woman in a white "
-        "dress with long black hair who appears ONLY inside the mirror and ONLY for one "
-        "second — she never appears outside the mirror and never moves toward anyone; "
-        "nothing in the house ever moves by itself except one door pushed by a visible "
-        "draft. Sequence, in order: (1) the two friends walk slowly through the "
-        "creaking house, the {costar} holding the oil lamp, real careful footsteps; "
-        "(2) a draft makes one wooden door swing slowly shut with a creak — they freeze "
-        "back to back; (3) the {costar} whispers in clear English: \"Tell me that was "
-        "the wind.\" — the person in Image 1 whispers back: \"...That wasn't the "
-        "wind.\"; (4) in the dusty mirror behind them the pale woman appears for one "
-        "second, then is gone when they both spin around, eyes wide." + _DUO_A,
-        "Continue directly from Video 1 — same three-figure rule; the ghostly woman "
-        "appears ONCE more, far down the corridor, standing still for one second only, "
-        "then the scene contains only the two friends. When she appears, the two grab "
-        "each other's arms and RUN — a realistic panicked sprint through the creaking "
-        "house, out the front door, into the moonlit courtyard, where they stop and "
-        "double over catching their breath, hands on knees, completely natural human "
-        "movement. The {costar} gasps in clear English: \"We are NEVER coming back "
-        "here.\" The person from Image 1, half-laughing half-terrified: \"Deal.\" They "
-        "look at each other and burst into nervous laughter under the moonlight — a "
-        "fun, spooky, shareable close." + _DUO_B,
+    "mountain": (
+        "A cinematic mountaineering movie scene: soft morning sunlight across a "
+        "beautiful snow-covered mountain range, photorealistic alpine light. EXACTLY "
+        "TWO people appear: the person in Image 1 and a young {costar}, climbing "
+        "partners, both in professional plain mountaineering outfits — climbing "
+        "harnesses, gloves, light backpacks — both faces clearly visible toward the "
+        "camera throughout. Sequence, in order: (1) the two stand together on a gentle "
+        "snowy mountain trail; the {costar} looks toward the summit and smiles: \"What "
+        "a perfect day to climb.\"; (2) medium close-up of the person in Image 1 "
+        "smiling warmly with an encouraging nod: \"And even better with good "
+        "company.\"; (3) front-facing tracking shot as both climbers walk side by side "
+        "up the snowy trail with real weighted steps, talking and laughing, helping "
+        "each other over small rocks, faces relaxed and visible; the {costar} grins: "
+        "\"Race you to that ridge?\" — the person in Image 1 answers: \"Only if we "
+        "finish together.\"; (4) they reach the ridge and stop to admire the sweeping "
+        "view; the {costar} offers a small snack from their backpack and the two share "
+        "it, smiling, the summit rising beautifully behind them." + _DUO_A,
+        "Continue directly from Video 1 — same two climbers, same mountain, higher up "
+        "near the summit. Sequence, in order: (1) they reach a small snowy step that "
+        "is slightly difficult to cross; the {costar} looks at it, then turns to the "
+        "person from Image 1 with a playful expression: \"A little help?\"; (2) "
+        "close-up of the person from Image 1 smiling, reaching out a hand and helping "
+        "the {costar} step safely onto the higher ground — real supporting grip and "
+        "weight: \"That's what climbing partners are for.\"; (3) the {costar} "
+        "reaches back and helps the person from Image 1 climb up too; they laugh, "
+        "clasp hands, and walk on toward the summit; the {costar}: \"Now we're "
+        "even.\" — the person from Image 1: \"Not yet. You owe me a summit "
+        "photo.\"; (4) both step onto the mountain peak side by side; warm sunlight "
+        "breaks through the clouds as they raise their arms, laugh, and take a joyful "
+        "selfie together on a plain phone, both faces clearly visible and full of "
+        "happiness; the {costar}: \"We made it!\" — the person from Image 1: "
+        "\"Together, all the way.\" — a triumphant, warm close." + _DUO_B,
     ),
-    # Drama branches by guest gender: the man is ALWAYS the cheater being
-    # caught — never the one doing đánh ghen. costar "man" => female guest
-    # confronts; costar "woman" => male guest is caught by his partner.
-    "drama": {
-        "man": (
-        "A Vietnamese melodrama movie scene, glossy TV-drama style, staged with precise "
-        "control: an elegant modern Saigon café terrace in soft natural afternoon "
-        "window light — the café interior is completely FREE of any text: no menus, no "
-        "signs, no chalkboards, no posters, no labels, no wall art with writing of any "
-        "kind. EXACTLY THREE people appear in this entire video and NEVER "
-        "anyone else — no waiter, no passers-by, no background people at all: (a) the "
-        "person in Image 1, dressed in an elegant flowing LONG CREAM-colored dress "
-        "(soft ivory/cream tone, ankle-length, refined and expensive-looking) with heels — "
-        "NEVER black clothing, NEVER a school uniform, NEVER the clothing from the "
-        "reference photo; (b) a young {costar} — the person in Image 1's PARTNER, "
-        "who is cheating; (c) one glamorous Vietnamese woman — the story's notorious "
-        "'tiểu tam'. Sequence, in order: (1) the {costar} and the glamorous woman sit "
-        "cozily together at a marble café table, laughing, her hand resting on the "
-        "{costar}'s arm, two glasses of iced tea on the table; (2) the person in "
-        "Image 1 walks in, stops dead at the sight — a long, devastating beat as "
-        "their expression hardens from shock to icy calm; (3) they walk slowly to the "
-        "table and stop DIRECTLY FACING the seated couple — body and face turned "
-        "TOWARD the two of them at all times, eyes locked on them, NEVER turning "
-        "their back to the couple while confronting them (the camera views the "
-        "confrontation from a three-quarter angle so the Image 1 face stays visible "
-        "while clearly facing the pair); the {costar} freezes mid-laugh, going pale, "
-        "and stammers in clear English: \"...It's — it's not what it looks like.\"; "
-        "(4) the glamorous woman just smirks and clings tighter to the {costar}'s "
-        "arm; the person in Image 1 stands facing them in dead silence, tension at "
-        "maximum." + _DUO_A,
-        "Continue directly from Video 1 — the same THREE people only, nobody else "
-        "ever appears; the person from Image 1 remains DIRECTLY FACING the seated "
-        "couple throughout steps 1-3, body and eyes toward them, never turning away "
-        "until the final exit. Sequence, in order: (1) the person from Image 1 says "
-        "in clear English, quiet and razor-sharp: \"Funny. It looks exactly like "
-        "what it is.\"; (2) they calmly pick up ONE glass of iced tea from the table with one "
-        "hand and tip it forward so it splashes over BOTH the {costar} and the "
-        "glamorous woman — one real physical splash, the glass staying firmly in "
-        "hand; the two flinch back with theatrical gasps, drenched (staged drama, "
-        "liquid only, nobody hurt, nobody touched); (3) the person from Image 1 sets "
-        "the glass down gently, looks at the pair and delivers the final line in "
-        "clear English: \"Keep each other. You deserve it.\"; (4) they turn and walk "
-        "out at a natural, unhurried, queenly pace with one small hair-flip — the "
-        "camera following their confident exit while the two cheaters sit frozen and "
-        "dripping behind them — an iconic, deliciously dramatic close." + _DUO_B,
+    "hoian": (
+        "A cinematic travel movie scene: warm evening light over the lively riverside "
+        "of Hội An ancient town, Vietnam — yellow-walled heritage houses, hundreds of "
+        "plain silk lanterns glowing warm and steady (all lanterns completely blank, "
+        "no writing anywhere), food stalls, festival visitors strolling in the "
+        "background who never approach the leads. EXACTLY TWO featured people: the "
+        "person in Image 1 and a young {costar}, two friends in comfortable plain "
+        "travel clothes. Sequence, in order: (1) the two stroll together through the "
+        "lantern-lit festival street, relaxed and curious, faces clearly visible; "
+        "(2) they stop at a street-food stall — the person in Image 1 hands the "
+        "vendor money and receives two small local snacks, passing one to the "
+        "{costar}; (3) walking on toward the river, the {costar} takes a bite and "
+        "smiles: \"This place feels so alive.\" — the person in Image 1: \"Wait "
+        "until you see the river.\"; (4) they find a peaceful viewing spot at the "
+        "river's edge, lantern light dancing on the water, just as a first firework "
+        "rises into the night sky. EXCEPTION to the effects rule: this scene DOES "
+        "include real festival FIREWORKS — real pyrotechnics that launch, burst and "
+        "fade with real physics, reflected in the river; lanterns and lamps still "
+        "burn small and steady." + _DUO_A,
+        "Continue directly from Video 1 — same two friends at the Hội An riverside. "
+        "The fireworks EXCEPTION still applies: real pyrotechnics only, everything "
+        "else steady. Sequence, in order: (1) a large golden firework blooms above "
+        "the river — both watch with happy, impressed expressions, the light playing "
+        "on their faces; (2) more fireworks fill the sky in red, blue, gold and "
+        "purple as the two watch calmly side by side; (3) the person from Image 1 "
+        "takes a few photos on a plain phone, then lowers it to simply enjoy the "
+        "moment; the {costar} says softly: \"Some things you don't watch through a "
+        "screen.\" — the person from Image 1 smiles: \"Agreed.\"; (4) a final "
+        "spread of golden fireworks crosses the sky; the two turn slightly toward "
+        "the camera with the glowing river and fireworks behind them, and the person "
+        "from Image 1 says warmly in clear English: \"What a beautiful night we got "
+        "to experience.\" — a glowing, peaceful close." + _DUO_B,
     ),
-        "woman": (
-        "A Vietnamese melodrama movie scene, glossy TV-drama style, staged with precise "
-        "control: an elegant modern Saigon café terrace in soft natural afternoon "
-        "window light — the café interior completely FREE of any text: no menus, no "
-        "signs, no chalkboards, no posters. EXACTLY THREE people appear in this entire "
-        "video and NEVER anyone else — no waiter, no passers-by: (a) the person in "
-        "Image 1 — a MAN, the story's cheating partner, dressed in a stylish plain "
-        "shirt and slacks; (b) a young {costar} — his PARTNER, the betrayed woman, "
-        "dressed in an elegant flowing LONG CREAM-colored dress (soft ivory, ankle-"
-        "length, refined) with heels; (c) one glamorous Vietnamese woman — the "
-        "story's notorious 'tiểu tam'. Sequence, in order: (1) the person in Image 1 "
-        "sits cozily at a marble café table WITH the glamorous tiểu tam beside him, "
-        "laughing together, her hand resting on his arm, two glasses of iced tea on "
-        "the table; (2) the {costar} walks in, stops dead at the sight — a long, "
-        "devastating beat as her expression hardens from shock to icy calm; (3) she "
-        "walks slowly to the table and stops DIRECTLY FACING the seated pair — body "
-        "and eyes toward them at all times, never turning her back — and the person "
-        "in Image 1 freezes mid-laugh, going pale, and stammers in clear English: "
-        "\"...It's — it's not what it looks like.\"; (4) the tiểu tam just smirks "
-        "and clings tighter to his arm; the {costar} stands facing them in dead "
-        "silence, tension at maximum." + _DUO_A,
-        "Continue directly from Video 1 — the same THREE people only, nobody else "
-        "ever appears; the {costar} remains DIRECTLY FACING the seated pair until her "
-        "exit. Sequence, in order: (1) the {costar} says in clear English, quiet and "
-        "razor-sharp: \"Funny. It looks exactly like what it is.\"; (2) she calmly "
-        "picks up ONE glass of iced tea and tips it forward so it splashes over BOTH "
-        "the person from Image 1 and the tiểu tam — one real physical splash, the "
-        "glass staying firmly in hand; the two flinch back with theatrical gasps, "
-        "drenched (staged drama, liquid only, nobody hurt, nobody touched); (3) she "
-        "sets the glass down gently and delivers the final line in clear English: "
-        "\"Keep each other. You deserve it.\" — then turns and struts out at a "
-        "queenly pace with one hair-flip; (4) the person from Image 1 sits frozen, "
-        "dripping, iced tea running off his hair — he looks straight into the camera, "
-        "sighs, and says sheepishly in clear English: \"...I deserved that.\" — a "
-        "hilarious, iconic close." + _DUO_B,
-        ),
-    },
 }
 
 
