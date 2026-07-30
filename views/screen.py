@@ -48,12 +48,18 @@ components.html(
              font-family:Georgia,'Times New Roman',serif;}
   #stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;}
   video{height:100vh;max-width:100vw;object-fit:contain;background:#000;}
-  #caption{position:fixed;left:50%;transform:translateX(-50%);bottom:34px;
-           width:min(48vh,86vw);text-align:center;color:#F6E08A;
+  #caption{position:fixed;left:50%;transform:translateX(-50%);top:18px;
+           width:min(60vh,86vw);text-align:center;color:#F6E08A;
            text-shadow:0 2px 10px #000;pointer-events:none;}
-  #caption .t{font-size:30px;letter-spacing:.08em;}
+  .navbtn{position:fixed;top:50%;transform:translateY(-50%);z-index:5;
+          color:#F6E08A;background:rgba(0,0,0,.45);border:1px solid rgba(246,197,92,.5);
+          border-radius:999px;width:52px;height:52px;font-size:26px;line-height:50px;
+          text-align:center;cursor:pointer;user-select:none;opacity:.35;}
+  .navbtn:hover{opacity:1;}
+  #prev{left:18px;} #next{right:18px;}
+  #caption .t{font-size:24px;letter-spacing:.08em;}
   #caption .s{font-size:16px;color:#D8C49A;letter-spacing:.24em;margin-top:4px;}
-  #live{position:fixed;top:22px;left:24px;color:#D8C49A;font-size:13px;letter-spacing:.3em;}
+  #live{position:fixed;bottom:70px;left:24px;color:#D8C49A;font-size:13px;letter-spacing:.3em;}
   #live b{color:#E04A2A;}
   #mutehint{position:fixed;top:20px;right:24px;color:#fff;background:rgba(0,0,0,.55);
             border:1px solid #F6C55C;border-radius:999px;padding:8px 18px;font-size:14px;
@@ -63,7 +69,9 @@ components.html(
   #empty h1{font-size:34px;margin:0 0 12px;}
   #empty p{color:#D8C49A;font-size:15px;}
 </style></head><body>
-<div id="stage"><video id="v" playsinline></video></div>
+<div id="stage"><video id="v" playsinline controls controlslist="nodownload"></video></div>
+<div class="navbtn" id="prev" title="Previous film">&#8249;</div>
+<div class="navbtn" id="next" title="Next film">&#8250;</div>
 <div id="caption"><div class="t"></div><div class="s"></div></div>
 <div id="live">● <b>LIVE</b> · PREMIERE PICTURES</div>
 <div id="mutehint">🔇 TAP FOR SOUND</div>
@@ -96,10 +104,21 @@ function next(){
   idx = (idx + 1) % playlist.length;
   show(playlist[idx]);
 }
+function prevFilm(){
+  if (!playlist.length) return;
+  idx = (idx - 1 + playlist.length) % playlist.length;
+  show(playlist[idx]);
+}
 v.addEventListener('ended', next);
 v.addEventListener('error', () => setTimeout(next, 800));
+document.getElementById('next').addEventListener('click', e => { e.stopPropagation(); next(); });
+document.getElementById('prev').addEventListener('click', e => { e.stopPropagation(); prevFilm(); });
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' && e.shiftKey) next();
+  if (e.key === 'ArrowLeft' && e.shiftKey) prevFilm();
+});
 
-// one tap anywhere -> sound on for the whole session
+// first tap/click enables sound for the whole session (native controls still work)
 function soundOn(){ v.muted = false; hint.style.display='none'; }
 document.addEventListener('click', soundOn);
 document.addEventListener('touchstart', soundOn);
@@ -119,7 +138,9 @@ async function poll(){
         fresh.push(e);            // premiere it next
       }
     }
-    if (v.paused && (playlist.length || fresh.length)) next();
+    // only auto-advance if nothing is loaded or the current film finished —
+    // never while the user has paused mid-video
+    if ((!v.currentSrc || v.ended) && (playlist.length || fresh.length)) next();
   } catch(err){ /* network blip — keep looping current list */ }
 }
 setInterval(poll, 15000);
