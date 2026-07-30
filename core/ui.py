@@ -488,7 +488,6 @@ def poster_art(key: str) -> str:
  <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#F6C55C" opacity="0.95">THE NIGHT THE RIVER GLOWS</text>
 </svg>""",
     }
-    return art.get(key, "")    }
     return art.get(key, "")
 
 
