@@ -42,6 +42,7 @@ pages = [
     st.Page("views/photo_gallery.py", title="Guest Gallery", url_path="guests"),
     st.Page("views/now_showing.py", title="Now Showing", url_path="now-showing"),
     st.Page("views/backlot.py", title="Backlot", url_path="backlot"),
+    st.Page("views/screen.py", title="Big Screen", url_path="screen"),
 ]
 
 st.navigation(pages, position="hidden").run()
