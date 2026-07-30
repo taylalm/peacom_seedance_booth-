@@ -44,6 +44,7 @@ def save_lead(lead: dict) -> None:
         if is_new:
             writer.writeheader()
         writer.writerow(row)
+    _mirror("leads.csv")
 
 
 def update_lead(ticket: str, **fields) -> None:
@@ -55,6 +56,7 @@ def update_lead(ticket: str, **fields) -> None:
         writer = csv.DictWriter(f, fieldnames=LEAD_FIELDS)
         writer.writeheader()
         writer.writerows(leads)
+    _mirror("leads.csv")
 
 
 GUESTS_JSON = DATA_DIR / "guest_photos.json"
@@ -71,6 +73,7 @@ def load_guest_photos() -> list[dict]:
 def _write_guests(items: list[dict]) -> None:
     ensure_dirs()
     GUESTS_JSON.write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8")
+    _mirror("guest_photos.json")
 
 
 def save_guest_photo(entry: dict) -> None:
@@ -108,6 +111,7 @@ def add_gallery_entry(entry: dict) -> None:
     entries = json.loads(GALLERY_META.read_text(encoding="utf-8")) if GALLERY_META.exists() else []
     entries.append(entry)
     GALLERY_META.write_text(json.dumps(entries, ensure_ascii=False, indent=2), encoding="utf-8")
+    _mirror("gallery_metadata.json")
 
 
 def delete_gallery_entry(ticket: str) -> None:
@@ -117,3 +121,12 @@ def delete_gallery_entry(ticket: str) -> None:
     entries = json.loads(GALLERY_META.read_text(encoding="utf-8"))
     entries = [e for e in entries if e.get("ticket") != ticket]
     GALLERY_META.write_text(json.dumps(entries, ensure_ascii=False, indent=2), encoding="utf-8")
+    _mirror("gallery_metadata.json")
+
+def _mirror(name: str) -> None:
+    """Best-effort cloud backup after any write (lazy import avoids cycles)."""
+    try:
+        from core import persist
+        persist.backup_async(name)
+    except Exception:
+        pass

@@ -5,7 +5,7 @@ Run: streamlit run app.py
 
 import streamlit as st
 
-from core import creds, netfix, seed, worker
+from core import creds, netfix, persist, seed, worker
 
 netfix.ensure_ca_bundle()  # trust corporate proxy CA before any HTTPS call
 
@@ -32,6 +32,8 @@ try:
     }
 except FileNotFoundError:
     _config = {"api_key": "", "model": "", "smtp": {}, "assets": {}, "tos": {}}
+persist.configure(_config.get("tos", {}), _config.get("assets", {}))
+persist.restore_all()  # fresh container after a recycle? pull data back from TOS
 worker.ensure_started(_config)
 seed.seed_demo_content()  # populate galleries with sample face + films (demo)
 

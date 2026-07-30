@@ -115,6 +115,7 @@ def _process(job: dict) -> None:
             storage.update_lead(ticket, status="rendering")
             live = bool(_config.get("api_key") and _config.get("model"))
             video_ref = _render_live(job) if live else _render_mock(job)
+            video_ref = _cloud_ref(video_ref)  # durable URL — survives container recycles
             storage.add_gallery_entry({
                 "ticket": ticket,
                 "name": job.get("name", ""),
@@ -276,6 +277,24 @@ def _render_mock(job: dict) -> str:
     log.info("MOCK render for %s (no ARK credentials)", job["ticket"])
     time.sleep(MOCK_RENDER_SECONDS)
     return MOCK_VIDEO_URL
+
+
+def _cloud_ref(video_ref: str) -> str:
+    """Upload a finished local gallery video to TOS and return its durable
+    public URL (Streamlit Cloud disks are ephemeral — a local-only video would
+    vanish on the next container recycle). Falls back to the local path."""
+    if video_ref.startswith("http") or not tos_store.is_configured(_config.get("tos", {})):
+        return video_ref
+    try:
+        path = storage.GALLERY_DIR / Path(video_ref).name
+        _, url = tos_store.upload_video(
+            _config["tos"], path.read_bytes(),
+            prefix=_config.get("event_prefix", "premiere"), cred=_config["assets"],
+        )
+        return url
+    except Exception:
+        log.exception("gallery video TOS upload failed; keeping local ref")
+        return video_ref
 
 
 def _email_video_ref(video_ref: str) -> str:
