@@ -198,11 +198,9 @@ def _run_task(job: dict, prompt: str, *, image_refs, video_ref=None, dest: Path)
 
 
 def _render_live(job: dict) -> str:
+    # Seedance 2.5: every guest gets one 30s solo film in a single generation pass
+    # (no co-star, no 2-clip stitch). Duration comes from films.FIXED_SPEC.
     asset_uri = _prepare_asset(job) if _real_face_ready() else None
-    gender = job.get("costar", "")
-    duo = films.duo_prompts(job["film_key"], gender) if gender in ("woman", "man") else None
-    if asset_uri and duo:
-        return _render_duo(job, asset_uri, duo)
     return _render_solo(job, asset_uri)
 
 

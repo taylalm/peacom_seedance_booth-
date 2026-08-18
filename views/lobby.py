@@ -93,7 +93,7 @@ def scene_lobby():
         """
         <p style="text-align:center; margin-top:1.2rem; color:#9A8C78">
         Take one photo, pick one film, and we'll cast you as the lead of your own cinematic
-        short — 15 seconds solo or 30 seconds with a co-star — straight to your inbox.
+        short — a 30-second cinematic film — straight to your inbox.
         </p>
         """,
         unsafe_allow_html=True,
@@ -242,7 +242,7 @@ def scene_posters():
     ui.filmstrip(2)
     ui.clap("SCENE 2 · THE POSTER WALL")
     st.markdown("## Which story is yours?")
-    st.caption("Pick one. Each is a 15-second short (or 30 seconds with a co-star) — its own look, pace, and vibe.")
+    st.caption("Pick one. Each is a 30-second cinematic short — its own look, pace, and vibe.")
 
     selected = st.session_state.get("film_key")
     per_row = 3  # themes tiled 3 per row
@@ -311,14 +311,7 @@ def scene_ticket():
             with st.form("ticket-form", border=False):
                 name = st.text_input("Full name *", placeholder="e.g. Somchai Jaidee")
                 company = st.text_input("Company *", placeholder="e.g. BytePlus")
-                job = st.text_input("Job title *", placeholder="e.g. Marketing Manager")
-                phone = st.text_input("Phone *", placeholder="+66 8x xxx xxxx")
                 email = st.text_input("Email *", placeholder="you@example.com")
-                costar_label = st.radio(
-                    "Your video",
-                    ["Solo — 15s", "With a co-star (woman) — 30s", "With a co-star (man) — 30s"],
-                    help="A co-star makes a 30-second video where the two of you explore together and chat.",
-                )
                 consent = st.checkbox(
                     "I consent (PDPA) to my photo being used to generate this video, "
                     "shown in the event gallery, and emailed to me."
@@ -331,10 +324,6 @@ def scene_ticket():
                     problems.append("name")
                 if not company.strip():
                     problems.append("company")
-                if not job.strip():
-                    problems.append("job title")
-                if not phone.strip():
-                    problems.append("phone")
                 if not EMAIL_RE.match(email.strip()):
                     problems.append("a valid email")
                 if not consent:
@@ -344,14 +333,12 @@ def scene_ticket():
                 else:
                     ticket_no = storage.next_ticket()
                     guest = st.session_state.get("guest_photo") or {}
-                    costar = {"With a co-star (woman) — 30s": "woman",
-                              "With a co-star (man) — 30s": "man"}.get(costar_label, "")
                     storage.save_lead({
                         "ticket": ticket_no,
                         "name": name.strip(),
                         "company": company.strip(),
-                        "job_title": job.strip(),
-                        "phone": phone.strip(),
+                        "job_title": "",
+                        "phone": "",
                         "email": email.strip(),
                         "film": film["key"],
                         "status": "queued",
@@ -359,14 +346,14 @@ def scene_ticket():
                         "email_sent": "no",
                         "photo_url": guest.get("tos_url", ""),
                         "asset_id": guest.get("asset_id", ""),
-                        "costar": costar,
+                        "costar": "",
                     })
                     job_msg = {
                         "ticket": ticket_no,
                         "film_key": film["key"],
                         "name": name.strip(),
                         "email": email.strip(),
-                        "costar": costar,
+                        "costar": "",
                     }
                     if st.session_state.get("portrait"):
                         job_msg["portrait"] = st.session_state["portrait"]

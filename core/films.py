@@ -7,7 +7,7 @@ AI co-star and background characters are Vietnamese. 15s solo or 30s duo.
 `c1/c2/c3` drive each poster's gradient (dark -> mid -> glow).
 """
 
-FIXED_SPEC = {"ratio": "9:16", "duration": 15, "resolution": "720p"}
+FIXED_SPEC = {"ratio": "9:16", "duration": 30, "resolution": "720p"}
 
 # Shared hard rules — every lesson learned across the booth apps, in one block.
 _RULES = (
@@ -66,9 +66,12 @@ _SUFFIX = (
     _RULES + " Use the face in Image 1 as the only and exclusive face reference — the face "
     "must stay EXACTLY identical to Image 1 in every single frame: same facial structure, "
     "same features, same identity, with ZERO morphing, drifting or beautifying, even during "
-    "fast motion; keep the face clearly visible to the camera as much as possible. Pace the "
-    "dialogue so the final line is completely finished by second 12, then hold a natural "
-    "closing beat — never cut off mid-sentence or mid-action. 15 seconds."
+    "fast motion; keep the face clearly visible to the camera as much as possible. This is a "
+    "30-second film with a real arc — let the action breathe across the full duration with "
+    "several natural beats (an opening, a develop, a payoff) rather than one quick moment; "
+    "spread any dialogue naturally across the time and pace it so the final line is completely "
+    "finished by second 27, then hold a natural closing beat with motion still flowing — never "
+    "cut off mid-sentence or mid-action, never freeze. 30 seconds."
 )
 
 FILMS = [
@@ -175,6 +178,35 @@ FILMS = [
                    "only exception; lanterns stay small and steady. A golden firework blooms; "
                    "they watch it, smile, turn slightly to the camera with the glowing river "
                    "behind them and say: \"What a beautiful night.\"" + _SUFFIX),
+    },
+    {
+        "key": "kpop", "no": "05", "emoji": "🎤",
+        "title_th": "IDOL", "title_en": "STAGE IDOL",
+        "genre_th": "MUSIC", "genre_en": "MUSIC · IDOL",
+        "logline_en": "Lights up. The stage is yours.",
+        "synopsis": ("You're a K-pop idol headlining a dazzling arena — spotlights, confetti "
+                     "and a roaring crowd waving light sticks. A spin, a strut, a wink to the "
+                     "camera. Pure superstar energy."),
+        "tags": "STAGE · SPOTLIGHT · FANS",
+        "c1": "#1A0A30", "c2": "#B0227A", "c3": "#57E0F0",
+        "prompt": ("A huge, lively arena concert stage with a giant LED backdrop clearly "
+                   "displaying the single word \"SEEDANCE\" in bright glowing letters — this "
+                   "wordmark is the ONLY text allowed anywhere in the entire video; absolutely "
+                   "no other text, captions or lettering may appear on screen at any moment, "
+                   "and the LED text stays exactly \"SEEDANCE\" in every frame, never changing "
+                   "to any other word. The person in Image 1 is a K-pop idol center stage in a "
+                   "stylish, fashionable stage costume — a sharp tailored embellished stage "
+                   "jacket with tasteful sparkle, NO logos or text on the costume. Beat 1: the "
+                   "idol raises a microphone right up to their mouth and says into it in clear "
+                   "English, lips in sync: \"Make some noise!\" — spotlights sweep and the crowd "
+                   "roars. Beat 2: the idol launches into a dynamic performance — a sharp spin, "
+                   "a confident strut along the front of the stage, crisp dance moves in rhythm, "
+                   "confetti falling, light sticks waving in the dark. Beat 3: the idol hits a "
+                   "triumphant pose as confetti bursts, points to the camera with a charming "
+                   "smile and says into the mic: \"This one's for you!\" then gives a warm, "
+                   "natural bow, still moving. Original instrumental K-pop-style backing track "
+                   "only — energetic, no lyrics, no vocals, never any existing or copyrighted "
+                   "song." + _SUFFIX),
     },
 ]
 

@@ -12,16 +12,16 @@ CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Archivo+Black&family=Taviraj:ital,wght@0,400;0,500;0,600;1,400&family=Prompt:wght@400;500;600&family=Noto+Sans+Thai:wght@400;600&display=swap');
 
 :root {
-  --cream:   #100D0A;   /* canvas: deep warm black */
-  --cream-2: #1C1712;   /* raised surfaces */
-  --paper:   #1E1913;   /* cards */
-  --coal:    #0A0806;   /* darkest surfaces (film strip, marquee) */
-  --verm:    #D93A20;   /* curtain crimson */
+  --cream:   #F4E9D8;   /* canvas: warm light paper */
+  --cream-2: #EADCC4;   /* raised surfaces */
+  --paper:   #FFFDF8;   /* cards / input boxes: near-white for readable text */
+  --coal:    #241C14;   /* darkest surfaces (film strip, marquee) — stays a dark accent */
+  --verm:    #C8321E;   /* curtain crimson */
   --verm-d:  #7E1B0C;
-  --gold:    #E8A020;
-  --gold-l:  #F6C55C;
-  --teal:    #C8A96A;   /* champagne secondary text */
-  --ink:     #F2E8D5;   /* main text: warm cream on dark */
+  --gold:    #B8821A;   /* darker gold — readable on light */
+  --gold-l:  #E8A94D;   /* light gold — used as text on the dark coal accents */
+  --teal:    #8A6D3B;   /* champagne secondary text — readable on light */
+  --ink:     #2B2320;   /* main text: dark warm ink on light */
 }
 
 /* ---------- canvas ---------- */
@@ -330,7 +330,7 @@ def header():
         """
         <div class="mp-header">
           <div class="mp-logo"><span class="reel">🎬</span> PREMIERE PICTURES <em>lights · camera · you</em></div>
-          <div class="mp-spec">ONE REEL · 15 SEC · 9:16 · 720P<br>POWERED BY SEEDANCE 2.0 · BYTEPLUS MODELARK</div>
+          <div class="mp-spec">ONE REEL · 30 SEC · 9:16 · 720P<br>POWERED BY SEEDANCE 2.5 · BYTEPLUS MODELARK</div>
         </div>
         """,
         unsafe_allow_html=True,
@@ -531,6 +531,6 @@ def hero_fan(films: list) -> str:
 
 def footer():
     st.markdown(
-        '<div class="mp-footer">PREMIERE PICTURES · A BYTEPLUS SEEDANCE 2.0 EXPERIENCE · EST. 2026</div>',
+        '<div class="mp-footer">PREMIERE PICTURES · A BYTEPLUS SEEDANCE 2.5 EXPERIENCE · EST. 2026</div>',
         unsafe_allow_html=True,
     )
