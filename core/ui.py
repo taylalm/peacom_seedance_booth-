@@ -454,6 +454,27 @@ def poster_art(key: str) -> str:
  <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" fill="#EAF6FF" opacity="0.95">TO THE TOP, TOGETHER</text>
 </svg>""",
         # --- Lantern Nights: Hoi An houses, lanterns, firework, river ---
+        # --- Stage Idol: arena spotlights, silhouette, lightsticks ---
+        "kpop": """
+<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+ <defs>
+  <linearGradient id="kp-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14082A"/><stop offset="0.6" stop-color="#3A0E4A"/><stop offset="1" stop-color="#B0227A"/></linearGradient>
+  <radialGradient id="kp-gl" cx="0.5" cy="0.3" r="0.5"><stop offset="0" stop-color="#57E0F0" stop-opacity="0.55"/><stop offset="1" stop-color="#57E0F0" stop-opacity="0"/></radialGradient>
+ </defs>
+ <rect width="300" height="400" fill="url(#kp-bg)"/>
+ <g opacity="0.7"><path d="M150 40 L60 300 L240 300 Z" fill="url(#kp-gl)"/><path d="M150 40 L20 260 L90 300 Z" fill="#57E0F0" opacity="0.12"/><path d="M150 40 L280 260 L210 300 Z" fill="#FE7AC8" opacity="0.14"/></g>
+ <g transform="translate(150 230)">
+  <circle cx="0" cy="-46" r="15" fill="#1A0A24"/>
+  <path d="M0 -34 c-17 0 -23 15 -21 32 l-9 46 h18 l6 -36 6 36 h18 l-9 -46 c2 -17 -4 -32 -21 -32Z" fill="#160814"/>
+  <rect x="-30" y="-30" width="16" height="8" rx="4" fill="#160814" transform="rotate(-30 -22 -26)"/>
+  <circle cx="-40" cy="-44" r="7" fill="#2A1030"/><rect x="-42" y="-44" width="5" height="26" rx="2" fill="#2A1030"/>
+ </g>
+ <g fill="#57E0F0"><rect x="40" y="330" width="4" height="16" rx="2"/><rect x="70" y="322" width="4" height="16" rx="2"/><rect x="226" y="324" width="4" height="16" rx="2"/><rect x="256" y="332" width="4" height="16" rx="2"/></g>
+ <g fill="#FE7AC8"><rect x="100" y="332" width="4" height="14" rx="2"/><rect x="196" y="330" width="4" height="14" rx="2"/></g>
+ <g fill="#FFFFFF" opacity="0.85"><circle cx="90" cy="120" r="3"/><circle cx="210" cy="100" r="3"/><circle cx="130" cy="80" r="2"/><circle cx="180" cy="140" r="2"/></g>
+ <text x="150" y="366" text-anchor="middle" font-family="Space Mono,monospace" font-size="13" fill="#EAF7FF" opacity="0.9">ARE YOU READY?</text>
+</svg>""",
+        # --- Lantern Nights: Hoi An riverside lanterns, fireworks ---
         "hoian": """
 <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
  <defs>
