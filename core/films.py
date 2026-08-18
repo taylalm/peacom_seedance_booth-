@@ -61,9 +61,23 @@ _RULES = (
     "movement with visible weight and effort, smooth animation, no flickering."
 )
 
+# mandatory co-star — every film pairs the guest with an opposite-gender companion
+_COSTAR = (
+    " TWO people star in this film together: the LEAD — the person in Image 1, the clear "
+    "main character whose face matches Image 1 exactly — and ONE co-star of the OPPOSITE "
+    "gender to the person in Image 1 (if the person in Image 1 is a man, the co-star is a "
+    "woman; if the person in Image 1 is a woman, the co-star is a man). The co-star is a "
+    "friendly, attractive, age-appropriate AI-generated companion — a completely different "
+    "person, NOT based on any uploaded photo and never a copy or twin of the lead — who "
+    "shares the scene and interacts warmly and naturally with the lead across the whole "
+    "film. Only the lead's face must match Image 1; the co-star's face is freely generated. "
+    "The two people are always clearly distinct and never merge, swap places or morph into "
+    "each other."
+)
+
 # appended to every SOLO prompt — face-lock + pacing + the shared rules
 _SUFFIX = (
-    _RULES + " Use the face in Image 1 as the only and exclusive face reference — the face "
+    _RULES + _COSTAR + " Use the face in Image 1 as the only and exclusive face reference — the face "
     "must stay EXACTLY identical to Image 1 in every single frame: same facial structure, "
     "same features, same identity, with ZERO morphing, drifting or beautifying, even during "
     "fast motion; keep the face clearly visible to the camera as much as possible. This is a "
@@ -91,14 +105,17 @@ FILMS = [
                    "gowns, men in suits and vests — chatting softly at the edges of a "
                    "polished dance floor. Gentle original orchestral music plays. The person "
                    "in Image 1, dressed in elegant plain evening wear (a graceful gown or a "
-                   "tailored suit with vest), steps onto the floor and dances a beautiful "
-                   "flowing waltz like a trained ballroom dancer — LONG, sweeping gliding "
-                   "steps that TRAVEL in wide circles around the floor, smooth full body "
-                   "turns with real momentum, clothes flowing with the motion, never "
-                   "dancing in one spot — face kept toward the camera in frontal or "
-                   "three-quarter view. They finish with one graceful full spin, look "
-                   "warmly into the camera and say in clear English: \"Some dances you "
-                   "remember forever.\" — holding a soft smile as the music fades." + _SUFFIX),
+                   "tailored suit with vest), is met on the floor by their co-star in "
+                   "matching elegant evening wear; they take each other's hands and dance a "
+                   "beautiful flowing waltz TOGETHER as a couple, like trained ballroom "
+                   "partners — LONG, sweeping gliding steps that TRAVEL in wide circles "
+                   "around the floor, the co-star turning gracefully under the lead's arm, "
+                   "smooth full body turns with real momentum, clothes flowing with the "
+                   "motion, never dancing in one spot — the LEAD's face kept toward the "
+                   "camera in frontal or three-quarter view. They finish with one graceful "
+                   "shared spin and dip; the lead looks warmly into the camera and says in "
+                   "clear English: \"Some dances you remember forever.\" — holding a soft "
+                   "smile with their partner as the music fades." + _SUFFIX),
     },
     {
         "key": "adventure", "no": "02", "emoji": "🗺️",
@@ -111,21 +128,23 @@ FILMS = [
         "tags": "JUNGLE · TREASURE · TRAPS",
         "c1": "#0A2414", "c2": "#2E7D32", "c3": "#F6C55C",
         "prompt": ("A cinematic adventure-movie scene: ancient jungle temple ruins, shafts of "
-                   "sunlight through the canopy over mossy stone. EXACTLY ONE person appears "
-                   "in this entire video — the person in Image 1; no other human ever "
-                   "appears, in the background or anywhere. Every stone or wall that moves "
+                   "sunlight through the canopy over mossy stone. Exactly TWO people appear: "
+                   "the person in Image 1 and their fellow-explorer co-star, adventuring as "
+                   "a team; no other human appears anywhere. Every stone or wall that moves "
                    "or falls does so only because a real physical force acts on it — a "
                    "stepped-on trigger plate, an impact, or its support visibly giving way "
                    "first; NOTHING collapses or rises by itself. The person in Image 1, in "
                    "rugged plain explorer gear, steps on an ancient trigger plate — it sinks "
                    "with a clunk, and the impact makes a nearby column's support give way so "
-                   "it topples visibly from the base. They sprint through the corridor, "
-                   "vaulting the fallen pillar with real athletic effort, then grab a "
-                   "hanging vine with BOTH hands and swing across a deep chasm, landing on "
-                   "two feet in a natural, balanced way. They rise before a stone altar, "
-                   "lift a small golden idol into a beam of sunlight, grin at the camera and "
-                   "say in clear English: \"Told you the map was real.\" — holding the idol "
-                   "up as the light flares." + _SUFFIX),
+                   "it topples visibly from the base. The two sprint through the corridor "
+                   "together, vaulting the fallen pillar with real athletic effort; the "
+                   "co-star grabs a hanging vine and swings across a deep chasm first, then "
+                   "the person in Image 1 swings across after them, both landing on two feet "
+                   "in a natural, balanced way. They rise together before a stone altar; the "
+                   "person in Image 1 lifts a small golden idol into a beam of sunlight, "
+                   "grins at the camera and says in clear English: \"Told you the map was "
+                   "real.\" — holding the idol up as the co-star laughs beside them and the "
+                   "light flares." + _SUFFIX),
     },
     {
         "key": "mountain", "no": "03", "emoji": "🏔️",
@@ -139,16 +158,18 @@ FILMS = [
         "c1": "#0E1E30", "c2": "#3A6A9A", "c3": "#EAF6FF",
         "prompt": ("A cinematic mountaineering movie scene: soft morning sunlight across a "
                    "beautiful snow-covered mountain range, photorealistic alpine light. "
-                   "EXACTLY ONE person appears: the person in Image 1 in a professional "
-                   "plain mountaineering outfit — climbing harness, gloves, light backpack "
-                   "— walking a gentle snowy trail with real weighted steps, breath visible "
-                   "in the cold air, face clearly visible toward the camera. They pause at "
-                   "a ridge, take in the sweeping view of peaks and clouds, smile and say "
-                   "in clear English: \"What a perfect day to climb.\" Then they push up "
-                   "the final snowy rise with real effort and step onto the peak, raise "
-                   "both arms wide against the sunlit clouds and say joyfully: \"Made it "
-                   "— all the way.\" — holding the happy pose as the wind moves the "
-                   "snow." + _SUFFIX),
+                   "TWO climbing partners appear: the person in Image 1 and their co-star, "
+                   "both in professional plain mountaineering outfits — climbing harness, "
+                   "gloves, light backpack — walking a gentle snowy trail together with real "
+                   "weighted steps, breath visible in the cold air, the LEAD's face clearly "
+                   "visible toward the camera. They pause at a ridge side by side, take in "
+                   "the sweeping view of peaks and clouds; the person in Image 1 smiles and "
+                   "says in clear English: \"What a perfect day to climb.\" On the final "
+                   "snowy rise the co-star reaches back and helps the person in Image 1 up "
+                   "the last steps with real effort, and the two step onto the peak "
+                   "together, raise their arms wide against the sunlit clouds; the person in "
+                   "Image 1 says joyfully: \"Made it — all the way.\" — the two holding the "
+                   "happy pose side by side as the wind moves the snow." + _SUFFIX),
     },
     {
         "key": "hoian", "no": "04", "emoji": "🏮",
@@ -169,15 +190,18 @@ FILMS = [
                    "lanterns overhead glowing warm and steady, the lantern-lit river on one "
                    "side, festival visitors strolling in the background who never approach. "
                    "The person in Image 1, in comfortable plain travel clothes, strolls the "
-                   "promenade with relaxed curiosity, stops at a simple wooden street cart "
-                   "(completely sign-less and unlabeled), hands the vendor money and receives "
-                   "a small local snack, then walks to the railing at the river's edge and "
+                   "promenade together with their co-star, the two chatting and smiling with "
+                   "relaxed curiosity; they stop at a simple wooden street cart (completely "
+                   "sign-less and unlabeled), the person in Image 1 hands the vendor money "
+                   "and receives a small local snack, shares a bite with the co-star, then "
+                   "the two walk to the railing at the river's edge and the person in Image 1 "
                    "says in clear English: \"This place feels so alive.\" EXCEPTION to the "
                    "effects rule: real festival FIREWORKS launch from across the river, burst "
                    "high and fade naturally with real physics, reflected in the water — the "
                    "only exception; lanterns stay small and steady. A golden firework blooms; "
-                   "they watch it, smile, turn slightly to the camera with the glowing river "
-                   "behind them and say: \"What a beautiful night.\"" + _SUFFIX),
+                   "the two watch it side by side, smile, and the person in Image 1 turns "
+                   "slightly to the camera with the glowing river behind them and says: "
+                   "\"What a beautiful night.\"" + _SUFFIX),
     },
     {
         "key": "kpop", "no": "05", "emoji": "🎤",
@@ -199,12 +223,14 @@ FILMS = [
                    "jacket with tasteful sparkle, NO logos or text on the costume. Beat 1: the "
                    "idol raises a microphone right up to their mouth and says into it in clear "
                    "English, lips in sync: \"Make some noise!\" — spotlights sweep and the crowd "
-                   "roars. Beat 2: the idol launches into a dynamic performance — a sharp spin, "
-                   "a confident strut along the front of the stage, crisp dance moves in rhythm, "
-                   "confetti falling, light sticks waving in the dark. Beat 3: the idol hits a "
-                   "triumphant pose as confetti bursts, points to the camera with a charming "
-                   "smile and says into the mic: \"This one's for you!\" then gives a warm, "
-                   "natural bow, still moving. Original instrumental K-pop-style backing track "
+                   "roars. Beat 2: the idol's co-star, a fellow idol in a matching stylish "
+                   "stage costume, struts out to join them and the two perform a dynamic "
+                   "DUET together — synchronized sharp spins, a confident side-by-side strut "
+                   "along the front of the stage, crisp matching dance moves in rhythm, "
+                   "confetti falling, light sticks waving in the dark. Beat 3: the two hit a "
+                   "triumphant pose together as confetti bursts; the person in Image 1 points "
+                   "to the camera with a charming smile and says into the mic: \"This one's "
+                   "for you!\" then the pair give a warm, natural bow, still moving. Original instrumental K-pop-style backing track "
                    "only — energetic, no lyrics, no vocals, never any existing or copyrighted "
                    "song." + _SUFFIX),
     },
