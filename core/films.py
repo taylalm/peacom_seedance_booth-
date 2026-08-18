@@ -63,16 +63,23 @@ _RULES = (
 
 # mandatory co-star — every film pairs the guest with an opposite-gender companion
 _COSTAR = (
-    " TWO people star in this film together: the LEAD — the person in Image 1, the clear "
-    "main character whose face matches Image 1 exactly — and ONE co-star of the OPPOSITE "
-    "gender to the person in Image 1 (if the person in Image 1 is a man, the co-star is a "
-    "woman; if the person in Image 1 is a woman, the co-star is a man). The co-star is a "
-    "friendly, attractive, age-appropriate AI-generated companion — a completely different "
-    "person, NOT based on any uploaded photo and never a copy or twin of the lead — who "
-    "shares the scene and interacts warmly and naturally with the lead across the whole "
-    "film. Only the lead's face must match Image 1; the co-star's face is freely generated. "
-    "The two people are always clearly distinct and never merge, swap places or morph into "
-    "each other."
+    " STRICT HEADCOUNT: this film contains EXACTLY TWO people and no more — never three, "
+    "never a third figure — for the ENTIRE duration, from the very first frame to the very "
+    "last. The count is always precisely two: the LEAD and the co-star. No extra person "
+    "ever walks in, appears, is revealed, joins, or is glimpsed in the foreground OR the "
+    "background at any moment — especially not at arrivals, doorways, summits, stage "
+    "entrances, reveals or the ending; if a crowd or bystanders are described they stay far "
+    "away and out of frame, and the number of clearly-visible people in shot stays exactly "
+    "two at all times. The two people are the LEAD — the person in Image 1, the clear main "
+    "character whose face matches Image 1 exactly — and ONE co-star of the OPPOSITE gender "
+    "to the person in Image 1 (if the person in Image 1 is a man, the co-star is a woman; "
+    "if the person in Image 1 is a woman, the co-star is a man). The co-star is a friendly, "
+    "attractive, age-appropriate AI-generated companion — a completely different person, "
+    "NOT based on any uploaded photo and never a copy or twin of the lead — who shares the "
+    "scene and interacts warmly and naturally with the lead across the whole film. Only the "
+    "lead's face must match Image 1; the co-star's face is freely generated. The same two "
+    "people persist unchanged the whole time — they never merge, split into more people, "
+    "swap places or morph into anyone else."
 )
 
 # appended to every SOLO prompt — face-lock + pacing + the shared rules
