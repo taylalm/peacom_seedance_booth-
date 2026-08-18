@@ -23,6 +23,16 @@ st.markdown(
 def premiere_wall():
     """Redraws itself every 10s so new premieres appear on the booth screen."""
     entries = storage.load_gallery()
+    # de-duplicate by ticket (keep the latest) so a re-render or a restore+seed
+    # overlap never shows the same film twice or collides on the container key
+    _seen, _uniq = set(), []
+    for e in reversed(entries):
+        t = e.get("ticket", "")
+        if t in _seen:
+            continue
+        _seen.add(t)
+        _uniq.append(e)
+    entries = list(reversed(_uniq))
 
     if not entries:
         st.markdown(
@@ -42,7 +52,7 @@ def premiere_wall():
         film = films.FILM_BY_KEY.get(entry.get("film", ""), None)
         title = f"{film['title_en']} · {film['title_th']}" if film else entry.get("film", "")
         with cols[i % 3]:
-            with st.container(key=f"show-{entry['ticket']}"):
+            with st.container(key=f"show-{i}-{entry['ticket']}"):
                 st.markdown('<div class="mp-showcard">', unsafe_allow_html=True)
                 st.video(entry["video"])
                 st.markdown(

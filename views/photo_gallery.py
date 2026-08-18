@@ -33,7 +33,7 @@ else:
     cols = st.columns(4, gap="medium")
     for i, g in enumerate(photos):
         with cols[i % 4]:
-            with st.container(key=f"guest-{g['id']}"):
+            with st.container(key=f"guest-{i}-{g['id']}"):
                 st.markdown('<div class="mp-showcard">', unsafe_allow_html=True)
                 st.image(g["tos_url"], use_container_width=True)
                 ready = "✓ ready" if g.get("asset_id") else "• new"
