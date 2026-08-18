@@ -52,6 +52,7 @@ if leads:
             "Email": lead["email"],
             "Film": films.FILM_BY_KEY.get(lead["film"], {}).get("title_en", lead["film"]),
             "Status": lead["status"],
+            "Detail": (lead.get("video_path", "") if lead["status"] == "failed" else ""),
             "Emailed": lead["email_sent"],
             "When": lead["timestamp"],
         }
