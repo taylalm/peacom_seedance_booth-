@@ -45,7 +45,7 @@ def _html(name: str, film: dict, ticket: str, link: str | None) -> str:
       <p style="text-align:center;font-size:16px">{watch}</p>
       <p style="font-size:12px;color:#8B7E6E;margin-top:24px;text-align:center">
         Thank you for starring with Premiere Pictures<br>
-        Powered by Seedance 2.0 on BytePlus ModelArk · EST. 2026
+        Powered by Dreamina Seedance 2.5 on BytePlus ModelArk · EST. 2026
       </p>
     </div>
   </div>

@@ -24,7 +24,8 @@ def goto(scene: str):
 
 
 def reset_visitor():
-    for key in ("portrait", "portrait_note", "guest_photo", "film_key", "ticket_no", "celebrated"):
+    for key in ("portrait", "portrait_note", "guest_photo", "film_key", "film_keys",
+                "ticket_no", "ticket_nos", "celebrated"):
         st.session_state.pop(key, None)
     st.session_state["scene"] = "lobby"
 
@@ -241,31 +242,44 @@ def scene_posters():
     ui.header()
     ui.filmstrip(2)
     ui.clap("SCENE 2 · THE POSTER WALL")
-    st.markdown("## Which story is yours?")
-    st.caption("Pick one. Each is a 30-second cinematic short — its own look, pace, and vibe.")
+    st.markdown("## Which stories are yours?")
+    st.caption("Tick one or more — you'll get a separate 30-second film for each theme you pick.")
 
-    selected = st.session_state.get("film_key")
+    selected = list(st.session_state.get("film_keys", []))
     per_row = 3  # themes tiled 3 per row
     for start in range(0, len(films.FILMS), per_row):
         cols = st.columns(per_row, gap="medium")
         for col, film in zip(cols, films.FILMS[start:start + per_row]):
             with col:
+                in_sel = film["key"] in selected
                 st.markdown(
-                    ui.poster_html(film, selected=(film["key"] == selected), synopsis=True),
+                    ui.poster_html(film, selected=in_sel, synopsis=True),
                     unsafe_allow_html=True,
                 )
-                label = "★ YOUR ROLE" if film["key"] == selected else "TAKE THIS ROLE"
+                label = "✓ SELECTED" if in_sel else "＋ ADD THIS ROLE"
                 if st.button(
                     label,
                     key=f"pick-{film['key']}",
-                    type="primary" if film["key"] == selected else "secondary",
+                    type="primary" if in_sel else "secondary",
                     use_container_width=True,
                 ):
-                    st.session_state["film_key"] = film["key"]
+                    if in_sel:
+                        selected = [k for k in selected if k != film["key"]]
+                    else:
+                        selected.append(film["key"])
+                    st.session_state["film_keys"] = selected
+                    st.session_state["film_key"] = selected[0] if selected else None
                     st.rerun()
 
     st.divider()
-    b1, _, b2 = st.columns([2, 4, 3])
+    b1, mid, b2 = st.columns([2, 4, 3])
+    with mid:
+        if selected:
+            st.markdown(
+                f"<p style='text-align:center;color:var(--teal);margin:.3rem 0'>"
+                f"<b>{len(selected)}</b> film{'s' if len(selected) > 1 else ''} selected</p>",
+                unsafe_allow_html=True,
+            )
     with b1:
         if st.button("← BACK"):
             goto("casting")
@@ -274,7 +288,7 @@ def scene_posters():
             "GET YOUR TICKET →",
             type="primary",
             use_container_width=True,
-            disabled=selected is None,
+            disabled=len(selected) == 0,
         ):
             goto("ticket")
 
@@ -282,28 +296,34 @@ def scene_posters():
 def scene_ticket():
     ui.header()
     ui.filmstrip(3)
-    film = films.FILM_BY_KEY[st.session_state["film_key"]]
+    film_keys = st.session_state.get("film_keys") or [st.session_state["film_key"]]
+    sel_films = [films.FILM_BY_KEY[k] for k in film_keys]
+    film = sel_films[0]  # primary, for the ticket header
+    multi = len(sel_films) > 1
 
     left, right = st.columns([2, 3], gap="large")
     with left:
         ui.clap("SCENE 3 · PREMIERE TICKET")
-        st.markdown("## Where do we send your film?")
+        st.markdown("## Where do we send your film" + ("s" if multi else "") + "?")
         st.markdown(
-            """
-            When your film wraps, it goes straight to your inbox —
-            no need to wait around at the screen. Enjoy the event.
+            f"""
+            When {"each film wraps" if multi else "your film wraps"}, it goes straight to
+            your inbox — no need to wait around at the screen. Enjoy the event.
             """,
             unsafe_allow_html=True,
         )
         st.markdown(ui.poster_html(film, selected=True), unsafe_allow_html=True)
+        if multi:
+            st.caption("Also making: " + " · ".join(f["title_en"] for f in sel_films[1:]))
 
     with right:
         with st.container(key="ticket-card"):
+            head_film = film["title_en"] + (f"  +{len(sel_films) - 1} more" if multi else "")
             st.markdown(
                 f"""
                 <div class="mp-ticket-head">
                   <span class="adm">ADMIT ONE · WORLD PREMIERE</span>
-                  <span class="film">{film['title_en']}</span>
+                  <span class="film">{head_film}</span>
                 </div>
                 """,
                 unsafe_allow_html=True,
@@ -331,40 +351,46 @@ def scene_ticket():
                 if problems:
                     st.error("Still needed: " + " · ".join(problems))
                 else:
-                    ticket_no = storage.next_ticket()
                     guest = st.session_state.get("guest_photo") or {}
-                    storage.save_lead({
-                        "ticket": ticket_no,
-                        "name": name.strip(),
-                        "company": company.strip(),
-                        "job_title": "",
-                        "phone": "",
-                        "email": email.strip(),
-                        "film": film["key"],
-                        "status": "queued",
-                        "consent": "yes",
-                        "email_sent": "no",
-                        "photo_url": guest.get("tos_url", ""),
-                        "asset_id": guest.get("asset_id", ""),
-                        "costar": "",
-                    })
-                    job_msg = {
-                        "ticket": ticket_no,
-                        "film_key": film["key"],
-                        "name": name.strip(),
-                        "email": email.strip(),
-                        "costar": "",
-                    }
-                    if st.session_state.get("portrait"):
-                        job_msg["portrait"] = st.session_state["portrait"]
                     if guest:
-                        job_msg["photo_id"] = guest.get("id")
-                        job_msg["photo_url"] = guest.get("tos_url")
-                        if guest.get("asset_id"):
-                            job_msg["asset_id"] = guest["asset_id"]
                         storage.update_guest_photo(guest["id"], label=name.strip())
-                    worker.enqueue(job_msg)
-                    st.session_state["ticket_no"] = ticket_no
+                    # one ticket + one render job per selected theme
+                    produced = []
+                    for fk in film_keys:
+                        ticket_no = storage.next_ticket()
+                        storage.save_lead({
+                            "ticket": ticket_no,
+                            "name": name.strip(),
+                            "company": company.strip(),
+                            "job_title": "",
+                            "phone": "",
+                            "email": email.strip(),
+                            "film": fk,
+                            "status": "queued",
+                            "consent": "yes",
+                            "email_sent": "no",
+                            "photo_url": guest.get("tos_url", ""),
+                            "asset_id": guest.get("asset_id", ""),
+                            "costar": "",
+                        })
+                        job_msg = {
+                            "ticket": ticket_no,
+                            "film_key": fk,
+                            "name": name.strip(),
+                            "email": email.strip(),
+                            "costar": "",
+                        }
+                        if st.session_state.get("portrait"):
+                            job_msg["portrait"] = st.session_state["portrait"]
+                        if guest:
+                            job_msg["photo_id"] = guest.get("id")
+                            job_msg["photo_url"] = guest.get("tos_url")
+                            if guest.get("asset_id"):
+                                job_msg["asset_id"] = guest["asset_id"]
+                        worker.enqueue(job_msg)
+                        produced.append((ticket_no, fk))
+                    st.session_state["ticket_no"] = produced[0][0]
+                    st.session_state["ticket_nos"] = produced
                     goto("production")
 
     st.divider()
@@ -375,8 +401,10 @@ def scene_ticket():
 def scene_production():
     ui.header()
     ui.filmstrip(4)
-    film = films.FILM_BY_KEY[st.session_state["film_key"]]
-    ticket_no = st.session_state.get("ticket_no", "PP-????")
+    produced = st.session_state.get("ticket_nos") or [
+        (st.session_state.get("ticket_no", "PP-????"), st.session_state.get("film_key"))
+    ]
+    multi = len(produced) > 1
 
     if not st.session_state.get("celebrated"):
         st.balloons()
@@ -386,23 +414,30 @@ def scene_production():
         f"""
         <div style="text-align:center; margin-top:.6rem">
           <div class="mp-clap">SCENE 4 · ACTION!</div>
-          <h2 style="margin:.2rem 0">Your epic is in production 🎥</h2>
-          <p style="font-style:italic; color:#C9BCA8">Rolling now — sit back, superstar.</p>
-        </div>
-        <div class="mp-stub">
-          <div class="meta">MAHA PICTURES · KEEP THIS STUB</div>
-          <div class="no">{ticket_no}</div>
-          <div style="font-family:'Chonburi',serif; font-size:1.15rem">{film['title_en']} · {film['title_th']}</div>
-          <div class="divider"></div>
-          <div class="meta">
-            WORLD PREMIERE: THE NOW SHOWING SCREEN + YOUR INBOX · ~5 MIN
-          </div>
+          <h2 style="margin:.2rem 0">Your {"epics are" if multi else "epic is"} in production 🎥</h2>
+          <p style="font-style:italic; color:#9A8C78">Rolling now — sit back, superstar.</p>
         </div>
         """,
         unsafe_allow_html=True,
     )
 
-    _production_status(ticket_no)
+    for ticket_no, fk in produced:
+        film = films.FILM_BY_KEY.get(fk, {})
+        st.markdown(
+            f"""
+            <div class="mp-stub">
+              <div class="meta">PREMIERE PICTURES · KEEP THIS STUB</div>
+              <div class="no">{ticket_no}</div>
+              <div style="font-family:'Playfair Display',serif; font-size:1.15rem">{film.get('title_en','')} · {film.get('title_th','')}</div>
+              <div class="divider"></div>
+              <div class="meta">
+                WORLD PREMIERE: THE NOW SHOWING SCREEN + YOUR INBOX · ~5 MIN
+              </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        _production_status(ticket_no)
 
     _, c1, c2, _ = st.columns([2, 3, 3, 2])
     with c1:
