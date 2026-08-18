@@ -123,7 +123,7 @@ FILMS = [
         "genre_th": "ADVENTURE", "genre_en": "ADVENTURE · EPIC",
         "logline_en": "The map was real. So are the traps.",
         "synopsis": ("Deep in jungle ruins you dodge ancient traps, swing across a chasm and "
-                     "lift the golden idol into a shaft of sunlight — a classic adventure-movie "
+                     "lift a radiant gemstone into a shaft of sunlight — a classic adventure-movie "
                      "treasure run."),
         "tags": "JUNGLE · TREASURE · TRAPS",
         "c1": "#0A2414", "c2": "#2E7D32", "c3": "#F6C55C",
@@ -141,10 +141,11 @@ FILMS = [
                    "co-star grabs a hanging vine and swings across a deep chasm first, then "
                    "the person in Image 1 swings across after them, both landing on two feet "
                    "in a natural, balanced way. They rise together before a stone altar; the "
-                   "person in Image 1 lifts a small golden idol into a beam of sunlight, "
-                   "grins at the camera and says in clear English: \"Told you the map was "
-                   "real.\" — holding the idol up as the co-star laughs beside them and the "
-                   "light flares." + _SUFFIX),
+                   "person in Image 1 lifts a magnificent fist-sized radiant emerald-green "
+                   "GEMSTONE into a beam of sunlight — its facets glinting brilliantly in "
+                   "the light — grins at the camera and says in clear English: \"Told you "
+                   "the map was real.\" — holding the gemstone up as the co-star laughs "
+                   "beside them and the light flares." + _SUFFIX),
     },
     {
         "key": "mountain", "no": "03", "emoji": "🏔️",
@@ -309,21 +310,21 @@ DUO = {
         "collapses or rises by itself. Temple walls and stonework bear only plain "
         "weathered shapes — absolutely no letters, script, runes or inscriptions "
         "anywhere. The two explorers, in rugged plain gear, examine the altar. The "
-        "person in Image 1 lifts the golden idol off its "
+        "person in Image 1 lifts a radiant emerald-green gemstone off its "
         "pedestal — the pedestal sinks under the released weight, triggering the ancient "
         "mechanism: stone supports visibly slide away and columns topple from their "
         "bases, one knocking into the next. The {costar} shouts in clear English: \"You "
-        "had to pick it up — RUN!\" The person in Image 1 clutches the idol: \"Go, go, "
+        "had to pick it up — RUN!\" The person in Image 1 clutches the gemstone: \"Go, go, "
         "GO!\" They sprint through the corridor together with real athletic effort, "
         "vaulting one fallen pillar cleanly and landing on their feet — the person in "
-        "Image 1 clearly HOLDING the golden idol in one hand the entire time, still "
+        "Image 1 clearly HOLDING the gemstone in one hand the entire time, still "
         "visibly in hand in the final frame of this sequence." + _DUO_A,
         "Continue directly from Video 1 — still EXACTLY TWO people, the same two "
         "explorers, nobody else ever appears. From the VERY FIRST FRAME the person "
-        "from Image 1 is still clearly HOLDING the golden idol in one hand — the idol "
+        "from Image 1 is still clearly HOLDING the gemstone in one hand — the gemstone "
         "never disappears, is never dropped or thrown, and stays visibly in their hand "
         "continuously until the exact moment they tuck it away. They reach a deep "
-        "chasm and stop; ON CAMERA, the person from Image 1 tucks the golden idol "
+        "chasm and stop; ON CAMERA, the person from Image 1 tucks the gemstone "
         "securely into their shoulder satchel — a clear, visible motion, idol in hand "
         "until it enters the bag — and only THEN, with BOTH hands now free, grips a "
         "hanging vine firmly with both "
@@ -337,7 +338,7 @@ DUO = {
         "letting go sheepishly. Behind them the last toppling columns crash down and seal the "
         "corridor in dust. Safe in a shaft of sunlight, they catch their breath and "
         "laugh. The {costar} says in clear English: \"Next time, YOU read the "
-        "warnings.\" The person from Image 1 pulls the idol from the satchel and holds "
+        "warnings.\" The person from Image 1 pulls the gemstone from the satchel and holds "
         "it up: \"Next time... we bring a bigger bag.\" They grin and walk out into the "
         "light — a classic adventure close." + _DUO_B,
     ),
