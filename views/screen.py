@@ -37,7 +37,7 @@ _initial = [
     {"ticket": e.get("ticket", ""), "name": e.get("name", ""),
      "film": e.get("film", ""), "video": e.get("video", ""), "created": e.get("created", "")}
     for e in sorted(storage.load_gallery(), key=lambda x: x.get("created", ""), reverse=True)
-    if str(e.get("video", "")).startswith("http")
+    if str(e.get("video", "")).startswith("http") and e.get("screen", True) is not False
 ]
 
 META_URL = ("https://seedance-booth-guests.tos-ap-southeast-1.bytepluses.com/"
@@ -251,6 +251,7 @@ async function poll(){
     if (!r.ok) return;
     const incoming = (await r.json())
       .filter(e => String(e.video || '').startsWith('http'))
+      .filter(e => e.screen !== false)
       .sort((a, b) => String(b.created || '').localeCompare(String(a.created || '')));
     const seen = new Set(list.map(e => e.video));
     const brandNew = incoming.filter(e => !seen.has(e.video));

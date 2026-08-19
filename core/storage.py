@@ -123,6 +123,18 @@ def delete_gallery_entry(ticket: str) -> None:
     GALLERY_META.write_text(json.dumps(entries, ensure_ascii=False, indent=2), encoding="utf-8")
     _mirror("gallery_metadata.json")
 
+
+def set_gallery_screen(ticket: str, visible: bool) -> None:
+    """Toggle whether a finished film plays on the /screen Big Screen reel."""
+    if not GALLERY_META.exists():
+        return
+    entries = json.loads(GALLERY_META.read_text(encoding="utf-8"))
+    for e in entries:
+        if e.get("ticket") == ticket:
+            e["screen"] = bool(visible)
+    GALLERY_META.write_text(json.dumps(entries, ensure_ascii=False, indent=2), encoding="utf-8")
+    _mirror("gallery_metadata.json")
+
 def _mirror(name: str) -> None:
     """Best-effort cloud backup after any write (lazy import avoids cycles)."""
     try:

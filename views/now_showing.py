@@ -65,6 +65,11 @@ def premiere_wall():
                     """,
                     unsafe_allow_html=True,
                 )
+                shown = entry.get("screen", True) is not False
+                tick = st.checkbox("📺 Show on Big Screen", value=shown,
+                                   key=f"scr-{i}-{entry['ticket']}")
+                if tick != shown:
+                    storage.set_gallery_screen(entry["ticket"], tick)
 
 
 premiere_wall()
