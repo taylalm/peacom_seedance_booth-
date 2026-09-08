@@ -209,30 +209,35 @@ FILMS = [
                      "envelopes. The most joyful morning of the year."),
         "tags": "ÁO DÀI · MAI BLOSSOM · LÌ XÌ",
         "c1": "#3A0A08", "c2": "#C8281E", "c3": "#F6C55C",
-        "prompt": ("FIRST RULE OF THIS SCENE: there is NO readable text anywhere — no signs, "
-                   "no banners, no calligraphy, and no letters, numbers or characters on any "
-                   "red couplet, lantern, envelope, wall or surface in any language; every "
-                   "decoration is plain and blank, and the camera never frames any writing "
-                   "because none exists. A cinematic Vietnamese Lunar New Year (Tết) movie "
-                   "scene: a warm, sunlit traditional Vietnamese courtyard decorated for Tết "
-                   "— a beautiful blossoming golden-yellow mai apricot tree (hoa mai) in full "
-                   "bloom, round red lanterns glowing softly and steadily (plain, no text), "
-                   "plain red silk banners, a small kumquat tree with orange fruit, and a "
-                   "lacquer tray of round red-wrapped treats. The person in Image 1, wearing "
-                   "an elegant traditional Vietnamese áo dài, celebrates Tết together with "
-                   "their co-star who also wears a graceful áo dài in a complementary color. "
-                   "Story, in order: (1) the two walk in together admiring the mai blossoms, "
-                   "smiling warmly and chatting; (2) the co-star takes a single plain red lì "
-                   "xì lucky-money envelope (completely blank, no writing on it) and offers "
-                   "it to the person in Image 1 with both hands in a warm traditional "
-                   "gesture; the person in Image 1 receives it with both hands and a happy "
-                   "little bow of the head, then says in clear English: \"Happy Lunar New "
-                   "Year!\"; (3) they stand side by side beside the mai tree as a few real "
-                   "apricot-blossom petals drift down gently in the breeze — real physical "
-                   "petals falling with true weight and physics, NEVER glitter, sparkles or "
-                   "magical particles; the person in Image 1 turns slightly to the camera "
-                   "with a soft, happy smile and says warmly: \"Wishing you a year of luck "
-                   "and joy.\" — holding the joyful moment with their co-star." + _SUFFIX),
+        "prompt": ("FIRST RULE: NO readable text anywhere — no calligraphy, no letters or "
+                   "characters on any red couplet, lantern, envelope or surface, in any "
+                   "language; all decorations are plain and blank. A lively, heart-warming "
+                   "Vietnamese Lunar New Year (Tết) family-reunion movie scene inside a warm, "
+                   "richly decorated traditional Vietnamese home on a sunny New Year morning: "
+                   "a blossoming golden mai apricot tree by the doorway, round red lanterns "
+                   "swaying gently, a long string of plain red decorative firecrackers "
+                   "hanging, a full festive table with a five-fruit tray, green-wrapped bánh "
+                   "chưng cakes, a tray of candied Tết treats and a teapot; a few relatives "
+                   "celebrate far in the soft-focus background but never approach and their "
+                   "faces are never featured. The person in Image 1 wears an elegant "
+                   "traditional Vietnamese áo dài; the co-star wears a graceful áo dài in a "
+                   "complementary color. Story, in order: (1) the two walk in together into "
+                   "the festive warmth, smiling and greeting with a warm bow; the person in "
+                   "Image 1 says in clear English: \"Happy Lunar New Year!\" (2) the co-star "
+                   "offers a single plain red lì xì lucky-money envelope with both hands; the "
+                   "person in Image 1 receives it with both hands and a happy little bow, then "
+                   "simply HOLDS the closed envelope in one hand — they NEVER open it, never "
+                   "peek inside, the envelope stays sealed the whole time — and says warmly: "
+                   "\"Wishing you wealth and health this year!\" (3) EXCEPTION to the "
+                   "no-effects rule: the hanging string of red firecrackers bursts in one "
+                   "lively, celebratory POP that showers harmless RED PAPER scraps down "
+                   "through the air — PAPER confetti only, absolutely NO real fire, no sparks, "
+                   "no embers, no smoke; amid the cheerful paper shower the two laugh happily "
+                   "and raise small cups of tea in a warm toast; the person in Image 1 turns "
+                   "to the camera with a bright, joyful smile and says: \"May this spring "
+                   "bring your family joy and luck!\" Camera: opens on a smooth sweeping pan "
+                   "across the festive room, pushes in to the two, dips low for the lì xì "
+                   "moment, then rises for the firecracker pop and toast." + _SUFFIX),
     },
     {
         "key": "kpop", "no": "05", "emoji": "🎤",
@@ -264,6 +269,47 @@ FILMS = [
                    "for you!\" then the pair give a warm, natural bow, still moving. Original instrumental K-pop-style backing track "
                    "only — energetic, no lyrics, no vocals, never any existing or copyrighted "
                    "song." + _SUFFIX),
+    },
+    {
+        "key": "tetmarket", "no": "06", "emoji": "🌸",
+        "title_th": "CHỢ HOA NGÀY TẾT", "title_en": "SPRING FLOWER MARKET",
+        "genre_th": "FESTIVAL", "genre_en": "FESTIVAL · TẾT",
+        "logline_en": "Peach blossoms, kumquats, a stroll through spring.",
+        "synopsis": ("A sunny stroll through a bustling Vietnamese Tết flower market — "
+                     "golden mai, pink peach blossoms and kumquat trees, in áo dài. Bright, "
+                     "festive and full of spring."),
+        "tags": "ÁO DÀI · HOA ĐÀO · CHỢ HOA",
+        "c1": "#4A0A18", "c2": "#D43A6A", "c3": "#F6C55C",
+        "prompt": ("FIRST RULE: NO readable text anywhere — no shop signs, no price tags, no "
+                   "banners, no calligraphy, no letters or characters on any surface in any "
+                   "language; every stall and decoration is plain and blank. A vibrant, "
+                   "colorful Vietnamese Lunar New Year (Tết) FLOWER MARKET movie scene on a "
+                   "bright sunny New Year morning: a lively outdoor street market lined with "
+                   "rows of blossoming golden mai apricot trees and pink peach-blossom (hoa "
+                   "đào) branches, potted kumquat trees heavy with orange fruit, round red "
+                   "lanterns strung overhead, flower stalls bursting with color; blurred "
+                   "background shoppers stroll far down the street but never come close and "
+                   "their faces are never featured. The person in Image 1 wears an elegant "
+                   "traditional Vietnamese áo dài; the co-star wears a graceful áo dài in a "
+                   "complementary color. Story, in order: (1) the two stroll into the flower "
+                   "market together, delighted, looking around at the blossoms; the person in "
+                   "Image 1 says in clear English: \"Spring is finally here!\" (2) they stop "
+                   "at a flower stall; the co-star picks up a branch of pink peach blossom and "
+                   "playfully holds it up beside the person in Image 1's face; both laugh, and "
+                   "the person in Image 1 says: \"Perfect for our Tết!\" (3) a fun, lively "
+                   "shopping beat: they move together to a stall of potted kumquat trees; the "
+                   "person in Image 1 happily lifts a small potted kumquat tree with both "
+                   "hands to admire it, turning it in the sunlight, while the co-star claps "
+                   "and nods with delight; they share a bright laugh — a cheerful "
+                   "picking-out-Tết-flowers moment (no vendor speaks); (4) carrying the little "
+                   "kumquat, the two walk on together down the flower-lined street as a few "
+                   "real blossom petals drift gently in the breeze (real petals with true "
+                   "physics — never glitter or magical particles); the person in Image 1 turns "
+                   "to the camera with a warm smile and says: \"Happy Lunar New Year, "
+                   "everyone!\" Camera: opens on a lively tracking shot gliding down the "
+                   "flower market, follows the two among the blossoms, drops to a low angle "
+                   "through the flowers for the kumquat moment, then rises for the final "
+                   "greeting." + _SUFFIX),
     },
 ]
 

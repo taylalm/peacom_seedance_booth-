@@ -509,6 +509,38 @@ def poster_art(key: str) -> str:
  <rect y="356" width="300" height="44" fill="#3A0A08" opacity="0.85"/>
  <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" fill="#F6C55C" opacity="0.95">TET SUM VAY</text>
 </svg>""",
+        # --- Spring Flower Market (Tết): peach blossoms, kumquat, market ---
+        "tetmarket": """
+<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+ <defs>
+  <linearGradient id="fm-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7EC8E8"/><stop offset="0.5" stop-color="#BEE4F2"/><stop offset="1" stop-color="#F4E9D8"/></linearGradient>
+ </defs>
+ <rect width="300" height="400" fill="url(#fm-sky)"/>
+ <circle cx="240" cy="70" r="42" fill="#FBE38A" opacity="0.85"/>
+ <!-- market ground perspective -->
+ <path d="M0 300 L120 300 L90 400 L0 400 Z" fill="#C9A86A" opacity="0.5"/>
+ <path d="M300 300 L180 300 L210 400 L300 400 Z" fill="#C9A86A" opacity="0.5"/>
+ <rect y="300" width="300" height="100" fill="#B89A5E" opacity="0.35"/>
+ <!-- hanging red lanterns -->
+ <g><ellipse cx="60" cy="52" rx="12" ry="15" fill="#E01E1E"/><ellipse cx="150" cy="40" rx="12" ry="15" fill="#E01E1E"/><ellipse cx="240" cy="52" rx="12" ry="15" fill="#E01E1E"/>
+  <g fill="#F6C55C"><rect x="54" y="38" width="12" height="4"/><rect x="144" y="26" width="12" height="4"/><rect x="234" y="38" width="12" height="4"/></g></g>
+ <!-- yellow mai tree left -->
+ <g stroke="#5A3208" stroke-width="4" fill="none"><path d="M40 300 C36 250 48 210 40 180 M40 230 C24 214 16 196 12 172 M40 214 C58 202 70 188 78 168"/></g>
+ <g fill="#F6C55C"><circle cx="12" cy="172" r="12"/><circle cx="78" cy="168" r="12"/><circle cx="40" cy="180" r="14"/><circle cx="26" cy="150" r="10"/><circle cx="60" cy="146" r="10"/><circle cx="40" cy="150" r="11"/></g>
+ <!-- pink peach tree right -->
+ <g stroke="#5A3208" stroke-width="4" fill="none"><path d="M262 300 C266 250 254 210 262 180 M262 230 C280 214 288 196 292 172 M262 214 C244 202 232 188 224 168"/></g>
+ <g fill="#F48FB8"><circle cx="292" cy="172" r="11"/><circle cx="224" cy="168" r="11"/><circle cx="262" cy="180" r="13"/><circle cx="276" cy="150" r="9"/><circle cx="244" cy="146" r="9"/><circle cx="262" cy="150" r="10"/></g>
+ <!-- potted kumquats in a row -->
+ <g>
+  <g transform="translate(95 288)"><ellipse cx="0" cy="-14" rx="20" ry="18" fill="#3E8E44"/><circle cx="-8" cy="-16" r="4" fill="#E8901E"/><circle cx="6" cy="-10" r="4" fill="#E8901E"/><circle cx="0" cy="-22" r="4" fill="#E8901E"/><path d="M-12 0 L12 0 L9 16 L-9 16 Z" fill="#C83A1E"/></g>
+  <g transform="translate(150 300)"><ellipse cx="0" cy="-16" rx="24" ry="22" fill="#3E8E44"/><circle cx="-10" cy="-18" r="5" fill="#E8901E"/><circle cx="8" cy="-12" r="5" fill="#E8901E"/><circle cx="0" cy="-26" r="5" fill="#E8901E"/><circle cx="-4" cy="-6" r="5" fill="#E8901E"/><path d="M-15 0 L15 0 L11 20 L-11 20 Z" fill="#D4141A"/></g>
+  <g transform="translate(205 288)"><ellipse cx="0" cy="-14" rx="20" ry="18" fill="#3E8E44"/><circle cx="8" cy="-16" r="4" fill="#E8901E"/><circle cx="-6" cy="-10" r="4" fill="#E8901E"/><circle cx="0" cy="-22" r="4" fill="#E8901E"/><path d="M-12 0 L12 0 L9 16 L-9 16 Z" fill="#C83A1E"/></g>
+ </g>
+ <!-- drifting petals -->
+ <g fill="#F48FB8" opacity="0.85"><circle cx="120" cy="150" r="2.4"/><circle cx="190" cy="130" r="2.4"/><circle cx="100" cy="230" r="2"/><circle cx="210" cy="250" r="2"/><circle cx="150" cy="200" r="2"/></g>
+ <rect y="356" width="300" height="44" fill="#4A0A18" opacity="0.82"/>
+ <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#F6C55C" opacity="0.95">CHO HOA NGAY TET</text>
+</svg>""",
     }
     return art.get(key, "")
 
