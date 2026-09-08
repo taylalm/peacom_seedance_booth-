@@ -200,42 +200,39 @@ FILMS = [
                    "happy pose side by side as the wind moves the snow." + _SUFFIX),
     },
     {
-        "key": "hoian", "no": "04", "emoji": "🏮",
-        "title_th": "THE NIGHT THE RIVER GLOWS", "title_en": "LANTERN NIGHTS",
-        "genre_th": "FESTIVAL", "genre_en": "FESTIVAL · HỘI AN",
-        "logline_en": "Lanterns on the water. Fireworks in the sky.",
-        "synopsis": ("A warm evening at a Hội An riverside lantern festival — glowing "
-                     "lanterns, street food, and a golden firework finale over the water. "
-                     "The night every traveler dreams about."),
-        "tags": "HỘI AN · LANTERNS · FIREWORKS",
-        "c1": "#1A0806", "c2": "#B0501E", "c3": "#F6C55C",
-        "prompt": ("FIRST RULE OF THIS SCENE: there is NO text anywhere — no signboards, no "
-                   "shopfronts, no menu boards, no lightboxes, no banners, no house plaques, "
-                   "no lettering in Vietnamese or any language on any surface; the camera "
-                   "never frames a single sign, because none exist. A cinematic travel movie "
-                   "scene: warm evening on the RIVERSIDE lantern promenade of Hội An ancient "
-                   "town, Vietnam — plain yellow plaster walls, strings of plain blank silk "
-                   "lanterns overhead glowing warm and steady, the lantern-lit river on one "
-                   "side, festival visitors strolling in the background who never approach. "
-                   "The person in Image 1, in comfortable plain travel clothes, strolls the "
-                   "promenade together with their co-star, the two chatting and smiling with "
-                   "relaxed curiosity; they stop at a simple wooden street cart (completely "
-                   "sign-less and unlabeled), the person in Image 1 hands the vendor money "
-                   "and the vendor (who works silently and does NOT speak) hands over TWO "
-                   "separate identical small local snacks — "
-                   "the person in Image 1 takes both, then gives ONE to the co-star so each "
-                   "person is holding their OWN snack in their own hand; PROP RULE: there are "
-                   "always exactly two snacks, one per person, each visibly held and eaten by "
-                   "its owner — a snack never splits, duplicates or multiplies in anyone's "
-                   "hand. Each takes a bite of their own snack, then "
-                   "the two walk to the railing at the river's edge and the person in Image 1 "
-                   "says in clear English: \"This place feels so alive.\" EXCEPTION to the "
-                   "effects rule: real festival FIREWORKS launch from across the river, burst "
-                   "high and fade naturally with real physics, reflected in the water — the "
-                   "only exception; lanterns stay small and steady. A golden firework blooms; "
-                   "the two watch it side by side, smile, and the person in Image 1 turns "
-                   "slightly to the camera with the glowing river behind them and says: "
-                   "\"What a beautiful night.\"" + _SUFFIX),
+        "key": "hoian", "no": "04", "emoji": "🧧",
+        "title_th": "TẾT SUM VẦY", "title_en": "LUCKY SPRING",
+        "genre_th": "FESTIVAL", "genre_en": "FESTIVAL · TẾT",
+        "logline_en": "Blossoms, red envelopes, a lucky new spring.",
+        "synopsis": ("A warm Vietnamese Lunar New Year (Tết) celebration — áo dài, a "
+                     "blossoming golden mai apricot tree, red lanterns and lucky red "
+                     "envelopes. The most joyful morning of the year."),
+        "tags": "ÁO DÀI · MAI BLOSSOM · LÌ XÌ",
+        "c1": "#3A0A08", "c2": "#C8281E", "c3": "#F6C55C",
+        "prompt": ("FIRST RULE OF THIS SCENE: there is NO readable text anywhere — no signs, "
+                   "no banners, no calligraphy, and no letters, numbers or characters on any "
+                   "red couplet, lantern, envelope, wall or surface in any language; every "
+                   "decoration is plain and blank, and the camera never frames any writing "
+                   "because none exists. A cinematic Vietnamese Lunar New Year (Tết) movie "
+                   "scene: a warm, sunlit traditional Vietnamese courtyard decorated for Tết "
+                   "— a beautiful blossoming golden-yellow mai apricot tree (hoa mai) in full "
+                   "bloom, round red lanterns glowing softly and steadily (plain, no text), "
+                   "plain red silk banners, a small kumquat tree with orange fruit, and a "
+                   "lacquer tray of round red-wrapped treats. The person in Image 1, wearing "
+                   "an elegant traditional Vietnamese áo dài, celebrates Tết together with "
+                   "their co-star who also wears a graceful áo dài in a complementary color. "
+                   "Story, in order: (1) the two walk in together admiring the mai blossoms, "
+                   "smiling warmly and chatting; (2) the co-star takes a single plain red lì "
+                   "xì lucky-money envelope (completely blank, no writing on it) and offers "
+                   "it to the person in Image 1 with both hands in a warm traditional "
+                   "gesture; the person in Image 1 receives it with both hands and a happy "
+                   "little bow of the head, then says in clear English: \"Happy Lunar New "
+                   "Year!\"; (3) they stand side by side beside the mai tree as a few real "
+                   "apricot-blossom petals drift down gently in the breeze — real physical "
+                   "petals falling with true weight and physics, NEVER glitter, sparkles or "
+                   "magical particles; the person in Image 1 turns slightly to the camera "
+                   "with a soft, happy smile and says warmly: \"Wishing you a year of luck "
+                   "and joy.\" — holding the joyful moment with their co-star." + _SUFFIX),
     },
     {
         "key": "kpop", "no": "05", "emoji": "🎤",

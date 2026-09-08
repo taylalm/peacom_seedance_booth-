@@ -475,38 +475,39 @@ def poster_art(key: str) -> str:
  <text x="150" y="366" text-anchor="middle" font-family="Space Mono,monospace" font-size="13" fill="#EAF7FF" opacity="0.9">ARE YOU READY?</text>
 </svg>""",
         # --- Lantern Nights: Hoi An riverside lanterns, fireworks ---
+        # --- Lucky Spring (Tết): mai blossom tree, red lanterns, lì xì ---
         "hoian": """
 <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
  <defs>
-  <linearGradient id="ha-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#120604"/><stop offset="0.55" stop-color="#5A2410"/><stop offset="1" stop-color="#B0501E"/></linearGradient>
+  <linearGradient id="ha-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A0A08"/><stop offset="0.55" stop-color="#8E1414"/><stop offset="1" stop-color="#C8281E"/></linearGradient>
  </defs>
  <rect width="300" height="400" fill="url(#ha-bg)"/>
- <g stroke="#F6C55C" stroke-width="1.5" opacity="0.85">
-  <path d="M150 60 L150 88 M150 60 L130 82 M150 60 L170 82 M150 60 L118 66 M150 60 L182 66 M150 60 L124 46 M150 60 L176 46 M150 60 L150 32 M150 60 L136 36 M150 60 L164 36"/>
- </g>
- <g fill="#F6C55C" opacity="0.9"><circle cx="150" cy="60" r="3"/><circle cx="130" cy="82" r="1.6"/><circle cx="170" cy="82" r="1.6"/><circle cx="118" cy="66" r="1.6"/><circle cx="182" cy="66" r="1.6"/><circle cx="150" cy="88" r="1.6"/><circle cx="150" cy="32" r="1.6"/></g>
- <g fill="#3A1608">
-  <rect x="10" y="150" width="130" height="90"/><rect x="160" y="140" width="130" height="100"/>
-  <path d="M0 152 L75 128 L150 152 Z"/><path d="M150 142 L225 118 L300 142 Z"/>
- </g>
- <g fill="#F6E08A" opacity="0.85"><rect x="30" y="180" width="18" height="26" rx="2"/><rect x="70" y="180" width="18" height="26" rx="2"/><rect x="185" y="172" width="18" height="26" rx="2"/><rect x="230" y="172" width="18" height="26" rx="2"/></g>
+ <!-- hanging red lanterns -->
  <g>
-  <g transform="translate(55 158)"><ellipse rx="9" ry="11" fill="#E8641E"/><rect x="-3" y="10" width="6" height="3" fill="#F6C55C"/></g>
-  <g transform="translate(110 152)"><ellipse rx="10" ry="12" fill="#D9481E"/><rect x="-3" y="11" width="6" height="3" fill="#F6C55C"/></g>
-  <g transform="translate(210 148)"><ellipse rx="9" ry="11" fill="#E8A020"/><rect x="-3" y="10" width="6" height="3" fill="#F6C55C"/></g>
-  <g transform="translate(260 156)"><ellipse rx="8" ry="10" fill="#E8641E"/><rect x="-3" y="9" width="6" height="3" fill="#F6C55C"/></g>
+  <g transform="translate(50 0)"><line x1="0" y1="0" x2="0" y2="40" stroke="#7A0E0E" stroke-width="2"/><ellipse cx="0" cy="54" rx="16" ry="20" fill="#E01E1E"/><rect x="-6" y="34" width="12" height="6" rx="2" fill="#F6C55C"/><rect x="-6" y="72" width="12" height="6" rx="2" fill="#F6C55C"/><path d="M0 78 l-4 12 M0 78 l4 12 M0 78 l0 13" stroke="#F6C55C" stroke-width="1.5"/></g>
+  <g transform="translate(250 0)"><line x1="0" y1="0" x2="0" y2="52" stroke="#7A0E0E" stroke-width="2"/><ellipse cx="0" cy="66" rx="16" ry="20" fill="#E01E1E"/><rect x="-6" y="46" width="12" height="6" rx="2" fill="#F6C55C"/><rect x="-6" y="84" width="12" height="6" rx="2" fill="#F6C55C"/><path d="M0 90 l-4 12 M0 90 l4 12 M0 90 l0 13" stroke="#F6C55C" stroke-width="1.5"/></g>
  </g>
- <rect y="240" width="300" height="160" fill="#1A0A04"/>
- <g opacity="0.6">
-  <ellipse cx="60" cy="290" rx="26" ry="5" fill="#E8641E"/><ellipse cx="150" cy="320" rx="34" ry="6" fill="#F6C55C"/><ellipse cx="240" cy="286" rx="22" ry="4" fill="#D9481E"/>
-  <path d="M140 250 L160 250 L166 262 L134 262 Z" fill="#5A2410"/>
+ <!-- golden mai apricot tree -->
+ <g stroke="#5A3208" stroke-width="6" fill="none" stroke-linecap="round">
+  <path d="M150 300 C146 250 158 210 150 170 M150 210 C130 196 116 176 108 152 M150 196 C172 184 190 166 200 142 M150 176 C136 160 130 140 132 118 M150 168 C166 156 178 140 182 120"/>
  </g>
- <g transform="translate(150 316)" fill="#0C0402">
-  <circle cx="0" cy="-38" r="9"/>
-  <path d="M0 -30 c-12 0 -16 10 -15 22 l-5 34 h40 l-5 -34 c1 -12 -3 -22 -15 -22Z"/>
+ <g fill="#F6C55C">
+  <g id="mai"><circle r="6"/><circle cx="0" cy="-6" r="2.6" fill="#F6E08A"/><circle cx="5.7" cy="-1.8" r="2.6" fill="#F6E08A"/><circle cx="3.5" cy="4.8" r="2.6" fill="#F6E08A"/><circle cx="-3.5" cy="4.8" r="2.6" fill="#F6E08A"/><circle cx="-5.7" cy="-1.8" r="2.6" fill="#F6E08A"/><circle r="1.8" fill="#E8901E"/></g>
  </g>
- <rect y="356" width="300" height="44" fill="#120604" opacity="0.85"/>
- <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#F6C55C" opacity="0.95">THE NIGHT THE RIVER GLOWS</text>
+ <g fill="#F6C55C">
+  <use href="#mai" x="108" y="150"/><use href="#mai" x="200" y="140"/><use href="#mai" x="132" y="116"/><use href="#mai" x="182" y="118"/><use href="#mai" x="150" y="150"/><use href="#mai" x="120" y="176"/><use href="#mai" x="176" y="164"/><use href="#mai" x="150" y="118"/><use href="#mai" x="96" y="128"/><use href="#mai" x="212" y="120"/>
+ </g>
+ <!-- drifting petals -->
+ <g fill="#F6E08A" opacity="0.8"><circle cx="70" cy="150" r="2"/><circle cx="230" cy="180" r="2"/><circle cx="90" cy="230" r="1.6"/><circle cx="210" cy="250" r="1.6"/><circle cx="60" cy="300" r="1.6"/></g>
+ <!-- ground + red envelope (lì xì) -->
+ <rect y="330" width="300" height="70" fill="#5A0A0A" opacity="0.6"/>
+ <g transform="translate(150 300)">
+  <rect x="-20" y="0" width="40" height="56" rx="4" fill="#D4141A" stroke="#F6C55C" stroke-width="2"/>
+  <circle cx="0" cy="24" r="10" fill="#F6C55C"/><circle cx="0" cy="24" r="5" fill="#E8901E"/>
+  <path d="M-20 0 h40 l-20 12 Z" fill="#B01015"/>
+ </g>
+ <rect y="356" width="300" height="44" fill="#3A0A08" opacity="0.85"/>
+ <text x="150" y="384" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" fill="#F6C55C" opacity="0.95">TET SUM VAY</text>
 </svg>""",
     }
     return art.get(key, "")
